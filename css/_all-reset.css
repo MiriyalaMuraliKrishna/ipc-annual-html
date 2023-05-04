@@ -200,12 +200,10 @@ ul.slick-dots li.slick-active button{background: linear-gradient(90deg,#3207ff 0
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .container{max-width: 1312px; margin: 0 auto;}
     .container.lg{max-width: 1440px; padding: 0 40px;}
-    .container.md{max-width: 1280px;}
-    .container.x-md{max-width: 1200px;}
-    .container.sm{max-width: 1184px;}
-    .container.x-small{max-width: 1024px;}
+    .container{max-width: 1280px; margin: 0 auto;}
+    .container.md{max-width: 1184px;}
+    .container.sm{max-width: 184px;}
     .container.x-sm{max-width: 896px;}
     .hide-desktop{display: none;}
 }
