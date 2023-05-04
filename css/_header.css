@@ -1,14 +1,18 @@
 
 
 .main-header{position: relative;}
-
+.header{padding: 24px 0 0;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
+
+    .toggle_menu{width: 56px; height: 56px; margin-right: 24px; font-size: 24px; line-height: 24px; color: var(--white); cursor: pointer; align-items: center; justify-content: center; background-color: var(--health-color);}
+    .toggle_bg{width: 100%; height: 100%; transform: translate(4px, 4px); z-index: -1; background-color: var(--tech-color); position: absolute; display: block;}
+
     .logo{flex: 0 0 200px;}
-    .header-right{flex: 1;}
-    .nav_btns{flex: 1;}
-    .nav_languages{flex: 1;}
+    .header-right{flex: 1; justify-content: flex-end;}
+    .nav_btns{width: auto; gap: 15px;}
+    .nav_languages{width: auto;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
 

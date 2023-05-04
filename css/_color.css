@@ -5,18 +5,10 @@
     --black-50: rgb(0 0 0 / 50%);
     --black-75: rgb(0 0 0 / 75%);
     --white: #ffffff;
-    --white-18: rgb(255 255 255 / 18%);
-    --white-20: rgb(255 255 255 / 20%);
-    --white-22: rgb(255 255 255 / 22%);
     --white-50: rgb(255 255 255 / 50%);
-    --white-60: rgb(255 255 255 / 60%);
-    --white-70: rgb(255 255 255 / 70%);
-    --white-90: rgb(255 255 255 / 90%);
-    --sky-blue:  #007DEB;
-    --illumin-blue: #3207FF;
-    --purple-color: #8200F0;
-    --slate-color: #4F6069;
-    --tin-color:  #F0F5FA;
-    --light-purple: #FBF6FF;
+    --white-75: rgb(255 255 255 / 75%);
     --error: #f00;
+    --health-color: #337975;
+    --tech-color: #C3E86C;
+    --slate-color: #242D38;
 }
