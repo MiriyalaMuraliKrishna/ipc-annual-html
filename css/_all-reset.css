@@ -7,7 +7,7 @@ a{color: var(--illumin-blue); text-decoration: none; transition-duration: 0.5s; 
 a:focus {outline: none;}
 a:hover, a:active {outline: 0;}
 a:hover{color: var(--black);}
-h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 8px; color: var(--black); letter-spacing: normal; text-transform: none; font-family: 'Overpass', sans-serif;}
+h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 8px; color: var(--black); letter-spacing: -0.05em; text-transform: none; font-family: 'Overpass', sans-serif;}
 h1 {font-size: 58px; line-height: 64px; margin-bottom: 20px;}
 h2 {font-size: 40px; line-height: 48px; margin-bottom: 12px;}
 h3 {font-size: 32px; line-height: 40px; margin-bottom: 10px;}
@@ -90,11 +90,11 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 .search-submit {display: none;}
 
 /* Buttons */
-button, .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{ background-color: #8200F0; border-radius: 0; color: var(--white); display: inline-block; font-size: 16px; line-height: 1.5; letter-spacing: 0px; padding: 9px 17px 8px; vertical-align: middle; cursor: pointer; border: none; position: relative; text-align: center; color: #FFFFFF; font-family: 'Graphik-Bold', sans-serif; transition-duration: .75s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1); transform: translate3d(0.05px, 0.05px, 0px) scale(1); text-transform: uppercase;}
+button, .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{ background-color: #8200F0; border-radius: 0; color: var(--white); display: inline-block; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; padding: 7px 13px 7px; vertical-align: middle; cursor: pointer; border: none; position: relative; text-align: center; color: #FFFFFF; font-family: 'League Gothic', sans-serif; transition-duration: .75s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1); transform: translate3d(0.05px, 0.05px, 0px) scale(1); text-transform: uppercase;}
 button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background-color: var(--red-color); color: var(--white);}
 
 .button.btn-transparent{background-color: transparent; border: 1px solid var(--health-color); color: var(--slate-color);}
-
+.button.btn-transparent:hover{background-color: var(--health-color);}
 
 /* Placeholder text color -- selectors need to be separate to work. */ 
 ::-webkit-input-placeholder {color: var(--black-50); font-family: 'Graphik-Regular', sans-serif;}
@@ -201,6 +201,7 @@ ul.slick-dots li.slick-active button{background: linear-gradient(90deg,#3207ff 0
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .container{max-width: 1312px; margin: 0 auto;}
+    .container.lg{max-width: 1440px; padding: 0 40px;}
     .container.md{max-width: 1280px;}
     .container.x-md{max-width: 1200px;}
     .container.sm{max-width: 1184px;}
