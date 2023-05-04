@@ -1,0 +1,18 @@
+
+
+.main-header{position: relative;}
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .logo{flex: 0 0 200px;}
+    .header-right{flex: 1;}
+    .nav_btns{flex: 1;}
+    .nav_languages{flex: 1;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    
+}

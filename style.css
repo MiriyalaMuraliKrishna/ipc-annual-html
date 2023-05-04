@@ -1,0 +1,29 @@
+
+@charset "utf-8";
+
+/*
+Theme Name: IPC Annual Report Microsite - Landing Page
+Theme URI: https://parachutedesign.ca/
+Author: 
+Author URI: https://parachutedesign.ca/
+Description: 
+Version: 2023.05.02_01
+Text Domain: 
+*/
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd-Roman';
+    src: url('./fonts/HelveticaNeueLTStd-Roman.woff2') format('woff2'),url('./fonts/HelveticaNeueLTStd-Roman.woff') format('woff'),url('./fonts/HelveticaNeueLTStd-Roman.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeue-Italic';
+    src: url('./fonts/HelveticaNeue-Italic.woff2') format('woff2'),url('./fonts/HelveticaNeue-Italic.woff') format('woff'),url('./fonts/HelveticaNeue-Italic.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeue-Medium';
+    src: url('./fonts/HelveticaNeue-Medium.woff2') format('woff2'),url('./fonts/HelveticaNeue-Medium.woff') format('woff'),url('./fonts/HelveticaNeue-Medium.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    src: url('./fonts/HelveticaNeue-Bold.woff2') format('woff2'),url('./fonts/HelveticaNeue-Bold.woff') format('woff'),url('./fonts/HelveticaNeue-Bold.ttf')  format('truetype');
+}
