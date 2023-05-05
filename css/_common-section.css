@@ -1,0 +1,14 @@
+
+
+
+.optional-repeater-text h2{font-size: 32px; line-height: 40px;}
+
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .optional-repeater-list{gap: 80px;}
+    .optional-repeater-text{flex: 0 0 594px;}
+    .optional-repeater-image{flex: 0 0 calc(100% - 674px);}
+    .optional-repeater-list:nth-child(even){flex-direction: row-reverse;}
+}
