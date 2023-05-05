@@ -3,7 +3,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
 audio, canvas, video {display: inline-block; max-width: 100%;}
 html {overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; height: 100%; box-sizing: border-box; scroll-behavior: smooth;}
-a{color: var(--link-color); text-decoration: none; transition-duration: 0.5s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); }
+a{color: var(--link-color); text-decoration: none; transition: all 0.45s ease-in-out;}
 a:focus {outline: none;}
 a:hover, a:active {outline: 0;}
 a:hover{color: var(--black);}
@@ -90,14 +90,35 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 .search-submit {display: none;}
 
 /* Buttons */
-button, .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{ background-color: var(--privacy-color); border-radius: 0; color: var(--white); display: inline-block; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; padding: 8px 12px 8px; vertical-align: middle; cursor: pointer; border: none; position: relative; text-align: center; color: #FFFFFF; font-family: 'League Gothic', sans-serif; transition-duration: .75s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1); transform: translate3d(0.05px, 0.05px, 0px) scale(1); text-transform: uppercase;}
-button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background-color: var(--red-color); color: var(--white);}
+button, .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{ background-color: var(--privacy-color); border-radius: 0; color: var(--white); display: inline-block; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; padding: 8px 12px 8px; vertical-align: middle; cursor: pointer; border: none; position: relative; text-align: center; font-family: 'League Gothic', sans-serif; transform: translate3d(0.05px, 0.05px, 0px) scale(1); text-transform: uppercase; transition: all 0.45s ease-in-out;}
+button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background-color: var(--privacy-color); color: var(--white);}
+
+.button::after {
+    top: 0;
+    bottom: 0;
+    left: 0;
+	right: 0;
+	background-color: var(--slate-color);
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+    transition: all 0.45s ease-in-out;
+	content: "";
+	position: absolute;
+	z-index: -1;
+}
+.button:hover::after{
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
 
 .button.btn-transparent{padding: 6px 12px; background-color: transparent; border: 2px solid var(--health-color); color: var(--slate-color);}
-.button.btn-transparent:hover{background-color: var(--health-color);}
+.button.btn-transparent:hover{background-color: transparent;}
 .button.black{color: var(--slate-color);}
+.button.black:hover{color: var(--white);}
 .button.white{color: var(--white); border-color: var(--privacy-color);}
-.button.white:hover{background-color: var(--privacy-color);}
+.button.white:hover:after{background-color: var(--privacy-color);}
 
 .btn-link{font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; color: var(--corporate-color); text-transform: uppercase; font-family: 'League Gothic', sans-serif;}
 
@@ -181,9 +202,9 @@ ul.slick-dots li.slick-active button{background: linear-gradient(90deg,#3207ff 0
 .play-btn-bg > span.circle::after{ width: 12px; height: 12px; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 6px solid var(--white); border-radius: 300px; content: ""; display: block; position: absolute; }
 .play-btn-bg > span.circle:hover{ transform: rotate(180deg) }
 .play-btn-bg > span.diamond{ background-image: linear-gradient(90deg,#3207ff 0,#8200f0 100%); z-index: 1; }
-.play-btn-bg > span.diamond:after{ left: calc(50% + 5px); width: 34px; height: 48px; top: 50%; transform: translate(-50%,-50%); background-image: url('images/play-icon.svg'); background-repeat: no-repeat; background-size: contain; background-position: center; content: ""; display: block; position: absolute; transition-duration: 0.5s; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); transition-property: all; transition-delay: 0s; }
+.play-btn-bg > span.diamond:after{ left: calc(50% + 5px); width: 34px; height: 48px; top: 50%; transform: translate(-50%,-50%); background-image: url('images/play-icon.svg'); background-repeat: no-repeat; background-size: contain; background-position: center; content: ""; display: block; position: absolute; transition: all 0.45s ease-in-out; }
 .play-btn-bg > span.diamond:hover:after{ transform: translate(-50%,-50%) scale(1.1); }
-.play-btn-bg > span { transition-duration: 0.5s; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); transition-property: all; transition-delay: 0s; border-radius: 50%; bottom: 0; content: " "; left: 0; position: absolute; right: 0; top: 0; }
+.play-btn-bg > span { transition: all 0.45s ease-in-out; border-radius: 50%; bottom: 0; content: " "; left: 0; position: absolute; right: 0; top: 0; }
 .play-btn-bg > span:not(:first-child) { animation: 6s playBtnZooming infinite linear; transform: scale(1); filter: opacity(0.25); -webkit-filter: opacity(0.25); background-color: var(--white); }
 .play-btn-bg > span:not(:first-child):nth-child(2) { -webkit-animation-delay: 2s; animation-delay: 2s; }
 .play-btn-bg > span:not(:first-child):nth-child(3) { -webkit-animation-delay: 4s; animation-delay: 4s; }

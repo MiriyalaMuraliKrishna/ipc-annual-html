@@ -9,8 +9,8 @@
 
 ul.social-icons{margin: 0 0 51px; gap: 68px;}
 ul.social-icons li::before{display: none;}
-ul.social-icons li a{font-size: 32px; line-height: 32px; display: inline-block; color: var(--white);}
-ul.social-icons li a:hover{background-image: linear-gradient(to right,#3207ff 0,#8200f0 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+ul.social-icons li a{font-size: 32px; line-height: 32px; display: inline-block; color: var(--white); transform: scale(1);}
+ul.social-icons li a:hover{color: var(--privacy-color); transform: scaleX(-0.95);}
 
 .copyrights-main{font-size: 12px; line-height: 20px;}
 ul.copyrights-links{margin: 0; gap: 41px;}
