@@ -1,0 +1,24 @@
+.advocacy-head{margin-bottom: 79px;}
+.advocacy-title h2{margin-bottom: 0; font-size: 48px; line-height: 56px;}
+.advocacy-list h2{font-size: 32px; line-height: 40px; letter-spacing: 0; margin-bottom: 24px; font-weight: 900;}
+ul.advocacy-links{margin: 0;}
+ul.advocacy-links > li{margin: 0 0 24px; background-color: var(--white);}
+ul.advocacy-links > li::before{display: none;}
+ul.advocacy-links > li > a{padding: 24px; font-size: 24px; line-height: 28px; letter-spacing: 0.05em; color: var(--slate-color); text-transform: uppercase; display: inline-block; font-family: 'League Gothic', sans-serif;}
+
+.advocacy{border-left: 1px solid var(--education-color);}
+.advocacy h2{color: var(--education-color);}
+.responsiveness{border-left: 1px solid var(--health-color);}
+.responsiveness h2{color: var(--health-color);}
+.accountability{border-left: 1px solid var(--tech-contrast-color);}
+.accountability h2{color: var(--tech-contrast-color);}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .advocacy-head{gap: 40px; justify-content: space-between;}
+    .advocacy-title{flex: 0 0 calc(100% - 305px); max-width: 800px;}
+    .advocacy-btn{flex: 0 0 265px;}
+
+    .advocacy-row{gap: 56px;}
+    .advocacy-list{flex: 0 0 calc(33.333% - 38px); padding-left: 24px;}
+}
