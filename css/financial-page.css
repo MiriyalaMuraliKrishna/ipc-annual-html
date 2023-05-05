@@ -20,9 +20,11 @@
     /* Team members section */
     .team-members-head{padding: 40px 0 48px 0;}
     .team-members-links{justify-content: flex-end; font-size: 24px; line-height: 28px; font-weight: 800;}
-    .team-members-links li a{color: var(--slate-color); position: relative; display: block;}
+    .team-members-links li a{padding: 0 10px 10px; color: var(--slate-color); position: relative; display: block;}
+    .team-members-links li a:hover{color: red;}
     .team-members-links li::before{display: none;}
-    .team-members-links li a::after{position: absolute; content: ""; bottom: 0; width: 100%; height: 4px; background-color: var(--slate-color);}
+    .team-members-links li a::after{position: absolute; content: ""; bottom: 0; left: 0; width: 100%; height: 4px; background-color: var(--slate-color); transition: all 0.45s ease-in-out;}
+    .team-members-links li a.active::after, .team-members-links li a:hover::after{height: 8px; background-color: red;}
 /*-- media starts here --*/
     @media only screen and (min-width: 1024px){
         .deposit-list{gap: 105px;}
