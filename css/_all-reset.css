@@ -121,6 +121,7 @@ button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button
 .button.white:hover:after{background-color: var(--privacy-color);}
 
 .btn-link{font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; color: var(--corporate-color); text-transform: uppercase; font-family: 'League Gothic', sans-serif;}
+.btn-link:hover{color: var(--privacy-color);}
 
 /* Placeholder text color -- selectors need to be separate to work. */ 
 ::-webkit-input-placeholder {color: var(--black-50); font-family: 'Graphik-Regular', sans-serif;}
@@ -179,13 +180,10 @@ figure.object-fit{width: 100%; height: 100%; display: block;}
 picture.object-fit{width: 100%; height: 100%; display: block;}
 .object-fit img{width: 100%; height: 100%; font-family: "object-fit: cover;"; object-fit: cover; -o-object-fit: cover; object-position: 50% 50%; -o-object-position: 50% 50%; }
 .object-img-fit img{width: 100%; height: auto; font-family: "object-fit: cover;"; object-fit: cover; -o-object-fit: cover; object-position: 50% 50%; -o-object-position: 50% 50%; }
-.slick-arrow:not(button.slick-arrow){top: 146px; left: auto; right: 55px; width: 96px; height: 96px; border-radius: 300px; position: absolute; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease-in-out; z-index: 2; background: linear-gradient(90deg, #3207FF 0%, #8200F0 100%);}
-.slick-arrow.slick-prev:not(button.slick-prev){right: auto; left: -47px;}
-.slick-arrow:not(button.slick-arrow):hover{background-image: linear-gradient(180deg,#3207ff 0,#8200f0 100%);}
-.slick-arrow:not(button.slick-arrow)::after { right: 35px; top: 50%; transform: translateY(-50%) rotate(-45deg); width: 30px; height: 30px; border-color: var(--white); border-bottom-style: solid; border-bottom-width: 8px; border-right-width: 8px; border-right-style: solid; content: ""; display: inline-block; position: absolute; }
-.slick-arrow.slick-prev:not(button.slick-prev)::after{ left: 39px; right: auto; transform: translateY(-50%) rotate(136deg); }
-.slick-arrow:not(button.slick-arrow):hover{-webkit-text-fill-color: var(--white);}
-.slick-arrow.slick-disabled{opacity: 0; background-color: transparent; pointer-events: none;}
+.slick-arrow{top: -100px; left: auto; right: 0; width: 41px; height: 41px; font-size: 1rem; line-height: 1.5; position: absolute; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease-in-out; z-index: 2; background-color: var(--health-color); color: var(--white);}
+.slick-arrow.slick-prev{right: 50px;}
+.slick-arrow:hover{background-color: var(--slate-color);}
+.slick-arrow.slick-disabled{opacity: 0.25; background-color: var(--slate-color); pointer-events: none;}
 ul.slick-dots{margin: 0 auto; width: 100%; left: 0; right: 0; gap: 4px; display: flex; align-items: center; justify-content: center; position: absolute;}
 ul.slick-dots li::before{display: none;}
 ul.slick-dots li{margin-bottom: 0;}
