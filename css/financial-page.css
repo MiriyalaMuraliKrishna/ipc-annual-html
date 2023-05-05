@@ -1,0 +1,43 @@
+@import url("./_default-banner-section.css");
+
+/* deposit section */
+    .deposit-main{padding: 80px 0;}
+    .deposit-text{color: var( --cement-color); font-style: normal; font-weight: 400; font-size: 16px; line-height: 24px;}
+    .deposit-text h2{font-weight: 800; font-size: 40px; line-height: 48px; font-style: normal; max-width: 324px;}
+
+
+    /* Ipc team section */
+    .ipc-team-main{padding: 80px 0;}
+    .ipc-team-list{margin-bottom: 80px;}
+    .team-heading span{margin-bottom: 24px;}
+    .team-heading h2{font-style: normal; font-weight: 800; font-size: 48px; line-height: 56px; letter-spacing: -0.05em;}
+    .team-desc{color: var( --cement-color); font-size:20px; font-Weight: 400; line-height: 28px;}
+    .feature-icon{width: 64px; height: 64px; margin-bottom: 16px;}
+    .feature-txt{color: var(--slate-color); font-size:16px; font-style: normal; line-height: 24px; font-weight: 400;}
+    .feature-txt span{display:block; font-style: normal; font-weight: 800; font-size: 24px; line-height: 28px; letter-spacing: -0.05em; margin-bottom: 16px;}
+
+
+    /* Team members section */
+    .team-members-head{padding: 40px 0 48px 0;}
+    .team-members-links{justify-content: flex-end; font-size: 24px; line-height: 28px; font-weight: 800;}
+    .team-members-links li a{color: var(--slate-color); position: relative; display: block;}
+    .team-members-links li::before{display: none;}
+    .team-members-links li a::after{position: absolute; content: ""; bottom: 0; width: 100%; height: 4px; background-color: var(--slate-color);}
+/*-- media starts here --*/
+    @media only screen and (min-width: 1024px){
+        .deposit-list{gap: 105px;}
+        .deposit-text{flex: 0 0 335px;}
+        .deposit-image{flex: 0 0 calc(100% - 440px);}
+        
+        .ipc-team-list{gap: 104px;}
+        .team-heading{flex: 0 0 588px;}
+        .team-desc{flex: 0 0 calc(100% - 692px);}
+
+        .team-features-row{gap: 32px;}
+        .features-list{flex: 0 0 calc(20% - 30px);}
+        
+
+        .team-members-title{flex: 0 0 50%;}
+        .team-members-right{flex: 0 0 50%;}
+        .team-members-links{gap: 20px;}
+    }
