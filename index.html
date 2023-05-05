@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="style.css" media="all">
 <link rel="stylesheet" href="./core.bundle.css" media="all">
 </head>
-<body>
+<body class="home">
 <header class="main-header">
 <div class="container lg">
 <div class="header flex flex-vcenter">
@@ -58,10 +58,6 @@
 </div>
 </header>
 <main class="main-content">
-<picture class="background-bg">
-    <source srcset="images/static-bg.svg" media="(min-width: 768px)">
-    <img src="images/static-bg.svg" alt="">
-</picture>
 <section class="frm-message-section">
 <div class="container md">
     <div class="frm-message-main pos-relative">
@@ -128,9 +124,13 @@
 <section class="modern-privacy-section">
 <div class="container">
     <div class="modern-privacy-main">
+        <picture class="object-fit">
+            <source srcset="images/stripe-frame@2x.jpg"  media="(min-width: 768px)">
+            <img src="images/stripe-frame@2x.jpg" alt="stripe-frame">
+        </picture>
         <div class="modern-privacy-head flex">
             <div class="modern-privacy-title">
-                <h2></h2>
+                <h2>Privacy and Transparency in a Modern Government</h2>
             </div>
         </div>
         <div class="modern-privacy-list flex flex-vcenter">
@@ -327,29 +327,42 @@
 </section>
 
 </main>
-<footer class="footer-main">
-<div class="container">
+<footer class="footer-main pos-relative">
+<div class="container pos-relative">
+    <div class="footer-bg background-bg">
+        <picture class="object-fit">
+            <source srcset="images/footer-bg.svg" media="(min-width: 768px)">
+            <img src="images/footer-bg.svg" alt="">
+        </picture>
+    </div>
     <div class="footer">
-        <div class="footer-logo">
-            <a href="#"><img src="" alt=""></a>
+        <div class="footer-logo flex flex-center">
+            <a href="#"><img src="images/footer-logo.svg" alt="footer-logo"></a>
         </div>
         <div class="footer-text">
-            <p></p>
-        </div>
-        <div class="primary-cta-btns">
-            <span><a href="#"></a></span>
-            <span><a href="#"></a></span>
+            <p>Committed to enhancing Ontarians’ trust that their privacy and access rights will be respected.</p>
+            <div class="footer-btns flex">
+                <span><a href="#" class="button black">Download a PDF Copy</a></span>
+                <span><a href="#" class="button btn-transparent white">Request a Printed Copy</a></span>
+            </div>
         </div>
         <ul class="social-icons flex">
             <li><a href="#" target="_blank"><span class="fa-brands fa-linkedin-in"></span></a></li>
+            <li><a href="#" target="_blank"><span class="fa-brands fa-youtube"></span></a></li>
             <li><a href="#" target="_blank"><span class="fa-brands fa-twitter"></span></a></li>
             <li><a href="#" target="_blank"><span class="fa-brands fa-instagram"></span></a></li>
-            <li><a href="#" target="_blank"><span class="fa-brands fa-facebook-f"></span></a></li>
-            <li><a href="#" target="_blank"><span class="fa-brands fa-youtube"></span></a></li>
         </ul>
-    </div>
-    <div class="copyrights-main flex flex-center">
-        <div class="copyrights-text">
+        <div class="copyrights-main">
+            <div class="copyrights-text">
+                <p>Copyright © Information and Privacy Commissioner of Ontario. All rights reserved.</p>
+                <ul class="copyrights-links flex">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Social Media Policy</a></li>
+                    <li><a href="#">Accessibility Policy</a></li>
+                    <li><a href="#">IPC Service Charter</a></li>
+                    <li><a href="#">Public Code of Conduct</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

@@ -38,7 +38,7 @@ dl {margin-bottom: 24px;}
 dd {margin-bottom: 24px;}
 ul {list-style: none; margin: 0 0 22px 15px;}
 ul > li {counter-increment: li; position: relative; margin-bottom: 8px;}
-ul > li:before {content: ""; position: absolute; top: 10px; left: -15px; width: 6px; height: 6px; border-radius: 300px; background-image: linear-gradient(90deg, #3207FF 0%, #8200F0 100%);} 
+ul > li:before {content: ""; position: absolute; top: 10px; left: -15px; width: 6px; height: 6px; background-color: red;} 
 li > ul {margin: 25px 0 26px 25px;}
 ol {counter-reset: section; list-style: none; margin: 0 0 22px 34px;}
 ol > li {counter-increment: li; position: relative; margin-bottom: 8px;}
@@ -90,11 +90,14 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 .search-submit {display: none;}
 
 /* Buttons */
-button, .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{ background-color: #8200F0; border-radius: 0; color: var(--white); display: inline-block; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; padding: 7px 12px 7px; vertical-align: middle; cursor: pointer; border: none; position: relative; text-align: center; color: #FFFFFF; font-family: 'League Gothic', sans-serif; transition-duration: .75s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1); transform: translate3d(0.05px, 0.05px, 0px) scale(1); text-transform: uppercase;}
+button, .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{ background-color: var(--privacy-color); border-radius: 0; color: var(--white); display: inline-block; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; padding: 8px 12px 8px; vertical-align: middle; cursor: pointer; border: none; position: relative; text-align: center; color: #FFFFFF; font-family: 'League Gothic', sans-serif; transition-duration: .75s; transition-property: all; transition-delay: 0s; transition-timing-function: cubic-bezier(0.075,0.82,0.165,1); transform: translate3d(0.05px, 0.05px, 0px) scale(1); text-transform: uppercase;}
 button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background-color: var(--red-color); color: var(--white);}
 
-.button.btn-transparent{background-color: transparent; border: 1px solid var(--health-color); color: var(--slate-color);}
+.button.btn-transparent{padding: 6px 12px; background-color: transparent; border: 2px solid var(--health-color); color: var(--slate-color);}
 .button.btn-transparent:hover{background-color: var(--health-color);}
+.button.black{color: var(--slate-color);}
+.button.white{color: var(--white); border-color: var(--privacy-color);}
+.button.white:hover{background-color: var(--privacy-color);}
 
 .btn-link{font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; color: var(--corporate-color); text-transform: uppercase; font-family: 'League Gothic', sans-serif;}
 
