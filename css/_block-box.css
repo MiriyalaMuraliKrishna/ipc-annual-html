@@ -1,3 +1,32 @@
 
 
+.white-block{width: 80px; height: 80px; background-color: var(--white); position: absolute;}
+.white-block.top-left{top: 0; left: 0;}
+.white-block.top-right{top: 0; right: 0;}
+
+
+
+
+
+
+
+
 .green-block{width: 208px; height: 208px; top: -32px; left: -32px; background-color: var(--tech-color); position: absolute; z-index: -1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

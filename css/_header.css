@@ -8,6 +8,13 @@
 .nav_languages a{color: var(--cement-color);}
 .nav_languages a.current{color: var(--health-color);}
 
+
+.navigation{width: 100%; height: auto; min-height: 100vh; top: 0; left: 0; display: none; background-color: var(--tech-color); position: fixed; z-index: 850;}
+ul.main_menu{margin: 0;}
+ul.main_menu > li{margin: 0;}
+ul.main_menu > li::before{display: none;}
+ul.main_menu > li > a{display: block;}
+
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
 
