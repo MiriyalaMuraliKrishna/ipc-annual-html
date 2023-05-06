@@ -120,8 +120,9 @@ button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button
 .button.white{color: var(--white); border-color: var(--privacy-color);}
 .button.white:hover:after{background-color: var(--privacy-color);}
 
-.btn-link{font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; color: var(--corporate-color); text-transform: uppercase; font-family: 'League Gothic', sans-serif;}
+.btn-link{padding-right: 20px; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; color: var(--corporate-color); text-transform: uppercase; font-family: 'League Gothic', sans-serif; position: relative;}
 .btn-link:hover{color: var(--privacy-color);}
+.btn-link::after{right: 0; top: 50%; transform: translateY(-50%); content: "\f061"; display: block; font-family: "Font Awesome 6 Pro"; position: absolute;}
 
 /* Placeholder text color -- selectors need to be separate to work. */ 
 ::-webkit-input-placeholder {color: var(--black-50); font-family: 'Graphik-Regular', sans-serif;}

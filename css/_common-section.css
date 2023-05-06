@@ -2,13 +2,18 @@
 
 
 .optional-repeater-text h2{font-size: 32px; line-height: 40px;}
-
-
+.common-grid-icon{ width: 80px; height: 80px; bottom: 0; left: 0; background-color: var(--white); position: absolute;}
+.common-grid-icon img{max-width: 64px; width: 100%; object-fit: cover;}
+.common-grid-text{font-size: 24px; line-height: 28px; letter-spacing: -0.05em; font-family: 'Overpass', sans-serif;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .optional-repeater-list{gap: 80px;}
+    .optional-repeater-list{gap: 80px; margin-bottom: 80px;}
     .optional-repeater-text{flex: 0 0 594px;}
     .optional-repeater-image{flex: 0 0 calc(100% - 674px);}
     .optional-repeater-list:nth-child(even){flex-direction: row-reverse;}
+    .optional-repeater-list.reverse{flex-direction: row-reverse;}
+
+    .common-grid-row{gap: 80px;}
+    .common-grid-list{flex: 0 0 calc(33.3333% - 54px);}
 }

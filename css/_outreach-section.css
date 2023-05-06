@@ -1,0 +1,16 @@
+
+
+.outreach-list{padding: 40px; font-size: 14px; line-height: 22px; background-color: var(--white); color: var(--slate-color); box-shadow: 8px 8px 0px #1B274F; color: var(--cement-color);}
+.outreach-number{font-size: 48px; line-height: 56px; letter-spacing: -0.05em; font-weight: 800; color: var(--corporate-color); font-family: 'Overpass', sans-serif;}
+.outreach-list span{font-size: 20px; line-height: 24px; letter-spacing: -0.05em; color: var(--privacy-color); font-family: 'Overpass', sans-serif;} 
+
+/*-- media starts here --*/
+@media only screen and (min-width: 1024px){
+    .outreach-row{gap: 48px;}
+    .outreach-list{flex: 0 0 calc(25% - 36px);}
+}
+
+
+
+
+
