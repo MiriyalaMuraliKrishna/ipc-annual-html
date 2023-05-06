@@ -1,5 +1,5 @@
 
-
+.footer-main{background-color: var(--white); z-index: 1;}
 .footer{padding: 0 64px 127px; color: var(--white);}
 .footer-bg{top: 80px; height: calc(100% - 80px);}
 .footer-stripe-left{width: 48px; height: 496px; top: calc(50% + 59px); transform: translateY(-50%); left: -24px; background-image: url('../images/stripe-left.svg'); background-repeat: no-repeat; background-size: contain; display: block; position: absolute;}

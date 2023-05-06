@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 35.5005C19 39.0005 17.04 42.0005 14 42.0005C10.96 42.0005 9 39.0005 9 35.5005C9 32.0005 10 30.0005 14 30.0005C18 30.0005 19 32.0005 19 35.5005Z" stroke="#00A19C" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M17 41.0005L23 45.0005V47.0005C23 48.6605 22 50.0005 21 50.0005H7C6 50.0005 5 48.6605 5 47.0005V45.0005L11 41.0005" stroke="#00A19C" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M27 52.0005C27 53.1005 26.1 54.0005 25 54.0005H20L24 62.0005L8 54.0005H3C1.9 54.0005 1 53.1005 1 52.0005V28.0005C1 26.9005 1.9 26.0005 3 26.0005H25C26.1 26.0005 27 26.9005 27 28.0005V52.0005Z" stroke="#00A19C" stroke-width="2" stroke-linejoin="round"/>
+<path d="M55 25.5005C55 29.0005 53.04 32.0005 50 32.0005C46.96 32.0005 45 29.0005 45 25.5005C45 22.0005 46 20.0005 50 20.0005C54 20.0005 55 22.0005 55 25.5005Z" stroke="#00A19C" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M53 31.0005L59 35.0005V37.0005C59 38.6605 58 40.0005 57 40.0005H43C42 40.0005 41 38.6605 41 37.0005V35.0005L47 31.0005" stroke="#00A19C" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44 16.0005H61C62.1 16.0005 63 16.9005 63 18.0005V42.0005C63 43.1005 62.1 44.0005 61 44.0005H56L40 52.0005L44 44.0005H39C37.9 44.0005 37 43.1005 37 42.0005V33.0005" stroke="#00A19C" stroke-width="2" stroke-linejoin="round"/>
+<path d="M33 11.5005C33 15.0005 31.04 18.0005 28 18.0005C24.96 18.0005 23 15.0005 23 11.5005C23 8.00055 24 6.00055 28 6.00055C32 6.00055 33 8.00055 33 11.5005Z" stroke="#00A19C" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M19 23.0005V21.0005L25 17.0005" stroke="#00A19C" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M31 17.0005L37 21.0005V23.0005C37 24.6605 36 26.0005 35 26.0005H30" stroke="#00A19C" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M15 23.0005V4.00055C15 2.90055 15.9 2.00055 17 2.00055H39C40.1 2.00055 41 2.90055 41 4.00055V28.0005C41 29.1005 40.1 30.0005 39 30.0005H34L30 36.0005" stroke="#00A19C" stroke-width="2" stroke-linejoin="round"/>
+<path d="M39 58.0005H41" stroke="#00A19C" stroke-width="2" stroke-linejoin="round"/>
+<path d="M35 58.0005H37" stroke="#00A19C" stroke-width="2" stroke-linejoin="round"/>
+<path d="M31 58.0005H33" stroke="#00A19C" stroke-width="2" stroke-linejoin="round"/>
+<path d="M43 58.0005H45" stroke="#00A19C" stroke-width="2" stroke-linejoin="round"/>
+</svg>
