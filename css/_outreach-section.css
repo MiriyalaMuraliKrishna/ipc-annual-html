@@ -8,6 +8,7 @@
 .color-4{box-shadow: 8px 8px 0px var(--tech-color);}
 /*-- media starts here --*/
 @media only screen and (min-width: 1024px){
+    .outreach-main{padding: 128px 0 120px;}
     .outreach-row{gap: 48px;}
     .outreach-list{flex: 0 0 calc(25% - 36px);}
 }
