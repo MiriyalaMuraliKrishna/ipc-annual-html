@@ -1,10 +1,11 @@
 
-
-
 .optional-repeater-text h2{font-size: 32px; line-height: 40px;}
+
+.common-grid-image{margin-bottom: 33px;}
 .common-grid-icon{ width: 80px; height: 80px; bottom: 0; left: 0; background-color: var(--white); position: absolute;}
 .common-grid-icon img{max-width: 64px; width: 100%; object-fit: cover;}
 .common-grid-text{font-size: 24px; line-height: 28px; letter-spacing: -0.05em; font-family: 'Overpass', sans-serif;}
+.common-grid-text p span{color: var(--privacy-color);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -14,6 +15,6 @@
     .optional-repeater-list:nth-child(even){flex-direction: row-reverse;}
     .optional-repeater-list.reverse{flex-direction: row-reverse;}
 
-    .common-grid-row{gap: 80px;}
+    .common-grid-row{gap: 80px; padding-bottom: 80px;}
     .common-grid-list{flex: 0 0 calc(33.3333% - 54px);}
 }
