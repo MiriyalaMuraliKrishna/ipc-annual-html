@@ -7,9 +7,11 @@
 
 .custom-cta-section{background-color: var(--white);}
 .custom-cta-main{padding: 160px 0;}
-.custom-cta-btns{gap: 16px;}
+.custom-cta-text{font-size: 1rem; line-height: 24px; color: var(--cement-color);}
+.custom-cta-text span.optional-text{margin-bottom: 31px;}
 .custom-cta-text h3{font-size: 48px; line-height: 56px;}
 .custom-cta-text hr{max-width: 128px;}
+.custom-cta-btns{gap: 16px; margin-top: 30px;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){

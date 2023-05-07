@@ -7,13 +7,13 @@ a{color: var(--link-color); text-decoration: none; transition: all 0.45s ease-in
 a:focus {outline: none;}
 a:hover, a:active {outline: 0;}
 a:hover{color: var(--black);}
-h1, h2, h3, h4, h5, h6 {clear: both; margin: 0 0 8px; color: var(--corporate-color); letter-spacing: -0.05em; text-transform: none; font-family: 'Overpass', sans-serif;}
+h1, h2, h3, h4, h5, h6 {clear: both; margin: 0; color: var(--corporate-color); font-weight: 800; letter-spacing: -0.05em; text-transform: none; font-family: 'Overpass', sans-serif;}
 h1 {font-size: 58px; line-height: 64px; margin-bottom: 20px;}
 h2 {font-size: 40px; line-height: 48px; margin-bottom: 12px;}
 h3 {font-size: 32px; line-height: 40px; margin-bottom: 10px;}
 h4 {font-size: 24px; line-height: 28px; margin-bottom: 16px;}
 h5 {font-size: 20px; line-height: 24px; margin-bottom: 14px;}
-h6 {font-size: 1rem; line-height: 26px;}
+h6 {font-size: 1rem; line-height: 26px; margin-bottom: 8px;}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--black);}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--slate-color);}
 address { margin-bottom: 9px;}
@@ -76,8 +76,8 @@ table tr:nth-child(even) td{background-color: rgba(0,0,0, 0.02);}
 table tr:last-child td{border-bottom: none;}
 
 caption, th, td {text-align: left;}
-del {color: #231f20;}
-hr{margin: 38px 0 39px; display: block; border: 0; width:100%; height: 8px; background-image: repeating-linear-gradient( -45deg, transparent 0 8px, var(--tech-color) 8px 10px );}
+del {color: var(--slate-color);}
+hr{margin: 31px 0 31px; display: block; border: 0; width:100%; height: 8px; background-image: repeating-linear-gradient( -45deg, transparent 0 8px, var(--tech-color) 8px 10px );}
 
 ::selection {background-color: var(--black); color: var(--white);}
 ::-moz-selection {background-color: var(--black); color: var(--white);}
@@ -99,7 +99,7 @@ button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button
 .button::after { top: 0; bottom: 0; left: 0; right: 0; background-color: var(--slate-color); -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 100% 50%; transform-origin: 100% 50%; transition: all 0.45s ease-in-out; content: ""; position: absolute; z-index: -1; }
 .button:hover::after{ -webkit-transform: scaleX(1); transform: scaleX(1); }
 
-.button.btn-transparent{padding: 6px 12px; background-color: transparent; border: 2px solid var(--health-color); color: var(--slate-color);}
+.button.btn-transparent{padding: 6px 10px; background-color: transparent; border: 2px solid var(--health-color); color: var(--slate-color);}
 .button.btn-transparent:hover{color: var(--white);}
 .button.btn-transparent:hover::after{background-color: var(--health-color);}
 .button.black{color: var(--slate-color);}
@@ -150,7 +150,7 @@ img.aligncenter{margin: 25px 0;}
 .table-cell{display: table-cell; vertical-align: middle;}
 .grid{display: grid; display: -moz-grid; display: -ms-grid;}
 
-body{font-size: 18px; line-height: 26px; font-family: 'HelveticaNeueLTStd-Roman', sans-serif; overflow: hidden; color: var(--black); background-image: url('./images/bg.svg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+body{font-size: 18px; line-height: 26px; font-family: 'HelveticaNeueLTStd-Roman', sans-serif; overflow: hidden; color: var(--slate-color); background-color: transparent;}
 span.optional-text{margin-bottom: 20px; color: var(--cement-color); font-size: 1rem; line-height: 20px; letter-spacing: 0.1em; display: block; font-family: 'League Gothic', sans-serif; text-transform: uppercase;}
 span.optional-text.black{margin-bottom: 46px; padding-right: 80px; text-align: right; color: var(--slate-color);}
 
