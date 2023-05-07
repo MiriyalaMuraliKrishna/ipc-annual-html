@@ -31,7 +31,8 @@
 .footer-btns{margin: 52px 0 55px; gap: 20px;}
 
 ul.social-icons{margin: 0 0 51px; gap: 68px;}
-ul.social-icons li::before{display: none;}
+ul.social-icons li::before{left: -38px; top: 50%; transform: translateY(-50%); width: 12px; height: 12px; font-size: 12px; line-height: 12px; content: "\f00d"; display: block; font-family: "Font Awesome 6 Pro"; background: none; color: var(--tech-color);}
+ul.social-icons li:first-child::before{display: none;}
 ul.social-icons li a{font-size: 32px; line-height: 32px; display: inline-block; color: var(--white); transform: scale(1);}
 ul.social-icons li a:hover{color: var(--privacy-color); transform: scaleX(-0.95);}
 

@@ -15,7 +15,7 @@ h4 {font-size: 24px; line-height: 28px; margin-bottom: 16px;}
 h5 {font-size: 20px; line-height: 24px; margin-bottom: 14px;}
 h6 {font-size: 1rem; line-height: 26px;}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--black);}
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--illumin-blue);}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--slate-color);}
 address { margin-bottom: 9px;}
 abbr[title] {border-bottom: 1px dotted #2b2b2b; cursor: help;}
 b, strong {font-weight: normal; font-family: 'Graphik-Bold', sans-serif;}
@@ -26,8 +26,10 @@ p:last-child{margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 15px; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
 pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 24px; max-width: 100%; overflow: auto; padding: 12px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
 blockquote, q {-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none; }
-blockquote{padding: 96px 64px 64px; color: var(--black); font-weight: normal; font-size: 32px; line-height: 40px; font-style: normal; position: relative; letter-spacing: -0.05em; border-radius: 0; margin: 0; font-family: 'Overpass', sans-serif; background-color: var(--health-color); color: var(--white);}
+blockquote{padding: 30px 64px 64px; font-weight: normal; font-size: 40px; line-height: 48px; font-style: normal; position: relative; letter-spacing: -0.05em; border-radius: 0; margin: 0; font-family: 'Overpass', sans-serif; background-color: var(--health-color); color: var(--white);}
+blockquote p span{color: var(--tech-color); background-image: linear-gradient(to top, rgb(36 45 56 / 50%) 20px, transparent 0px); background-position: 0 -8px;}
 blockquote::before{width: 74px; height: 64px; top: -15px; background-image: url("../images/quote-icon.svg"); background-repeat: no-repeat; background-size: contain; content: ""; display: block; position: absolute;}
+blockquote p::after{top: -0.1ex; content: "”"; display: inline; color: var(--tech-color); position: relative;}
 blockquote cite, blockquote small {font-size: 1rem;}
 blockquote em, blockquote i, blockquote cite {font-style: normal;}
 small {font-size: 14px; line-height: 20px;}
@@ -43,7 +45,7 @@ ul > li:before {content: ""; position: absolute; top: 10px; left: -15px; width: 
 li > ul {margin: 25px 0 26px 25px;}
 ol {counter-reset: section; list-style: none; margin: 0 0 22px 34px;}
 ol > li {counter-increment: li; position: relative; margin-bottom: 8px;}
-ol > li:before{counter-increment: section; content: counter(section, decimal) "."; top: 3px; left: -34px; position: absolute; font-size: 1rem; line-height: 1.5; color: var(--illumin-blue); font-family: 'Graphik-Bold', sans-serif;}
+ol > li:before{counter-increment: section; content: counter(section, decimal) "."; top: 3px; left: -34px; position: absolute; font-size: 1rem; line-height: 1.5; color: var(--tech-color); font-family: 'Graphik-Bold', sans-serif;}
 li > ol {margin: 25px 0 26px 25px;}
 img {-ms-interpolation-mode: bicubic; border: 0; vertical-align: middle; max-width: 100%; height: auto;}
 figure {margin: 0;}
@@ -75,7 +77,7 @@ table tr:last-child td{border-bottom: none;}
 
 caption, th, td {text-align: left;}
 del {color: #231f20;}
-hr{margin: 38px 0 39px; display: block; border: 0; width:100%; height: 1px; background-image: linear-gradient(to right,var(--tech-color) 1px,transparent 1px); background-size: 64px;}
+hr{margin: 38px 0 39px; display: block; border: 0; width:100%; height: 8px; background-image: repeating-linear-gradient( -45deg, transparent 0 8px, var(--tech-color) 8px 10px );}
 
 ::selection {background-color: var(--black); color: var(--white);}
 ::-moz-selection {background-color: var(--black); color: var(--white);}
@@ -94,28 +96,12 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 button, .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{ background-color: var(--privacy-color); border-radius: 0; color: var(--white); display: inline-block; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; padding: 8px 12px 8px; vertical-align: middle; cursor: pointer; border: none; position: relative; text-align: center; font-family: 'League Gothic', sans-serif; transform: translate3d(0.05px, 0.05px, 0px) scale(1); text-transform: uppercase; transition: all 0.45s ease-in-out;}
 button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background-color: var(--privacy-color); color: var(--white);}
 
-.button::after {
-    top: 0;
-    bottom: 0;
-    left: 0;
-	right: 0;
-	background-color: var(--slate-color);
-	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transform-origin: 100% 50%;
-	transform-origin: 100% 50%;
-    transition: all 0.45s ease-in-out;
-	content: "";
-	position: absolute;
-	z-index: -1;
-}
-.button:hover::after{
-	-webkit-transform: scaleX(1);
-	transform: scaleX(1);
-}
+.button::after { top: 0; bottom: 0; left: 0; right: 0; background-color: var(--slate-color); -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 100% 50%; transform-origin: 100% 50%; transition: all 0.45s ease-in-out; content: ""; position: absolute; z-index: -1; }
+.button:hover::after{ -webkit-transform: scaleX(1); transform: scaleX(1); }
 
 .button.btn-transparent{padding: 6px 12px; background-color: transparent; border: 2px solid var(--health-color); color: var(--slate-color);}
-.button.btn-transparent:hover{background-color: transparent;}
+.button.btn-transparent:hover{color: var(--white);}
+.button.btn-transparent:hover::after{background-color: var(--health-color);}
 .button.black{color: var(--slate-color);}
 .button.black:hover{color: var(--white);}
 .button.white{color: var(--white); border-color: var(--privacy-color);}
@@ -166,7 +152,7 @@ img.aligncenter{margin: 25px 0;}
 
 body{font-size: 18px; line-height: 26px; font-family: 'HelveticaNeueLTStd-Roman', sans-serif; overflow: hidden; color: var(--black); background-image: url('./images/bg.svg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
 span.optional-text{margin-bottom: 20px; color: var(--cement-color); font-size: 1rem; line-height: 20px; letter-spacing: 0.1em; display: block; font-family: 'League Gothic', sans-serif; text-transform: uppercase;}
-span.optional-text.black{color: var(--slate-color);}
+span.optional-text.black{margin-bottom: 46px; padding-right: 80px; text-align: right; color: var(--slate-color);}
 
 .radius-8{border-radius: 8px;}
 .radius-12{border-radius: 12px;}
