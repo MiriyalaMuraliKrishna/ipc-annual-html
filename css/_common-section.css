@@ -1,5 +1,7 @@
 
-
+.custom-ipc-head::before, .custom-ipc-head::after{width: 40px; height: 112px; left: -90px; top: 0;  content: ""; background-image: url('../images/title-frame-left.svg'); background-repeat: no-repeat; background-size: contain; position: absolute;}
+.custom-ipc-head::after{right: -90px; left: auto; top: 50%; transform: translateY(-50%); background-image: url('../images/title-frame-right.svg');}
+.custom-ipc-title h2{font-size: 48px; line-height: 56px; margin-bottom: 0;}
 
 .number{margin-bottom: 8px; font-size: 48px; line-height: 56px; letter-spacing: -0.05em; font-weight: 800; color: var(--corporate-color); font-family: 'Overpass', sans-serif;}
 .sub-heading{margin-bottom: 8px; font-size: 20px; line-height: 24px; color: var(--privacy-color);  letter-spacing: -0.05em; font-weight: 800; font-family: 'Overpass', sans-serif; display: block;}
@@ -8,17 +10,21 @@
 .color-3{box-shadow: 8px 8px 0px var(--privacy-color);}
 .color-4{box-shadow: 8px 8px 0px var(--tech-color);}
 
-
 .optional-repeater-text h2{font-size: 32px; line-height: 40px;}
 
 .common-grid-image{margin-bottom: 33px;}
 .common-grid-icon{ width: 80px; height: 80px; bottom: 0; left: 0; background-color: var(--white); position: absolute;}
 .common-grid-icon img{max-width: 64px; width: 100%; object-fit: cover;}
-.common-grid-text{font-size: 24px; line-height: 28px; letter-spacing: -0.05em; font-family: 'Overpass', sans-serif;}
+.common-grid-text{font-size: 24px; line-height: 28px; letter-spacing: -0.05em; font-weight: 800; font-family: 'Overpass', sans-serif;}
 .common-grid-text p span{color: var(--privacy-color);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
+    .custom-ipc-head{gap: 40px; margin-bottom: 80px;}
+    .custom-ipc-title{flex: 0 0 575px;}
+    .custom-ipc-image{flex: 0 0 calc(100% - 615px); transform: translateX(90px);}
+    .custom-ipc-thumb{max-width: 582px; margin-left: auto;}
+
     .optional-repeater-list{gap: 80px; margin-bottom: 80px;}
     .optional-repeater-text{flex: 0 0 594px;}
     .optional-repeater-image{flex: 0 0 calc(100% - 674px);}
