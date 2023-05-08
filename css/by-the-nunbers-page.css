@@ -1,0 +1,14 @@
+/* feature overview section */
+    .feature-overview-main{padding: 80px 0;}
+    .feature-overview-list{gap: }
+    .feature-overview-text .number{font-size: 88px; font-weight: 800; font}
+
+
+
+
+/* media starts here */
+@media only screen and (min-width: 1024px){
+    .feature-overview-list{gap: 80px;}
+    .feature-overview-text{flex: 0 0 600px;}
+    .feature-overview-image{flex: 0 0 calc(100% - 80px);}
+}
