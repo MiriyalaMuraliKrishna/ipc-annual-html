@@ -4,4 +4,12 @@
 
 
 
-.banner-right-image{width: 318px;}
+.primary-banner-image{width: 318px;}
+
+
+
+.primary-banner-text h1{font-size: 64px; line-height: 64px; color: var(--white); text-transform: uppercase;}
+ul.report_list{margin: 0;}
+ul.report_list > li::before{display: none;}
+ul.report_list > li{margin: 0; padding: 25px 0 26px; font-size: 48px; line-height: 56px; letter-spacing: 0.15em; font-weight: 400; font-family: 'League Gothic', sans-serif; background-color: var(--slate-color); color: var(--white);} 
+ul.report_list > li:last-child{background-color: var(--privacy-color);}

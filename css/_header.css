@@ -1,7 +1,7 @@
 
 
 .main-header{position: relative;}
-.header{padding: 24px 0 0;}
+.header{padding: 24px 0 24px;}
 .nav_languages{gap: 20px; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; margin-left: 16px; font-family: 'League Gothic', sans-serif;}
 .nav_languages span:first-child::before{display: none;}
 .nav_languages span::before{content: ""; top: -1px; left: -10px; width: 1px; height: 24px; opacity: 0.5; transform: rotate(25deg); background-color: var(--tech-color); display: block; position: absolute;}
