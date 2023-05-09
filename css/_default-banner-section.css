@@ -1,7 +1,8 @@
-.default-banner-section{padding: 80px 0;}
+.default-banner-section{padding: 80px 0; background-color: var(--white);}
 .default-banner-desc{color: var(--cement-color); line-height: 28px; font-size: 20px; font-weight: 400; font-style: normal; }
 .default-banner-desc span{margin-bottom: 40px;}
 .default-banner-desc h1{color: var(--corporate-color); margin-bottom: 88px; font-size: 48px; line-height: 56px; font-weight: 800;}
+.default-banner-desc hr{max-width: 128px;}
 .blue-block{position: absolute; width: 256px; height: 260px; bottom: -80px; right: 400px; background-color: var( --link-color); opacity: 0.8; mix-blend-mode: multiply; }
 .light-green-block{width: 168px; height: 168px; top: -85px; left: 504px; background-color: var(--tech-color); position: absolute; z-index: 1; opacity: 0.8; mix-blend-mode: multiply;}
 

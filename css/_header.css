@@ -1,6 +1,6 @@
 
 
-.main-header{position: relative;}
+.main-header{background-color: var(--white); position: relative;}
 .header{padding: 24px 0 24px;}
 .nav_languages{gap: 20px; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; margin-left: 16px; font-family: 'League Gothic', sans-serif;}
 .nav_languages span:first-child::before{display: none;}
