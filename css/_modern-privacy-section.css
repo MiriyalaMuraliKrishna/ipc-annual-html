@@ -2,3 +2,4 @@
 
 
 .modern-privacy-section{background-color: var(--white);}
+.modern-privacy-bg{width: 100%; height: calc(100% - 145px); top: 1; left: 0;}

@@ -5,14 +5,22 @@ ul.advocacy-links{margin: 0;}
 ul.advocacy-links > li{margin: 0 0 24px; background-color: var(--white);}
 ul.advocacy-links > li:last-child{margin-bottom: 0;}
 ul.advocacy-links > li::before{display: none;}
-ul.advocacy-links > li > a{padding: 24px; font-size: 24px; line-height: 28px; letter-spacing: 0.05em; color: var(--slate-color); text-transform: uppercase; display: inline-block; font-family: 'League Gothic', sans-serif;}
+ul.advocacy-links > li > a{padding: 24px 57px 24px 24px; font-size: 24px; line-height: 28px; letter-spacing: 0.05em; color: var(--slate-color); text-transform: uppercase; display: block; font-family: 'League Gothic', sans-serif;}
+ul.advocacy-links > li > a:hover{color: var(--privacy-color);}
+ul.advocacy-links > li > a span{right: 25px; top: 50%; transform: translateY(-50%); position: absolute;}
+ul.advocacy-links > li > a span::after{height: 56px; width: 1px; left: -14px; top: 50%;  transform: translateY(-50%); background-color: var(--sand-color); content: ""; display: block; position: absolute;}
+ul.advocacy-links > li > a:hover span{color: var(--privacy-color);}
 
-.advocacy{border-left: 1px solid var(--education-color);}
-.advocacy h2{color: var(--education-color);}
-.responsiveness{border-left: 1px solid var(--health-color);}
-.responsiveness h2{color: var(--health-color);}
-.accountability{border-left: 1px solid var(--tech-contrast-color);}
-.accountability h2{color: var(--tech-contrast-color);}
+.advocacy-color-1{border-left: 1px solid var(--education-color);}
+.advocacy-color-1 h2{color: var(--education-color);}
+.advocacy-color-1 span.fa-arrow-down{color: var(--education-color);}
+.advocacy-color-2{border-left: 1px solid var(--health-color);}
+.advocacy-color-2 h2{color: var(--health-color);}
+.advocacy-color-2 span.fa-arrow-down{color: var(--health-color);}
+.advocacy-color-3{border-left: 1px solid var(--tech-contrast-color);}
+.advocacy-color-3 h2{color: var(--tech-contrast-color);}
+.advocacy-color-3 span.fa-arrow-down{color: var(--tech-contrast-color);}
+
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){

@@ -94,7 +94,7 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 .search-submit {display: none;}
 
 /* Buttons */
-button, .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{ background-color: var(--privacy-color); border-radius: 0; color: var(--white); display: inline-block; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; padding: 8px 12px 8px; vertical-align: middle; cursor: pointer; border: none; position: relative; text-align: center; font-family: 'League Gothic', sans-serif; transform: translate3d(0.05px, 0.05px, 0px) scale(1); text-transform: uppercase; transition: all 0.45s ease-in-out;}
+button, .button, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{ background-color: var(--health-color); border-radius: 0; color: var(--white); display: inline-block; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; padding: 8px 12px 8px; vertical-align: middle; cursor: pointer; border: none; position: relative; text-align: center; font-family: 'League Gothic', sans-serif; transform: translate3d(0.05px, 0.05px, 0px) scale(1); text-transform: uppercase; transition: all 0.45s ease-in-out;}
 button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover{background-color: var(--privacy-color); color: var(--white);}
 
 .button::after { top: 0; bottom: 0; left: 0; right: 0; background-color: var(--slate-color); -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 100% 50%; transform-origin: 100% 50%; transition: all 0.45s ease-in-out; content: ""; position: absolute; z-index: -1; }
