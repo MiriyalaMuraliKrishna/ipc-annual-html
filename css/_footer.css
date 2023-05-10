@@ -1,51 +1,12 @@
 
-.footer-main{background-color: var(--white); z-index: 1;}
+.footer-main{padding-top: 80px; background-color: var(--white); z-index: 1;}
 .footer{padding: 0 64px 127px; color: var(--white);}
 .footer-bg{top: 80px; height: calc(100% - 80px);}
 .footer-stripe-left{width: 48px; height: 496px; top: calc(50% + 40px); transform: translateY(-50%); left: -24px; background-image: url('../images/stripe-left.svg'); background-repeat: no-repeat; background-size: contain; display: block; position: absolute;}
-.footer-green-block {
-	width: 96px;
-	height: 96px;
-	top: 33px;
-	right: 48px;
-	opacity: .9;
-	background-color: var(--tech-color);
-	position: absolute;
-	z-index: 1;
-}
-.footer-green-block::before{
-    width: 128px;
-    height: 48px;
-    right: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    background-image: url('../images/footer-stripe-frame.svg');
-    background-position: left;
-    content: "";
-    display: block;
-    position: absolute;
-}
-.footer-white-block {
-	width: 142px;
-	height: 96px;
-	top: 78px;
-	right: -46px;
-	opacity: 1;
-	background-color: var(--white);
-	position: absolute;
-	border-top-right-radius: 50%;
-	z-index: 0;
-}
-.footer-circle-glow {
-	top: -116px;
-	right: -197px;
-	width: 586px;
-	height: 582px;
-	background-image: url('../images/footer-circle-glow.svg');
-	background-repeat: no-repeat;
-	position: absolute;
-	z-index: 1;
-}
+.footer-green-block { width: 96px; height: 96px; top: 33px; right: 48px; opacity: .9; background-color: var(--tech-color); position: absolute; z-index: 1; }
+.footer-green-block::before{ width: 128px; height: 48px; right: 100%; top: 50%; transform: translateY(-50%); background-image: url('../images/footer-stripe-frame.svg'); background-position: left; content: ""; display: block; position: absolute; }
+.footer-white-block { width: 142px; height: 96px; top: 78px; right: -46px; opacity: 1; background-color: var(--white); border-top-right-radius: 50%; position: absolute; z-index: 0; }
+.footer-circle-glow { top: -116px; right: -197px; width: 586px; height: 582px; background-image: url('../images/footer-circle-glow.svg'); background-repeat: no-repeat; position: absolute; z-index: 1; }
 
 .footer-privacy-block{width: 160px; height: 160px; bottom: 0; right: -80px; opacity: 0.8; background-color: var(--privacy-color); position: absolute;}
 .footer-logo{padding: 32px 24px; max-width: 324px; background-color: var(--slate-color);}

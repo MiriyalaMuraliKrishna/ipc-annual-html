@@ -11,7 +11,8 @@ body.by-the-numbers-page{background-attachment: fixed; background-image: url('..
 
 /*-- media starts here --*/
 @media only screen and (min-width: 1024px){
-    .feature-overview-list{gap: 80px;}
+    .feature-overview-list{gap: 80px; margin-bottom: 112px;}
+    .feature-overview-list:last-child{margin-bottom: 0;}
     .feature-overview-text{flex: 0 0 600px;}
     .feature-overview-image{flex: 0 0 calc(100% - 680px);}
 

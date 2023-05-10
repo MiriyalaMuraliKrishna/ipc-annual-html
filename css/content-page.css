@@ -44,7 +44,7 @@ ul.aside_links > li > a:hover{color: var(--corporate-color); font-weight: 700;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .default-content-main{gap: 80px;}
+    .default-content-main{gap: 80px; padding: 0 0 80px;}
     .default-article{width: calc(100% - 415px);}
     .default-aside{width: 335px;}
     .default-list-main{gap: 48px;}
