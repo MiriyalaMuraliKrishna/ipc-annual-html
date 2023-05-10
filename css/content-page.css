@@ -1,0 +1,52 @@
+
+
+
+.default-article > p:first-child > span{margin-bottom: 64px; font-size: 24px; line-height: 32px; color: var(--health-color); display: block;}
+.default-caption-main{margin: 64px 0 17px;}
+.default-caption-text{padding: 24px 24px 24px 40px; max-width: 785px; margin-left: auto; transform: translate(48px, -48px); color: var(--cement-color); font-size: 14px; line-height: 22px; background-color: var(--white); box-shadow: 8px 8px 0px rgba(233, 230, 222, 0.5); position: relative; z-index: 1;}
+.default-caption-text::before{width: 40px; height: 114px; top: 0; left: -20px; content: ""; background-image: url('../images/caption-stripe.svg'); background-repeat: no-repeat; background-size: contain; display: block; position: absolute;}
+.default-article hr{margin: 64px 0 64px;}
+
+.custom-quote-main{padding: 40px; margin: 0 0 59px; background-color: var(--sand-color);}
+.custom-quote-icon{max-width: 64px; margin-bottom: 24px;}
+.custom-quote-icon img{width: 100%; object-fit: cover;}
+.custom-quote-text{margin-bottom: 21px; font-size: 32px; line-height: 40px; letter-spacing: -.05em; font-weight: 800; font-family: 'Overpass', sans-serif;}
+.custom-stripe-frame{width: 181px; height: 48px; bottom: -22px; left: 40px; background-image: url('../images/custom-stripe-frame.svg'); background-repeat: no-repeat; background-size: contain; position: absolute;}
+
+.podcast-image{margin: 0 0 62px;}
+
+.icons-block-default{padding: 20px 0 32px;}
+.core-list{margin-bottom: 32px;}
+.core-icon{width: 64px; margin-right: 32px;}
+.core-text{width: calc(100% - 96px); padding-left: 32px; font-size: 16px; line-height: 24px;}
+.core-text span:not(p span){font-size: 20px; line-height: 24px; margin-bottom: 8px; color: var(--corporate-color); font-weight: 800; letter-spacing: -.05em; font-family: 'Overpass', sans-serif;  display: block;}
+
+.default-article blockquote:not(span.optional-text){padding: 89px 42px 40px; margin-bottom: 64px; font-size: 32px; line-height: 40px;}
+.default-list-main{padding: 48px; margin: 63px 0 64px; background-image: url('../images/default-list-bg@2x.jpg'); background-repeat: no-repeat; background-size: cover;}
+.default-content-list{padding: 40px; color: var(--cement-color); font-size: 14px; line-height: 22px; background-color: var(--white);}
+
+ul.default-social-icons{margin: 0 0 51px; gap: 68px;}
+ul.default-social-icons li::before{left: -38px; top: 50%; transform: translateY(-50%); width: 12px; height: 12px; font-size: 12px; line-height: 12px; content: "\f00d"; display: block; font-family: "Font Awesome 6 Pro"; background: none; color: var(--tech-color);}
+ul.default-social-icons li:first-child::before{display: none;}
+ul.default-social-icons li a{font-size: 32px; line-height: 32px; display: inline-block; color: var(--slate-color); transform: scale(1);}
+ul.default-social-icons li a:hover{color: var(--privacy-color); transform: scaleX(-0.95);}
+
+ul.aside_links{margin: 0; padding-top: 11px;}
+ul.aside_links > li{margin-bottom: 12px;}
+ul.aside_links > li::before{width: 3px; height: 100%; left: 0; top: 50%; transform: translateY(-50%); background-color: var(--privacy-color);}
+ul.aside_links > li:hover::before{width: 8px; background-color: var(--corporate-color);}
+ul.aside_links > li > a{padding: 8px 0 7px 20px; font-size: 16px; line-height: 16px; letter-spacing: -0.05em; font-weight: 500; color: var(--cement-color); display: inline-block; font-family: 'Overpass', sans-serif;}
+ul.aside_links > li > a:hover{color: var(--corporate-color); font-weight: 700;}
+
+.aside-btns{gap: 20px; }
+.aside-btns span{flex: 0 0 calc(50% - 10px);}
+.aside-btns .button{width: 100%;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .default-content-main{gap: 80px;}
+    .default-article{width: calc(100% - 415px);}
+    .default-aside{width: 335px;}
+    .default-list-main{gap: 48px;}
+    .default-content-list{flex: 0 0 calc(50% - 24px);}
+}
