@@ -8,7 +8,7 @@ a:focus {outline: none;}
 a:hover, a:active {outline: 0;}
 a:hover{color: var(--black);}
 h1, h2, h3, h4, h5, h6 {clear: both; margin: 0; color: var(--corporate-color); font-weight: 800; letter-spacing: -0.05em; text-transform: none; font-family: 'Overpass', sans-serif;}
-h1 {font-size: 58px; line-height: 64px; margin-bottom: 20px;}
+h1 {font-size: 48px; line-height: 56px; margin-bottom: 20px;}
 h2 {font-size: 40px; line-height: 48px; margin-bottom: 24px;}
 h3 {font-size: 32px; line-height: 40px; margin-bottom: 20px;}
 h4 {font-size: 24px; line-height: 28px; margin-bottom: 16px;}
@@ -220,10 +220,7 @@ ul.slick-dots li.slick-active button{background: linear-gradient(90deg,#3207ff 0
     .container.x-sm{max-width: 896px;}
     .hide-desktop{display: none;}
 }
-@media only screen and (max-width: 1439px) and (min-width: 1024px){
-
-}
-@media only screen and (max-width: 1349px) and (min-width: 1024px){
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
     .container{max-width: 100%; padding: 0 30px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){

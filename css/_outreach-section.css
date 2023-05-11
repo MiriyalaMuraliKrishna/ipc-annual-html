@@ -6,15 +6,25 @@
 
 /*-- media starts here --*/
 @media only screen and (min-width: 1024px){
-    .outreach-main{padding: 128px 0 120px;}
-    .outreach-head{gap: 48px; margin-bottom: 36px;}
-    .outreach-title{flex: 0 0 calc(100% - 304px);}
-    .outreach-btn{flex: 0 0 256px; text-align: right;}
-    .outreach-row{gap: 48px;}
+    .outreach-wrap{padding: 128px 0 120px;}
+    .outreach-title{padding-right: 304px;}
+    .outreach-btn{right: 0; top: 0; position: absolute;}
+    .outreach-row{gap: 48px; margin-top: 36px;}
     .outreach-list{flex: 0 0 calc(25% - 36px);}
 }
-
-
-
-
-
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .outreach-row{gap: 30px;}
+    .outreach-list { flex: 0 0 calc(25% - 23px); padding: 24px; }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .outreach-wrap{padding: 67px 0 88px;}
+    .outreach-title{padding-right: 280px;}
+    .outreach-btn{text-align: center; padding-top: 40px; display: block;}
+    .outreach-row{gap: 24px;}
+    .outreach-list { flex: 0 0 calc(50% - 12px); padding: 24px; }
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .outreach-row{display: block;}
+    .outreach-list{margin-bottom: 30px;}
+    .outreach-btn .button{width: 100%;}
+}
