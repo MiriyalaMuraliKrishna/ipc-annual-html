@@ -32,7 +32,7 @@
                 </a>
             </div>
             <div class="header-right flex flex-vcenter">
-                <div class="nav_btns flex">
+                <div class="nav_btns flex hide-mobile">
                     <a href="#" class="button btn-transparent">STATISTICS</a>
                     <a href="#" class="button btn-transparent">Financials</a>
                 </div>
@@ -324,19 +324,19 @@
 
 </main>
 <footer class="footer-main pos-relative">
-<div class="container pos-relative">
-    <div class="footer-bg background-bg">
-        <picture class="object-fit">
-            <source srcset="images/footer-bg@2x.jpg" media="(min-width: 768px)">
-            <img src="images/footer-bg.svg" alt="">
-        </picture>
-    </div>
-    <div class="footer-stripe-left"></div>
-    <div class="footer-green-block"></div>
-    <div class="footer-white-block"></div>
-    <div class="footer-circle-glow"></div>
-    <div class="footer-privacy-block"></div>
-    <div class="footer">
+<div class="container">
+    <div class="footer pos-relative">
+        <div class="footer-stripe-left"></div>
+        <div class="footer-green-block hide-mobile"></div>
+        <div class="footer-circle-glow"></div>
+        <div class="footer-center-glow"></div>
+        <div class="footer-privacy-block"></div>
+        <div class="footer-bg background-bg">
+            <picture class="footer-bg-image object-fit">
+                <source srcset="images/footer-bg@2x.jpg" media="(min-width: 768px)">
+                <img src="images/footer-bg-mobile@2x.jpg" alt="footer-bg-mobile">
+            </picture>
+        </div>
         <div class="footer-logo flex flex-center">
             <a href="#"><img src="images/footer-logo.svg" alt="footer-logo"></a>
         </div>
@@ -355,7 +355,7 @@
         </ul>
         <div class="copyrights-main">
             <div class="copyrights-text">
-                <p>Copyright © Information and Privacy Commissioner of Ontario. All rights reserved.</p>
+                <p><strong>Copyright © Information and Privacy Commissioner of Ontario. All rights reserved.</strong></p>
                 <ul class="copyrights-links flex">
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Social Media Policy</a></li>

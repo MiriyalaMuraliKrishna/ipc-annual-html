@@ -17,7 +17,6 @@ ul.main_menu > li > a{display: block;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-
     .toggle_menu{width: 56px; height: 56px; margin-right: 24px; font-size: 24px; line-height: 24px; color: var(--white); cursor: pointer; align-items: center; justify-content: center; background-color: var(--health-color); box-shadow: 4px 4px 0px #C3E86C;}
     .toggle_bg{width: 100%; height: 100%; transform: translate(4px, 4px); z-index: -1; background-color: var(--tech-color); position: absolute; display: block;}
 
@@ -28,7 +27,12 @@ ul.main_menu > li > a{display: block;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
 
+    
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    
+    .header { padding: 16px 0 16px; }
+    .toggle_menu{width: 48px; height: 48px; margin-right: 24px; font-size: 24px; line-height: 24px; color: var(--white); cursor: pointer; align-items: center; justify-content: center; background-color: var(--health-color); box-shadow: 4px 4px 0px #C3E86C;}
+    .toggle_bg{width: 100%; height: 100%; transform: translate(4px, 4px); z-index: -1; background-color: var(--tech-color); position: absolute; display: block;}
+    .logo{width: 157px;}
+    .header-right{flex: 1;}
 }
