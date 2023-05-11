@@ -15,3 +15,8 @@
     .frm-author-thumb{flex: 0 0 228px;}
     .frm-author-text{flex: 0 0 calc(100% - 316px);}
 }
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .frm-message-main{padding: 20px; box-shadow: 24px 24px 0 rgba(0,161,156,.5);}
+    .frm-message-main h2{font-size: 24px; line-height: 28px;}
+    .frm-author-main{display: block;}
+}
