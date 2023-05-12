@@ -9,7 +9,7 @@
     .outreach-wrap{padding: 128px 0 120px;}
     .outreach-title{padding-right: 304px;}
     .outreach-btn{right: 0; top: 0; position: absolute;}
-    .outreach-row{gap: 48px; margin-top: 36px;}
+    .outreach-row{gap: 48px; margin: 36px 0 73px;}
     .outreach-list{flex: 0 0 calc(25% - 36px);}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
