@@ -105,6 +105,7 @@
 
 <section class="frm-message-section">
 <div class="container md">
+<div class="frm-message-wrap">
     <div class="frm-message-main pos-relative">
         <div class="frm-green-block hide-mobile"></div>
         <span class="optional-text">A MESSAGE FROM OUR COMMISSIONER</span>
@@ -112,21 +113,26 @@
         <p>Accumsan ut fames et eget tincidunt leo sit amet amet. Posuere id vitae sed amet mattis donec. Nibh ipsum in vel nunc massa pulvinar volutpat. Ut elementum ultrices vivamus pellentesque. Et interdum ut massa sed. Purus facilisi lectus at at risus sed augue libero. Id non id consequat elementum convallis ornare. Velit non convallis facilisis commodo tellus faucibus. Dignissim ut tristique porta leo aenean leo eget dapibus. Semper morbi orci urna quisque sit ut. Morbi tincidunt risus sed egestas nulla dictum sed. Sem pellentesque adipiscing tellus sed id. Et in neque vitae risus. 
         <p>Risus egestas pretium venenatis aliquam sem nec egestas. Id felis amet at sit tristique magna. Ut id urna sed dolor. Eget tortor habitasse luctus commodo. Ornare non aliquet mauris tincidunt malesuada in ac morbi quis. At sagittis lobortis egestas vitae ipsum sed eget.</p>
         <div class="frm-author-main flex flex-vcenter">
-            <figure class="frm-author-thumb object-fit">    
-                <img src="images/author-thumb-one@2x.jpg" alt="author-thumb-one">
-            </figure>
+            <div class="frm-author-image pos-relative">
+                <figure class="frm-author-thumb object-fit">    
+                    <img src="images/author-thumb-one@2x.jpg" alt="author-thumb-one">
+                </figure>
+                <div class="frm-author-stripe"></div>
+                <div class="frm-author-block"></div>
+            </div>
             <div class="frm-author-text">
-                <p><a href="#">First Lastname</a> it netus elit convallis nibh donec in feugiat libero euismod. Risus egestas eu in sit ut. Tortor in vitae libero magnis cursus justo. It netus elit convallis nibh donec in feugiat libero euismod. Risus egestas eu in sit ut. Tortor in vitae libero magnis cursus.</p>
+                <p><a href="#"><strong>First Lastname</strong></a> it netus elit convallis nibh donec in feugiat libero euismod. Risus egestas eu in sit ut. Tortor in vitae libero magnis cursus justo. It netus elit convallis nibh donec in feugiat libero euismod. Risus egestas eu in sit ut. Tortor in vitae libero magnis cursus.</p>
                 <a href="#" class="btn-link">Read the commissioners full letter</a>
             </div>
         </div>
     </div>
 </div>
+</div>
 </section>
 
 <section class="advocacy-section">
 <div class="container">
-    <div class="advocacy-main">
+    <div class="advocacy-main pos-relative">
         <div class="advocacy-title">
             <h2>How? Through advocacy, responsiveness, and accountability.</h2>
         </div>
@@ -179,23 +185,25 @@
                 <h2>Privacy and Transparency in a Modern Government</h2>
             </div>
             <div class="custom-ipc-image">
-                <figure class="custom-ipc-thumb object-fit">
-                    <img src="images/ipc-post-image@2x.png" alt="ipc-post-image"/>
-                </figure>
+                <picture class="custom-ipc-thumb object-fit">
+                    <source srcset="images/ipc-post-image@2x.png" media="(min-width: 768px)">
+                    <img src="images/ipc-post-mobile@2x.png" alt="ipc-post-mobile">
+                </picture>
             </div>
         </div>
         <div class="optional-repeater-row">
             <div class="optional-repeater-list flex flex-vcenter">
+                <div class="optional-repeater-image pos-relative">
+                    <figure class="optional-repeater-thumb object-fit">
+                        <img src="images/optional-thumb-one@2x.jpg" alt="optional-thumb-one">
+                    </figure>
+                    <div class="white-block top-left"></div>
+                    <div class="optional-repeater-stripe right"></div>
+                </div>
                 <div class="optional-repeater-text">
                     <span class="optional-text">The transparency challenge</span>
                     <h2>Amet et morbi pharetra amet purus porta mattis. Magna dapibus cursus amet et amet dignissim. Eget commodo egestas tristique tortor vitae tincidunt eu imperdiet. Aliquet purus suspendisse maecenas aliquet molestie porta tincidunt non sapien. </h2>
                     <a href="#" class="btn-link">Privacy and Transparency in a Modern Government</a>
-                </div>
-                <div class="optional-repeater-image pos-relative">
-                    <figure class="object-fit">
-                        <img src="images/optional-thumb-one@2x.jpg" alt="optional-thumb-one">
-                    </figure>
-                    <div class="white-block top-left"></div>
                 </div>
             </div>
         </div>
@@ -242,6 +250,7 @@
         </div>
         <blockquote>
             <span class="optional-text black">WHAT IT MEANS TO BE AN IPC’ER</span>
+            <div class="blockquote-icon"></div>
             <p>Amet vitae egestas tellus eu enim, nibh condimentum in ut mauris arcu, tempus euismod aliquet dictum sollic itudin congue fringilla diam <span>highlighted words</span> diam nisi ut mauris arcu, tempus euismod aliquet dictum sollic  pharetra quis lorem ut viverra condimentum.</p>
             <div class="white-block top-right"></div>
         </blockquote>
@@ -250,9 +259,10 @@
                 <h2>Children and Youth<br> in a Digital World</h2>
             </div>
             <div class="custom-ipc-image">
-                <figure class="custom-ipc-thumb object-fit">
-                    <img src="images/ipc-post-image@2x.png" alt="ipc-post-image"/>
-                </figure>
+                <picture class="custom-ipc-thumb object-fit">
+                    <source srcset="images/ipc-post-image@2x.png" media="(min-width: 768px)">
+                    <img src="images/ipc-post-mobile@2x.png" alt="ipc-post-mobile">
+                </picture>
             </div>
         </div>
         <div class="optional-repeater-row">
@@ -263,10 +273,11 @@
                     <a href="#" class="btn-link">Children and Youth in a Digital World</a>
                 </div>
                 <div class="optional-repeater-image pos-relative">
-                    <figure class="object-fit">
+                    <figure class="optional-repeater-thumb object-fit">
                         <img src="images/optional-thumb-five@2x.jpg" alt="optional-thumb-five">
                     </figure>
                     <div class="white-block top-right"></div>
+                    <div class="optional-repeater-stripe left"></div>
                 </div>
             </div>
         </div>
@@ -397,70 +408,75 @@
                 <h2>Trust in Digital Health</h2>
             </div>
             <div class="custom-ipc-image">
-                <figure class="custom-ipc-thumb object-fit">
-                    <img src="images/ipc-post-image@2x.png" alt="ipc-post-image"/>
-                </figure>
+                <picture class="custom-ipc-thumb object-fit">
+                    <source srcset="images/ipc-post-image@2x.png" media="(min-width: 768px)">
+                    <img src="images/ipc-post-mobile@2x.png" alt="ipc-post-mobile">
+                </picture>
             </div>
         </div>
         <div class="optional-repeater-row">
             <div class="optional-repeater-list flex flex-vcenter">
-                <div class="optional-repeater-text">
-                    <span class="optional-text">Axe the Fax</span>
-                    <h2>Vestibulum sed elementum purus interdum nam sem at egestas. Id id nunc pellentesque ac adipiscing metus eu vel semper. Nullam faucibus donec arcu diam commodo. Quis scelerisque et ornare lacus ut consectetur. Purus et ridiculus viverra nisl volutpat risus.</h2>
-                    <a href="#" class="btn-link">Trust in Digital Health</a>
-                </div>
                 <div class="optional-repeater-image pos-relative">
-                    <figure class="object-fit optional-repeater-thumb">
+                    <figure class="optional-repeater-thumb object-fit">
                         <img src="images/optional-thumb-two@2x.jpg" alt="optional-thumb-two">
                     </figure>
                     <div class="white-block top-left"></div>
                 </div>
-            </div>
-            <div class="optional-repeater-list flex flex-vcenter">
                 <div class="optional-repeater-text">
                     <span class="optional-text">Axe the Fax</span>
                     <h2>Vestibulum sed elementum purus interdum nam sem at egestas. Id id nunc pellentesque ac adipiscing metus eu vel semper. Nullam faucibus donec arcu diam commodo. Quis scelerisque et ornare lacus ut consectetur. Purus et ridiculus viverra nisl volutpat risus.</h2>
                     <a href="#" class="btn-link">Trust in Digital Health</a>
                 </div>
+            </div>
+            <div class="optional-repeater-list flex flex-vcenter">
                 <div class="optional-repeater-image pos-relative">
-                    <figure class="object-fit">
+                    <figure class="optional-repeater-thumb object-fit">
                         <img src="images/optional-thumb-six@2x.jpg" alt="optional-thumb-six">
                     </figure>
                     <div class="white-block top-right"></div>
+                    <div class="optional-repeater-stripe left"></div>
+                </div>
+                <div class="optional-repeater-text">
+                    <span class="optional-text">Axe the Fax</span>
+                    <h2>Vestibulum sed elementum purus interdum nam sem at egestas. Id id nunc pellentesque ac adipiscing metus eu vel semper. Nullam faucibus donec arcu diam commodo. Quis scelerisque et ornare lacus ut consectetur. Purus et ridiculus viverra nisl volutpat risus.</h2>
+                    <a href="#" class="btn-link">Trust in Digital Health</a>
                 </div>
             </div>
         </div>
         <blockquote>
             <span class="optional-text black">COMMISSIONER’S RECOMMENDATION</span>
+            <div class="blockquote-icon"></div>
             <p>IPC and our counterparts urge governments to address the issue by coordinating a strategic plan and providing appropriate supports, such as funding or other incentives, to <span>phase out traditional fax and unencrypted email.</span> The resolution asks governments to promote the adoption of more modern and secure digital alternatives that are equitably available and accessible to all, and calls on health sector organizations and providers to do their part as well.</p>
             <div class="white-block top-right"></div>
         </blockquote>
         <h2>Next Generation Law Enforcement</h2>
         <div class="optional-repeater-row">
             <div class="optional-repeater-list flex flex-vcenter">
+                <div class="optional-repeater-image pos-relative">
+                    <figure class="optional-repeater-thumb object-fit">
+                        <img src="images/optional-thumb-seven@2x.jpg" alt="optional-thumb-seven">
+                    </figure>
+                    <div class="white-block top-left"></div>
+                    <div class="optional-repeater-stripe right"></div>
+                </div>
                 <div class="optional-repeater-text">
                     <span class="optional-text">Facial Recognition Technologyx</span>
                     <h2>Vestibulum sed elementum purus interdum nam sem at egestas. Id id nunc pellentesque ac adipiscing metus eu vel semper. Nullam faucibus donec arcu diam commodo. Quis scelerisque et ornare lacus ut consectetur. Purus et ridiculus viverra nisl volutpat risus.</h2>
                     <a href="#" class="btn-link">Next GENERATION Law Enforcement</a>
                 </div>
-                <div class="optional-repeater-image pos-relative">
-                    <figure class="object-fit">
-                        <img src="images/optional-thumb-seven@2x.jpg" alt="optional-thumb-seven">
-                    </figure>
-                    <div class="white-block top-left"></div>
-                </div>
             </div>
             <div class="optional-repeater-list flex flex-vcenter">
+                <div class="optional-repeater-image pos-relative">
+                    <figure class="optional-repeater-thumb object-fit">
+                        <img src="images/optional-thumb-eight@2x.jpg" alt="optional-thumb-eight">
+                    </figure>
+                    <div class="white-block top-right"></div>
+                    <div class="optional-repeater-stripe left"></div>
+                </div>
                 <div class="optional-repeater-text">
                     <span class="optional-text">Intimate Partner Violence</span>
                     <h2>Vestibulum sed elementum purus interdum nam sem at egestas. Id id nunc pellentesque ac adipiscing metus eu vel semper. Nullam faucibus donec arcu diam commodo. Quis scelerisque et ornare lacus ut consectetur. Purus et ridiculus viverra nisl volutpat risus.</h2>
                     <a href="#" class="btn-link">Read More</a>
-                </div>
-                <div class="optional-repeater-image pos-relative">
-                    <figure class="object-fit">
-                        <img src="images/optional-thumb-eight@2x.jpg" alt="optional-thumb-eight">
-                    </figure>
-                    <div class="white-block top-right"></div>
                 </div>
             </div>
         </div>
@@ -473,9 +489,6 @@
                 <a href="#" class="button">More About Responsiveness</a>
             </div>
         </div>
-
-
-
 
         <div class="common-grid-row flex">
             <div class="common-grid-list">
@@ -564,27 +577,29 @@
 <div class="success-story-main">
     <div class="optional-repeater-row">
         <div class="optional-repeater-list flex flex-vcenter">
+            <div class="optional-repeater-image pos-relative">
+                <figure class="optional-repeater-thumb object-fit">
+                    <img src="images/optional-thumb-three@2x.jpg" alt="optional-thumb-three">
+                </figure>
+                <div class="white-block top-left"></div>
+                <div class="optional-repeater-stripe right"></div>
+            </div>
             <div class="optional-repeater-text">
                 <span class="optional-text">Success Story One</span>
                 <h2>Vestibulum sed elementum purus interdum nam sem at egestas. Id id nunc pellentesque ac adipiscing metus eu vel semper. Nullam faucibus donec arcu diam commodo. Quis scelerisque et ornare lacus ut consectetur. Purus et ridiculus viverra nisl volutpat risus.</h2>
             </div>
-            <div class="optional-repeater-image pos-relative">
-                <figure class="object-fit">
-                    <img src="images/optional-thumb-three@2x.jpg" alt="optional-thumb-three">
-                </figure>
-                <div class="white-block top-left"></div>
-            </div>
         </div>
         <div class="optional-repeater-list flex flex-vcenter">
-            <div class="optional-repeater-text">
-                <span class="optional-text">Success Story Two</span>
-                <h2>Vestibulum sed elementum purus interdum nam sem at egestas. Id id nunc pellentesque ac adipiscing metus eu vel semper. Nullam faucibus donec arcu diam commodo. Quis scelerisque et ornare lacus ut consectetur. Purus et ridiculus viverra nisl volutpat risus.</h2>
-            </div>
             <div class="optional-repeater-image pos-relative">
-                <figure class="object-fit">
+                <figure class="optional-repeater-thumb object-fit">
                     <img src="images/optional-thumb-four@2x.jpg" alt="optional-thumb-four">
                 </figure>
                 <div class="white-block top-right"></div>
+                <div class="optional-repeater-stripe left"></div>
+            </div>
+            <div class="optional-repeater-text">
+                <span class="optional-text">Success Story Two</span>
+                <h2>Vestibulum sed elementum purus interdum nam sem at egestas. Id id nunc pellentesque ac adipiscing metus eu vel semper. Nullam faucibus donec arcu diam commodo. Quis scelerisque et ornare lacus ut consectetur. Purus et ridiculus viverra nisl volutpat risus.</h2>
             </div>
         </div>
     </div>
@@ -721,19 +736,19 @@
                 </tr>
                 <tr>
                     <td>Employee Benefits</td>
-                    <td>$14,900,500</td>
+                    <td>$3,980,400</td>
                 </tr>
                 <tr>
                     <td>Transportation and Communications</td>
-                    <td>$14,900,500</td>
+                    <td>$122,000</td>
                 </tr>
                 <tr>
                     <td>Services</td>
-                    <td>$14,900,500</td>
+                    <td>$3,492,400</td>
                 </tr>
                 <tr>
                     <td>Supplies and Equipment</td>
-                    <td>$14,900,500</td>
+                    <td>$137,000</td>
                 </tr>
             </table>
         </div>
@@ -750,8 +765,9 @@
                 <img src="images/cta-thumb@2x.jpg" alt="cta-thumb">
             </figure>
             <div class="white-block top-left"></div>
-            <div class="green-block"></div>
-            <div class="privacy-block"></div>
+            <div class="cta-green-block cta-block"></div>
+            <div class="cta-privacy-block cta-block"></div>
+            <div class="cta-stripe"></div>
         </div>
         <div class="custom-cta-text">
             <span class="optional-text">Optional Preheader</span>

@@ -1,5 +1,12 @@
 
-
-
 .modern-privacy-section{background-color: var(--white);}
 .modern-privacy-bg{width: 100%; height: calc(100% - 145px); top: 1; left: 0;}
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .modern-privacy-main{padding: 20px 0 0;}
+}
