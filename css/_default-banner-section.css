@@ -42,4 +42,5 @@
     .default-banner-text span{margin-bottom: 24px;}
     .banner-green-block{top: -20px; right: -20px; width: 80px; height: 80px;}
     .banner-blue-block{width: 104px; height: 104px; left: -20px; bottom: -20px;}
+    .banner-stripe{left: 84px; height: 24px; bottom: -12px; background-image: url('../images/banner-stripe-mobile.svg');}
 }
