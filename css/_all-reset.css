@@ -26,9 +26,8 @@ p:last-child{margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 15px; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
 pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 24px; max-width: 100%; overflow: auto; padding: 12px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
 blockquote, q {-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none; }
-blockquote:not(span.optional-text){padding: 30px 64px 64px; font-weight: 800; font-size: 40px; line-height: 48px; font-style: normal; position: relative; letter-spacing: -0.05em; border-radius: 0; margin: 0; font-family: 'Overpass', sans-serif; background-color: var(--health-color); color: var(--white);}
+blockquote:not(span.optional-text){padding: 30px 64px 38px; font-weight: 800; font-size: 40px; line-height: 48px; font-style: normal; position: relative; letter-spacing: -0.05em; border-radius: 0; margin: 0 0 80px; font-family: 'Overpass', sans-serif; background-color: var(--health-color); color: var(--white);}
 .blockquote-icon{width: 74px; height: 64px; background-image: url("../images/quote-icon.svg"); background-repeat: no-repeat; background-size: contain; content: ""; display: block;}
-blockquote::after{width: 312px; height: 48px; right: 40px; bottom: -24px; content: ""; display: block; background-image: url('../images/common-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute;}
 blockquote p span{color: var(--tech-color); background-image: linear-gradient(to top, rgb(36 45 56 / 50%) 20px, transparent 0px); background-position: 0 -4px;}
 blockquote p::after{top: 0ex; content: "”"; display: inline; color: var(--tech-color); position: relative;}
 blockquote cite, blockquote small {font-size: 1rem;}
@@ -220,8 +219,10 @@ ul.slick-dots li.slick-active button{background: linear-gradient(90deg,#3207ff 0
     .container.x-sm{max-width: 896px;}
     .hide-desktop{display: none;}
     .blockquote-icon{ top: -15px; position: absolute;}
+    blockquote::after{width: 312px; height: 48px; right: 40px; bottom: -24px; content: ""; display: block; background-image: url('../images/common-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute;}
+    blockquote.sm:not(span.optional-text){font-size: 32px; line-height: 40px;}
 }
-@media only screen and (max-width: 1299px) and (min-width: 1024px){
+@media only screen and (max-width: 1339px) and (min-width: 1024px){
     .container{max-width: 100%; padding: 0 30px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
@@ -234,7 +235,7 @@ ul.slick-dots li.slick-active button{background: linear-gradient(90deg,#3207ff 0
     .hide-mobile{display: none;}
     span.optional-text{margin-bottom: 32px;}
     
-    blockquote:not(span.optional-text) { padding: 30px 20px 64px; font-size: 24px; line-height: 28px; }
+    blockquote:not(span.optional-text) { padding: 30px 20px 20px; font-size: 24px; line-height: 28px; }
     blockquote p span{background: none;}
     span.optional-text.black{text-align: left; margin-bottom: 23px;}
     blockquote .white-block{width: 80px; height: 80px;}

@@ -1,11 +1,11 @@
-.default-banner-section{padding: 80px 0; background-color: var(--white);}
+.default-banner-section{background-color: var(--white);}
 .default-banner-main{align-items: flex-start;}
-.default-banner-desc{color: var(--cement-color); line-height: 28px; font-size: 20px; font-weight: 400; font-style: normal; }
-.default-banner-desc span{margin-bottom: 40px;}
-.default-banner-desc h1{color: var(--corporate-color); margin-bottom: 45px; font-size: 48px; line-height: 56px; font-weight: 800;}
-.default-banner-desc hr{max-width: 128px; margin-bottom: 38px;}
-.banner-green-block{width: 168px; height: 168px; top: -85px; left: 504px; background-color: var(--tech-color); position: absolute; z-index: 1; opacity: 0.8; mix-blend-mode: multiply;}
-.banner-blue-block{position: absolute; width: 256px; height: 260px; bottom: -80px; left: -64px; background-color: var( --link-color); opacity: 0.8; mix-blend-mode: multiply; }
+.default-banner-text{color: var(--cement-color); line-height: 28px; font-size: 20px; font-weight: 400; font-style: normal; }
+.default-banner-text span{margin-bottom: 40px;}
+.default-banner-text h1{color: var(--corporate-color); margin-bottom: 45px; font-size: 48px; line-height: 56px; font-weight: 800;}
+.default-banner-text hr{max-width: 128px; margin-bottom: 38px;}
+.banner-green-block{background-color: var(--tech-color); position: absolute; z-index: 1; opacity: 0.8; mix-blend-mode: multiply;}
+.banner-blue-block{position: absolute; background-color: var( --link-color); opacity: 0.8; mix-blend-mode: multiply; }
 .banner-stripe{width: 312px; height: 48px; bottom: -24px; left: 192px; position: absolute; background-image: url("../images/banner-stripe-frame.svg"); background-repeat: no-repeat;} 
 
 
@@ -13,7 +13,33 @@
 
 /*-- media starts here --*/
 @media only screen and (min-width: 1024px){
-    .default-banner-main{gap: 160px; padding: 0 0 97px;}
-    .default-banner-desc{flex: 0 0 528px;}
-    .default-banner-image{flex: 0 0 calc(100% - 688px);}
+    .default-banner-main{gap: 160px; padding: 96px 0 140px; flex-direction: row-reverse;}
+    .default-banner-text{flex: 0 0 calc(100% - 752px);}
+    .default-banner-image{flex: 0 0 592px;}
+    .banner-green-block{width: 168px; height: 168px; top: -85px; right: -80px;}
+    .banner-blue-block{width: 256px; height: 260px; bottom: -80px; left: -64px; }
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .default-banner-main{gap: 60px; padding: 96px 0 90px;}
+    .default-banner-text{flex: 0 0 calc(100% - 552px);}
+    .default-banner-image{flex: 0 0 492px;}
+    .banner-green-block{width: 104px; height: 104px; top: -30px; right: -30px;}
+    .banner-blue-block{width: 168px; height: 168px; left: -30px; bottom: -30px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .default-banner-main{padding: 40px 0;}
+    .default-banner-text{padding-top: 56px;}
+    .default-banner-text hr{margin-bottom: 24px;}
+    .default-banner-text span{margin-bottom: 24px;}
+    .banner-green-block{top: -20px; right: -20px; width: 80px; height: 80px;}
+    .banner-blue-block{width: 104px; height: 104px; left: -20px; bottom: -20px; }
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .default-banner-main{padding: 40px 0;}
+    .default-banner-text{padding-top: 56px;}
+    .default-banner-text h1{font-size: 32px; line-height: 40px; margin-bottom: 24px;}
+    .default-banner-text hr{margin-bottom: 24px;}
+    .default-banner-text span{margin-bottom: 24px;}
+    .banner-green-block{top: -20px; right: -20px; width: 80px; height: 80px;}
+    .banner-blue-block{width: 104px; height: 104px; left: -20px; bottom: -20px;}
 }

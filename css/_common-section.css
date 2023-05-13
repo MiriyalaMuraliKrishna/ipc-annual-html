@@ -21,6 +21,11 @@
 .common-grid-text{font-size: 24px; line-height: 28px; letter-spacing: -0.05em; font-weight: 800; font-family: 'Overpass', sans-serif;}
 .common-grid-text p span{color: var(--privacy-color);}
 
+.full-width-wrap{padding: 48px 0;}
+.full-width-stripe{width: 100%; height: 48px; margin: 0; opacity: 0.3; background-image: url("../images/full-width-stripe-frame.svg"); background-repeat: no-repeat;}
+.custom-digital-main{padding: 80px 0 0;}
+.nxt-generation-main{padding: 80px 0 120px;}
+
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .custom-ipc-head{gap: 40px; margin-bottom: 80px;}
@@ -28,6 +33,7 @@
     .custom-ipc-image{flex: 0 0 calc(100% - 615px); transform: translateX(90px);}
     .custom-ipc-thumb{max-width: 582px; margin-left: auto;}
 
+    .trust-in-main .optional-repeater-row{padding-bottom: 40px;}
     .optional-repeater-list{gap: 80px; margin-bottom: 80px;}
     .optional-repeater-text{flex: 0 0 594px;}
     .optional-repeater-image{flex: 0 0 calc(100% - 674px);}

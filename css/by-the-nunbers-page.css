@@ -1,12 +1,9 @@
 body.by-the-numbers-page{background-attachment: fixed; background-image: url('../images/static-bg@2x.jpg'); background-size: cover;}
 body.by-the-numbers-page .outreach-main{padding-top: 40px;}
-.full-width-stripe{width: 100%; height: 48px; opacity: 0.3; background-image: url("../images/full-width-stripe-frame.svg"); background-repeat: no-repeat;}
-
 
 /* feature overview section */
 .feature-overview-main{padding: 75px 0;}
 .feature-overview-text h2{font-size: 32px; line-height: 40px; color: var( --slate-color);}
-.feature-overview-text .number{font-size: 88px; font-weight: 800; line-height: 88px; margin-bottom: 24px;}
 .feature-overview-list:nth-child(even){flex-direction: row-reverse;}
 .feature-overview-text p{margin-bottom: 24px;}
 .feature-overview-text span{display:block; margin-bottom: 24px;}
@@ -19,7 +16,25 @@ body.by-the-numbers-page .outreach-main{padding-top: 40px;}
 @media only screen and (min-width: 1024px){
     .feature-overview-list{gap: 80px; margin-bottom: 112px;}
     .feature-overview-list:last-child{margin-bottom: 0;}
-    .feature-overview-text{flex: 0 0 600px;}
-    .feature-overview-image{flex: 0 0 calc(100% - 680px);}
-
+    .feature-overview-text{flex: 0 0 calc(100% - 680px);}
+    .feature-overview-image{flex: 0 0 600px;}
+    .feature-overview-text .number{font-size: 88px; font-weight: 800; line-height: 88px; margin-bottom: 24px;}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .feature-overview-list{gap: 50px;}
+    .feature-overview-text{flex: 0 0 calc(100% - 540px);}
+    .feature-overview-image{flex: 0 0 490px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .feature-overview-list{gap: 30px; margin-bottom: 66px;}
+    .feature-overview-list:last-child{margin-bottom: 0;}
+    .feature-overview-text{flex: 0 0 calc(100% - 390px);}
+    .feature-overview-image{flex: 0 0 360px;}
+    .feature-overview-text h2{font-size: 24px; line-height: 28px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .feature-overview-list{display: block; margin-bottom: 68px;}
+    .feature-overview-list:last-child{margin-bottom: 0;}
+    .feature-overview-image{margin-bottom: 30px;}
+    .feature-overview-text h2{font-size: 24px; line-height: 28px;}
 }

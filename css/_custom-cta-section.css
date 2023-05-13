@@ -13,7 +13,7 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .custom-cta-main{gap: 160px; padding: 160px 0 114px; flex-direction: row-reverse;}
+    .custom-cta-main{gap: 160px; padding: 114px 0 114px; flex-direction: row-reverse;}
     .custom-cta-text{flex: 0 0 528px;}
     .custom-cta-image{flex: 0 0 calc(100% - 688px);}
 }

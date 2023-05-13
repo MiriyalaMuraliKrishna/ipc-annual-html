@@ -1,12 +1,13 @@
 
 
 .outreach-list{padding: 40px; font-size: 14px; line-height: 22px; background-color: var(--white); color: var(--slate-color); color: var(--cement-color);}
-
-
+.outreach-list.no_color{display: flex; flex-wrap: wrap; align-items: center; justify-content: center; background-color: transparent; position: relative; z-index: 1;}
+.outreach-icon img{width: 64px; margin: 0 auto;}
+.outreach-icon-glow{width: 435px; height: 435px; background-image: url('../images/outreach-glow.svg'); background-repeat: no-repeat; background-size: cover; background-position: center; position: absolute; z-index: -1;}
 
 /*-- media starts here --*/
 @media only screen and (min-width: 1024px){
-    .outreach-wrap{padding: 128px 0 120px;}
+    .outreach-wrap{padding: 128px 0 54px;}
     .outreach-title{padding-right: 304px;}
     .outreach-btn{right: 0; top: 0; position: absolute;}
     .outreach-row{gap: 48px; margin: 36px 0 73px;}
