@@ -13,7 +13,7 @@ jQuery(document).ready(function(){
 
     });
     jQuery('ul.main_menu > li > a').on('click', function(e){
-        e.preventDefault();
+      //  e.preventDefault();
         jQuery(this).parent('li').addClass('current-menu-item');
         jQuery(this).parent().siblings('li').removeClass('current-menu-item');
         jQuery('.toggle_menu').removeClass('active');
@@ -29,4 +29,19 @@ jQuery(document).ready(function(){
         jQuery(this).siblings('.accordion-content').slideToggle(500);
         jQuery(this).parent().siblings().find('.accordion-content').slideUp(500);
     });
+
+    let headerHeight = jQuery('.main-header').outerHeight(true);
+    jQuery('a[href*=#]:not([href=#])').click(function(){
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = jQuery(this.hash);
+            target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                jQuery('html,body').animate({
+                    scrollTop: target.offset().top - headerHeight
+                }, 1000);
+                return false;
+            }
+        }
+    });
+
 });

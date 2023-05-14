@@ -2,7 +2,9 @@
 
 .main-header{top: 0; left: 0; width: 100%; height: auto; position: fixed; z-index: 800; background-color: var(--white);}
 body.home .main-header{background-color: transparent;}
-header.main-header.fixed_header{background-color: var(--white); box-shadow: 0 1px 1px rgb(115 114 114 / 15%);}
+.main-header::before { content: ""; bottom: 0; left: 0; right: 0; top: 0; transition: all 0.45s ease-in-out; background-color: var(--white); box-shadow: 0 1px 1px rgb(115 114 114 / 15%); transform-origin: center top; transform: scaleY(0); position: absolute; z-index: -1; }
+.main-header.fixed_header::before{transform: scaleY(1);}
+
 .header{padding: 24px 0 24px;}
 .toggle_menu{width: 56px; height: 56px; margin-right: 24px; font-size: 24px; line-height: 24px; color: var(--white); cursor: pointer; align-items: center; justify-content: center; background-color: var(--health-color); box-shadow: 4px 4px 0px var(--tech-color);}
 .toggle_menu.active{box-shadow: 4px 4px 0px var(--white); z-index: 900;}

@@ -20,9 +20,10 @@ table.financial-table td:last-child{flex: 0 0 300px; padding-right: 0; text-alig
 @media only screen and (min-width: 1024px){
     .financial-main{gap: 96px; padding: 80px 0 32px; flex-direction: row-reverse;}
     .financial-text{flex: 0 0 calc(100% - 656px);}
-    .financial-head{gap: 40px;}
+    .financial-head{gap: 40px; margin-bottom: 32px;}
     .financial-title{flex: 0 0 calc(100% - 290px);}
     .financial-btn{flex: 0 0 250px; text-align: right;}
     .financial-graph{flex: 0 0 560px;}
+    .financial-title h2{margin-bottom: 0;}
 }
 

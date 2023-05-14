@@ -39,26 +39,14 @@ ul.copyrights-links > li > a:hover{color: var(--privacy-color);}
     ul.copyrights-links > li::before { left: -10px; }
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .footer {
-        padding: 0 40px 127px;
-    }
-    .footer-text {
-        padding-top: 48px;
-        font-size: 22px;
-        line-height: 32px;
-    }
+    .financials-page .footer-main{padding-top: 72px;}
+    .footer { padding: 0 40px 127px; }
+    .footer-text { padding-top: 48px; font-size: 22px; line-height: 32px; }
     .footer-btns{flex-direction: column;}
     .footer-btns .button{width: 100%;}
-    ul.social-icons {
-        gap: 0 43px;
-    }
+    ul.social-icons { gap: 0 43px; }
     ul.social-icons li::before{left: -26px;}
-    .footer-privacy-block {
-        width: 88px;
-        height: 88px;
-        bottom: 0;
-        right: -20px;
-    }
+    .footer-privacy-block { width: 88px; height: 88px; right: -20px; bottom: 0; }
     .footer-logo{max-width: 255px;}
     .footer-logo img{max-width: 228px;}
 }

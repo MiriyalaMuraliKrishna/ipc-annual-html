@@ -21,11 +21,11 @@ ul.advocacy-links > li > a:hover span{color: var(--privacy-color);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .advocacy-main{padding: 0 0 80px;}
+    .advocacy-main{padding: 0 0 160px;}
     .advocacy-title{ max-width: 995px; padding-right: 265px;}
     .advocacy-btn{top: 34px; right: 0; position: absolute;}
     
-    .advocacy-row{gap: 56px; padding-top: 79px;}
+    .advocacy-row{gap: 56px; padding-top: 81px;}
     .advocacy-list{flex: 0 0 calc(33.333% - 38px); padding-left: 24px;}
 
     .advocacy-color-1{border-left: 1px solid var(--education-color);}

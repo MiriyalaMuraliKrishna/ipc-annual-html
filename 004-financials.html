@@ -14,11 +14,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
 <meta name="keywords" content="HTML, CSS, XML, PHP, JavaScript, jQuery">
 <script src="https://kit.fontawesome.com/6e1f84394a.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Overpass:wght@700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Overpass+Mono:wght@400;500;600;700&family=Overpass:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" media="all">
 <link rel="stylesheet" href="./core.bundle.css" media="all">
 </head>
-<body>
+<body class="financials-page">
 <header class="main-header">
 <div class="container lg">
 <div class="header flex flex-vcenter">
@@ -86,6 +86,7 @@
 </section>
 <section class="annual-report-section">
 <div class="container">
+<div class="annual-report-main">
     <table class="table">
         <thead>
             <tr>
@@ -136,11 +137,14 @@
             </tr>
         </tfoot>
     </table>
-    <hr>
+</div>
 </div>
 </section>
+
 <section class="deposit-section">
 <div class="container">
+<div class="deposit-wrap">
+    <hr>
     <div class="deposit-main">
         <div class="deposit-list flex">
             <div class="deposit-text">
@@ -156,73 +160,75 @@
         <div class="full-width-wrap"><span class="full-width-stripe"></span></div>
     </div>
 </div>
+</div>
 </section>
 
 <section class="ipc-team-section">
 <div class="container">
     <div class="ipc-team-main">
-        <div class="ipc-team-list flex flex-vcenter">
-            <div class="team-heading">
+        <div class="ipc-team-intro flex flex-vcenter">
+            <div class="ipc-team-heading">
                 <span class="optional-text">THE IPC TEAM</span>
                 <h2>A short intro about IPC organization and team appears here</h2>
             </div>
-            <div class="team-desc">
+            <div class="ipc-team-desc pos-relative">
+                <hr class="hide-desktop">
                 <p>Accumsan ut fames et eget tincidunt leo sit amet amet. Posuere id vitae sed amet mattis donec. Nibh ipsum in vel nunc massa pulvinar volutpat. Ut elementum ultrices vivamus pellentesque. Et interdum ut massa sed. Purus facilisi lectus at at risus sed augue libero. Id non id consequat elementum convallis ornare. </p>
             </div>
         </div>
         <div class="team-features-row flex">
             <div class="team-features-list">
-                <div class="feature-icon">
-                    <figure class="feature-thumb">
+                <div class="team-feature-icon">
+                    <figure class="team-feature-thumb">
                         <img src="images/feature-icon1.svg" alt="feature-icon1">
                     </figure>
                 </div>
-                <div class="feature-txt">
+                <div class="team-feature-txt">
                     <span class="feature-title">Respect</span>
                     <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit curabitur ultrices.</p>
                     <a href="#" class=""></a>
                 </div>
             </div>
             <div class="team-features-list">
-                <div class="feature-icon">
-                    <figure class="feature-thumb">
+                <div class="team-feature-icon">
+                    <figure class="team-feature-thumb">
                         <img src="images/feature-icon2.svg" alt="feature-icon2">
                     </figure>
                 </div>
-                <div class="feature-txt">
+                <div class="team-feature-txt">
                     <span class="feature-title">Integrity</span>
                     <p>Egestas ultrices elementum adipiscing neque consectetur. Adipiscing enim sed eleifend laoreet nulla risus. Facilisi.</p>
                 </div>
             </div>
             <div class="team-features-list">
-                <div class="feature-icon">
-                    <figure class="feature-thumb">
+                <div class="team-feature-icon">
+                    <figure class="team-feature-thumb">
                         <img src="images/feature-icon3.svg" alt="feature-icon3">
                     </figure>
                 </div>
-                <div class="feature-txt">
+                <div class="team-feature-txt">
                     <span class="feature-title">Fairness</span>
                     <p>Mattis faucibus turpis convallis elementum eget. Lacus in pretium senectus id ac vestibulum elit magna.</p>
                 </div>
             </div>
             <div class="team-features-list">
-                <div class="feature-icon">
-                    <figure class="feature-thumb">
-                        <img src="images/feature-icon4.svg" alt="feature-icon4">
+                <div class="team-feature-icon">
+                    <figure class="team-feature-thumb">
+                        <img src="images/feature-icon4.svg" alt="team-feature-icon4">
                     </figure>
                 </div>
-                <div class="feature-txt">
+                <div class="team-feature-txt">
                     <span class="feature-title">Collaboration</span>
                     <p>Ante dignissim donec adipiscing ut morbi elementum. In sodales malesuada in eu at dolor mattis mauris egestas </p>
                 </div>
             </div>
             <div class="team-features-list">
-                <div class="feature-icon">
-                    <figure class="feature-thumb">
+                <div class="team-feature-icon">
+                    <figure class="team-feature-thumb">
                         <img src="images/feature-icon5.svg" alt="feature-icon5">
                     </figure>
                 </div>
-                <div class="feature-txt">
+                <div class="team-feature-txt">
                     <span class="feature-title">Excellence</span>
                     <p>Ante dignissim donec adipiscing ut morbi elementum. In sodales malesuada in eu at dolor mattis mauris egestas</p>
                 </div>
@@ -235,7 +241,7 @@
 <section class="team-members-section">
     <div class="container">
         <div class="team-members-main">
-            <div class="team-members-head flex">
+            <div class="team-members-head flex flex-vcenter">
                 <div class="team-members-title">
                     <h3>Meet the Team</h3>
                 </div> 
@@ -253,9 +259,12 @@
                             <img src="images/team-mem1@2x.jpg" alt="team-mem1">
                         </figure>
                     </div>
-                    <div class="team-member-desc">
-                        <span>Firstname Lastname</span>
-                        <p><a href="#">Position or job title</a></p>
+                    <div class="team-member-text">
+                        <h4>Firstname Lastname</h4>
+                        <span class="position"><a href="#">Position or job title</a></span>
+                        <div class="team-member-desc">
+                            <p>Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="team-member-list pos-relative">
@@ -264,9 +273,12 @@
                             <img src="images/team-mem2@2x.jpg" alt="team-mem2">
                         </figure>
                     </div>
-                    <div class="team-member-desc">
-                        <span>Firstname Lastname</span>
-                        <p><a href="#">Position or job title</a></p>
+                    <div class="team-member-text">
+                        <h4>Firstname Lastname</h4>
+                        <span class="position"><a href="#">Position or job title</a></span>
+                        <div class="team-member-desc">
+                            <p>Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="team-member-list pos-relative">
@@ -275,9 +287,12 @@
                             <img src="images/team-mem3@2x.jpg" alt="team-mem3">
                         </figure>
                     </div>
-                    <div class="team-member-desc">
-                        <span>Firstname Lastname</span>
-                        <p><a href="#">Position or job title</a></p>
+                    <div class="team-member-text">
+                        <h4>Firstname Lastname</h4>
+                        <span class="position"><a href="#">Position or job title</a></span>
+                        <div class="team-member-desc">
+                            <p>Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="team-member-list pos-relative">
@@ -286,9 +301,12 @@
                             <img src="images/team-mem4@2x.jpg" alt="team-mem4">
                         </figure>
                     </div>
-                    <div class="team-member-desc">
-                        <span>Firstname Lastname</span>
-                        <p><a href="#">Position or job title</a></p>
+                    <div class="team-member-text">
+                        <h4>Firstname Lastname</h4>
+                        <span class="position"><a href="#">Position or job title</a></span>
+                        <div class="team-member-desc">
+                            <p>Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="team-member-list pos-relative">
@@ -297,9 +315,12 @@
                             <img src="images/team-mem1@2x.jpg" alt="team-mem1">
                         </figure>
                     </div>
-                    <div class="team-member-desc">
-                        <span>Firstname Lastname</span>
-                        <p><a href="#">Position or job title</a></p>
+                    <div class="team-member-text">
+                        <h4>Firstname Lastname</h4>
+                        <span class="position"><a href="#">Position or job title</a></span>
+                        <div class="team-member-desc">
+                            <p>Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="team-member-list pos-relative">
@@ -308,9 +329,12 @@
                             <img src="images/team-mem2@2x.jpg" alt="team-mem2">
                         </figure>
                     </div>
-                    <div class="team-member-desc">
-                        <span>Firstname Lastname</span>
-                        <p><a href="#">Position or job title</a></p>
+                    <div class="team-member-text">
+                        <h4>Firstname Lastname</h4>
+                        <span class="position"><a href="#">Position or job title</a></span>
+                        <div class="team-member-desc">
+                            <p>Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="team-member-list pos-relative">
@@ -319,9 +343,12 @@
                             <img src="images/team-mem3@2x.jpg" alt="team-mem3">
                         </figure>
                     </div>
-                    <div class="team-member-desc">
-                        <span>Firstname Lastname</span>
-                        <p><a href="#">Position or job title</a></p>
+                    <div class="team-member-text">
+                        <h4>Firstname Lastname</h4>
+                        <span class="position"><a href="#">Position or job title</a></span>
+                        <div class="team-member-desc">
+                            <p>Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="team-member-list pos-relative">
@@ -330,9 +357,12 @@
                             <img src="images/team-mem4@2x.jpg" alt="team-mem4">
                         </figure>
                     </div>
-                    <div class="team-member-desc">
-                        <span>Firstname Lastname</span>
-                        <p><a href="#">Position or job title</a></p>
+                    <div class="team-member-text">
+                        <h4>Firstname Lastname</h4>
+                        <span class="position"><a href="#">Position or job title</a></span>
+                        <div class="team-member-desc">
+                            <p>Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="team-member-list pos-relative">
@@ -341,9 +371,12 @@
                             <img src="images/team-mem1@2x.jpg" alt="team-mem1">
                         </figure>
                     </div>
-                    <div class="team-member-desc">
-                        <span>Firstname Lastname</span>
-                        <p><a href="#">Position or job title</a></p>
+                    <div class="team-member-text">
+                        <h4>Firstname Lastname</h4>
+                        <span class="position"><a href="#">Position or job title</a></span>
+                        <div class="team-member-desc">
+                            <p>Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.Leo nisl interdum vestibulum nulla et nibh lacus nunc odio. Erat nunc pellentesque non lacus habitasse ullamcorper netus vitae. Aliquet turpis nisl sem eleifend. Et in ornare leo iaculis vestibulum ultrices.</p>
+                        </div>
                     </div>
                 </div>
             </div>

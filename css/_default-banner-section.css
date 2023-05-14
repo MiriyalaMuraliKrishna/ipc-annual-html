@@ -13,6 +13,7 @@
 
 /*-- media starts here --*/
 @media only screen and (min-width: 1024px){
+    .financials-page .default-banner-main{padding-bottom: 117px;}
     .default-banner-main{gap: 160px; padding: 96px 0 140px; flex-direction: row-reverse;}
     .default-banner-text{flex: 0 0 calc(100% - 752px);}
     .default-banner-image{flex: 0 0 592px;}

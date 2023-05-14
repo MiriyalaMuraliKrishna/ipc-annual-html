@@ -1,6 +1,5 @@
- .modern-privacy-section{z-index: 1;}
-.modern-privacy-bg{width: 100%; height: calc(100% - 224px); bottom: 0; background-color: var(--white); position: absolute; z-index: -1;}
-.modern-privacy-main{padding: 80px 0 0;}
+
+.modern-privacy-section{z-index: 1;}
 .modern-block{opacity: 0.75; mix-blend-mode: multiply; position: absolute; z-index: 1;}
 .modern-education-block{width: 396px; height: 396px; left: 80px; top: -80px; opacity: 0.5; mix-blend-mode: normal; background-color: var(--education-color);}
 .modern-hlth-block{width: 160px; height: 160px; left: -80px; top: 315px; background-color: var(--health-color);}
@@ -11,7 +10,7 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .modern-image-wrap{margin-bottom: 80px;}
+    .modern-privacy-main{padding: 80px 0 0;}
     .modern-featured-text{bottom: 0; left: 0; padding: 40px; max-width: 990px; position: absolute; color: var(--white); font-size: 24px; line-height: 28px; letter-spacing: -0.05em; font-weight: 800; font-family: 'Overpass', sans-serif;}
     .modern-featured-text h2{font-size: 112px; line-height: 112px; margin-bottom: 0; color: var(--white);}
 
