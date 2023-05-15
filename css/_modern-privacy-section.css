@@ -1,20 +1,28 @@
 
 .modern-privacy-section{z-index: 1;}
 .modern-block{opacity: 0.75; mix-blend-mode: multiply; position: absolute; z-index: 1;}
-.modern-education-block{width: 396px; height: 396px; left: 80px; top: -80px; opacity: 0.5; mix-blend-mode: normal; background-color: var(--education-color);}
-.modern-hlth-block{width: 160px; height: 160px; left: -80px; top: 315px; background-color: var(--health-color);}
+.modern-education-block{mix-blend-mode: normal; background-color: var(--education-color);}
 .modern-corporate-block{width: 260px; height: 260px; right: -80px; bottom: 80px; background-color: var(--corporate-color);}
-.modern-block-grow{width: 667px; height: 666px; top: -15px; left: 128px; background-image: url('./images/article-banner-glow.svg'); background-repeat: no-repeat; background-size: cover; position: absolute;}
-.modern-vertical-stripe{width: 48px; height: 300px; right: -24px; top: 80px; background-image: url('./images/modern-vertical-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute;}
-
+.modern-vertical-stripe{background-repeat: no-repeat; background-size: contain; position: absolute;}
+.modern-featured-text{font-size: 24px; line-height: 28px; letter-spacing: -0.05em; font-weight: 800; font-family: 'Overpass', sans-serif;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .modern-privacy-main{padding: 80px 0 0;}
-    .modern-featured-text{bottom: 0; left: 0; padding: 40px; max-width: 990px; position: absolute; color: var(--white); font-size: 24px; line-height: 28px; letter-spacing: -0.05em; font-weight: 800; font-family: 'Overpass', sans-serif;}
+    .modern-featured-text{bottom: 0; left: 0; padding: 40px; max-width: 990px; position: absolute; color: var(--white);}
     .modern-featured-text h2{font-size: 112px; line-height: 112px; margin-bottom: 0; color: var(--white);}
-
+    .modern-hlth-block{width: 160px; height: 160px; left: -80px; top: 315px; background-color: var(--health-color);}
+    .modern-block-grow{width: 667px; height: 666px; top: -15px; left: 128px; background-image: url('./images/article-banner-glow.svg'); background-repeat: no-repeat; background-size: cover; position: absolute;}
+    .modern-education-block{width: 396px; height: 396px; left: 80px; top: -80px; opacity: 0.5;}
+    .modern-vertical-stripe{width: 48px; height: 300px; right: -24px; top: 80px; background-image: url('./images/modern-vertical-stripe.svg'); }
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .modern-privacy-main{padding: 20px 0 0;}
+    .modern-advocacy-main{padding: 40px 0 0;}
+    .modern-image-wrap{padding-bottom: 41px;}
+    .modern-corporate-block { width: 80px; height: 80px; right: -20px; top: -20px; }
+    .modern-education-block { width: 104px; height: 104px; left: -20px; bottom: -20px; top: auto; opacity: 0.8; }
+    .modern-vertical-stripe{width: 191px; height: 24px; left: 84px; bottom: -12px; background-image: url('./images/modern-hr-stripe.svg'); }
+    .modern-featured-text{padding-top: 56px;}
+    .modern-featured-text h2{color: var(--education-color);}
 }

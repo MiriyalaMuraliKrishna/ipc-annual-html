@@ -17,7 +17,15 @@
     .statistics-row{gap: 28px;}
     .statistics-list{flex: 0 0 calc(50% - 14px);}
 }
-
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .statistics-wrap { padding: 40px 0 40px; }
+    .statistics-title h2{font-size: 32px; line-height: 40px;}
+    .statistics-row{display: block; padding-top: 24px;}
+    .statistics-list{margin-bottom: 20px;}
+    .statistics-list:last-child{margin-bottom: 0;}
+    .statistics-btn{padding-top: 48px;}
+    .statistics-btn .button{width: 100%;}
+}
 
 
 

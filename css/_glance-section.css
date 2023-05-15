@@ -29,9 +29,16 @@
 
 
 
-
-
-
+/*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .glance-head{padding-right: 120px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .glance-frame{height: 40px; background-image: url('./images/glance-bottom-frame-mobile.svg');}
+    .glance-main { padding: 39px 0 105px; }
+    .glance-head { margin-bottom: 32px; }
+    .glance-slider .glance-slide{margin-right: 24px;}
+}
 
 
 

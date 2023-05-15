@@ -1,4 +1,5 @@
 .advocacy-head{margin-bottom: 79px;}
+.advocacy-title::before{ width: 40px; height: 112px; left: -80px; top: 0; content: ""; background-image: url('./images/frame-left.svg'); background-repeat: no-repeat; background-size: cover; position: absolute; }
 .advocacy-title h2{margin-bottom: 0; font-size: 48px; line-height: 56px;}
 .advocacy-list h2{font-size: 32px; line-height: 40px; letter-spacing: 0; margin-bottom: 24px; font-weight: 900;}
 ul.advocacy-links{margin: 0;}
@@ -44,9 +45,11 @@ ul.advocacy-links > li > a:hover span{color: var(--privacy-color);}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .advocacy-main{padding: 0 0 20px;}
-    .advocacy-title{padding-bottom: 60px;}
+    .advocacy-title{padding: 0 0 60px 41px;}
+    .advocacy-title::before{left: -20px; height: 84px;}
     .advocacy-title h2{font-size: 24px; line-height: 28px;}
     .advocacy-list{padding: 23px 0 60px;}
+    .advocacy-list:last-child{padding-bottom: 40px;}
     .advocacy-list h2{font-size: 24px; line-height: 32px;}
     .advocacy-color-1{ border-top: 1px solid var(--education-color); }
     .advocacy-color-2{border-top: 1px solid var(--health-color);}

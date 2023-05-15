@@ -2,13 +2,10 @@
 .custom-cta-section{background-color: var(--white);}
 .custom-cta-text{font-size: 1rem; line-height: 24px; color: var(--cement-color);}
 .custom-cta-text span.optional-text{margin-bottom: 31px;}
-.custom-cta-text h3{font-size: 48px; line-height: 56px;}
-.custom-cta-text hr{max-width: 128px;}
-.custom-cta-btns{gap: 16px; margin-top: 30px;}
 
 .cta-block{position: absolute; z-index: 1; mix-blend-mode: multiply;}
-.cta-green-block{width: 168px; height: 168px; top: -84px; right: -81px; opacity: 0.9; background-color: var(--tech-color);}
-.cta-privacy-block{width: 256px; height: 260px; bottom: -32px; left: -32px; opacity: 0.8; background-color: var(--privacy-color);}
+.cta-green-block{opacity: 0.9; background-color: var(--tech-color);}
+.cta-privacy-block{opacity: 0.8; background-color: var(--privacy-color);}
 .cta-stripe{ width: 312px; height: 48px; left: 224px; bottom: -24px; background-image: url('./images/common-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute; }
 
 /*-- media css starts here --*/
@@ -16,8 +13,23 @@
     .custom-cta-main{gap: 160px; padding: 114px 0 114px; flex-direction: row-reverse;}
     .custom-cta-text{flex: 0 0 528px;}
     .custom-cta-image{flex: 0 0 calc(100% - 688px);}
+    .cta-green-block{width: 168px; height: 168px; top: -84px; right: -81px;}
+    .cta-privacy-block{width: 256px; height: 260px; bottom: -32px; left: -32px;}
+    .custom-cta-text h3{font-size: 48px; line-height: 56px;}
+    .custom-cta-text hr{max-width: 128px;}
+    .custom-cta-btns{gap: 16px; margin-top: 30px;}
 }
-
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .custom-cta-main{padding: 0 0 24px;}
+    .cta-green-block{width: 80px; height: 80px; top: -20px; right: -20px;}
+    .cta-privacy-block{width: 104px; height: 104px; left: -20px; bottom: -20px;}
+    .custom-cta-text{padding-top: 57px;}
+    .custom-cta-text span.optional-text{margin-bottom: 23px;}
+    .custom-cta-text hr{margin: 15px 0 23px;}
+    .custom-cta-btns{display: block;}
+    .custom-cta-btns span{display: block; margin-bottom: 16px;}
+    .custom-cta-btns .button{width: 100%;}
+}
 
 
 

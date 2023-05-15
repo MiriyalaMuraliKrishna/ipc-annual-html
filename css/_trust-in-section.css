@@ -10,7 +10,6 @@
 .trust-in-main blockquote{font-size: 32px; line-height: 40px;}
 
 .trust-in-head::before{width: 40px; height: 112px; left: -90px; top: 50%; transform: translateY(-50%);  content: ""; background-image: url('./images/title-frame-left.svg'); background-repeat: no-repeat; background-size: contain; position: absolute;}
-.trust-in-title h2{font-size: 48px; line-height: 56px; margin-bottom: 0;}
 
 
 
@@ -18,11 +17,15 @@
 @media only screen and (min-width: 1024px){
     .trust-in-head{gap: 40px; margin-bottom: 80px;}
     .trust-in-title{flex: 0 0 calc(100% - 315px);}
+    .trust-in-title h2{font-size: 48px; line-height: 56px; margin-bottom: 0;}
     .trust-in-btn{flex: 0 0 275px; text-align: right;}
 
 }
-
-
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .trust-in-main{padding: 40px 0 0;}
+    .trust-in-head{display: block;}
+    .trust-in-title h2{font-size: 32px; line-height: 40px; margin-bottom: 0;}
+}
 
 
 
