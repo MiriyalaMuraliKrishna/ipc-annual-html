@@ -26,6 +26,8 @@
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .outreach-row{display: block;}
-    .outreach-list{margin-bottom: 30px;}
+    .outreach-list{margin-bottom: 23px;}
     .outreach-btn .button{width: 100%;}
+    .outreach-list.no_color{min-height: 250px;}
+    .outreach-main .full-width-wrap{padding: 23px 0 0;}
 }

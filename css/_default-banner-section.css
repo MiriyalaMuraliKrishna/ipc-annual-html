@@ -36,7 +36,7 @@
     .banner-blue-block{width: 104px; height: 104px; left: -20px; bottom: -20px; }
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .default-banner-main{padding: 40px 0;}
+    .default-banner-main{padding: 37px 0;}
     .default-banner-text{padding-top: 56px;}
     .default-banner-text h1{font-size: 32px; line-height: 40px; margin-bottom: 24px;}
     .default-banner-text hr{margin-bottom: 24px;}

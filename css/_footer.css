@@ -40,6 +40,7 @@ ul.copyrights-links > li > a:hover{color: var(--privacy-color);}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .financials-page .footer-main{padding-top: 72px;}
+    .footer-main{padding-top: 40px;}
     .footer { padding: 0 40px 127px; }
     .footer-text { padding-top: 48px; font-size: 22px; line-height: 32px; }
     .footer-btns{flex-direction: column;}

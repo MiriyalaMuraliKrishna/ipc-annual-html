@@ -11,6 +11,7 @@
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .white-block{width: 80px; height: 80px; }
+    .white-block.sm{width: 48px; height: 48px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .white-block{width: 60px; height: 60px;}

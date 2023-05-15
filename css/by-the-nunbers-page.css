@@ -1,5 +1,5 @@
 body.by-the-numbers-page{background-attachment: fixed; background-image: url('./images/static-bg@2x.jpg'); background-size: cover;}
-body.by-the-numbers-page .outreach-main{padding-top: 40px;}
+.by-outreach-main{padding-top: 40px;}
 
 /* feature overview section */
 .feature-overview-main{padding: 75px 0;}
@@ -33,8 +33,12 @@ body.by-the-numbers-page .outreach-main{padding-top: 40px;}
     .feature-overview-text h2{font-size: 24px; line-height: 28px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .feature-overview-list{display: block; margin-bottom: 68px;}
+    .feature-overview-main{padding: 40px 0 0;}
+    .feature-overview-list{display: block; margin-bottom: 56px;}
     .feature-overview-list:last-child{margin-bottom: 0;}
     .feature-overview-image{margin-bottom: 30px;}
     .feature-overview-text h2{font-size: 24px; line-height: 28px;}
+    .by-outreach-main.second-reach{padding-top: 0;}
+    .by-outreach-main.third-reach{padding-top: 0;}
+    .feature-last{padding-bottom: 34px;}
 }
