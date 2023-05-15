@@ -1,19 +1,32 @@
 
 
-.accountability-main{padding: 0 0 1px;}
-.accountability-image-wrap{margin: 0 0 80px;}
-.accountability-text{bottom: 0; left: 0; width: 100%; padding: 40px 40px 30px; color: var(--white); position: absolute;}
-.accountability-text h2{font-size: 112px; line-height: 112px; margin-bottom: 0; color: var(--white);}
 .accountability-block{opacity: 0.75; mix-blend-mode: multiply; position: absolute; z-index: 1;}
-.acc-tech-block{width: 351px; height: 271px; left: 190px; opacity: 0.3; mix-blend-mode: normal; background-color: var(--tech-color); }
+.acc-tech-block{opacity: 0.3; mix-blend-mode: normal; background-color: var(--tech-color); }
 .acc-sm-tech{opacity: 0.7; height: 80px; top: -80px;}
-.acc-corporate-block{width: 271px; height: 271px; left: -81px; top: 271px; background-color: var(--corporate-color);}
+.acc-corporate-block{background-color: var(--corporate-color);}
 .acc-block-grow{width: 539px; height: 538px; top: 0; left: -80px; background-image: url('./images/article-banner-glow.svg'); background-repeat: no-repeat; position: absolute;}
-.acc-slate-block{width: 256px; height: 260px; right: -80px; right: -80px; bottom: 80px; background-color: var(--slate-color);}
 .acc-verticle-stripe{ width: 48px; height: 300px; right: -24px; top: 80px; background-image: url('./images/modern-vertical-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute; }
 
 
 
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .accountability-main{padding: 0 0 1px;}
+    .accountability-image-wrap{margin-bottom: 80px;}
+    .acc-slate-block{width: 256px; height: 260px; right: -80px; bottom: 80px; background-color: var(--slate-color);}
+    .acc-corporate-block{width: 271px; height: 271px; left: -81px; top: 271px;}
+    .acc-tech-block{width: 351px; height: 271px; left: 190px;}
+    .accountability-text{bottom: 0; left: 0; width: 100%; padding: 40px 40px 30px; color: var(--white); position: absolute;}
+    .accountability-text h2{font-size: 112px; line-height: 112px; margin-bottom: 0; color: var(--white);}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .accountability-main{padding: 0 0 20px;}
+    .accountability-image-wrap{margin-bottom: 60px;}
+    .acc-corporate-block{width: 80px; height: 80px; right: -20px; top: -20px;}
+    .acc-tech-block{width: 104px; height: 104px; left: -20px; bottom: -20px;}
+    .acc-block-grow{width: 260px; height: 260px;}
+    .accountability-text{padding-top: 56px;}
+}
 
 
 

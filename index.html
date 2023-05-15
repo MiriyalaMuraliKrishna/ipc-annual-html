@@ -684,15 +684,16 @@
         <div class="accountability-image pos-relative">
             <div class="white-block top-left"></div>
             <div class="white-block bottom-right"></div>
-            <div class="acc-sm-tech acc-tech-block accountability-block"></div>
+            <div class="acc-sm-tech acc-tech-block accountability-block hide-mobile"></div>
             <div class="acc-tech-block accountability-block"></div>
             <div class="acc-corporate-block accountability-block"></div>
             <div class="acc-block-grow"></div>
             <div class="acc-slate-block accountability-block"></div>
             <div class="acc-verticle-stripe"></div>
-            <figure class="accountability-thumb">
-                <img src="images/accountability-image@2x.jpg" alt="accountability-image">
-            </figure>
+            <picture class="accountability-thumb">
+                <source srcset="images/accountability-image@2x.jpg" media="(min-width: 768px)">
+                <img src="images/accountability-mobile-image@2x.jpg" alt="accountability-mobile-image">
+            </picture>
         </div>
         <div class="accountability-text">
             <h2>ACCOUNTABILITY</h2>
@@ -702,7 +703,7 @@
         <div class="trust-in-title">
             <h2>Maintaining confidence in the organizational excellence of the IPC</h2>
         </div>
-        <div class="trust-in-btn">
+        <div class="trust-in-btn hide-mobile">
             <a href="#" class="button">More About Responsiveness</a>
         </div>
     </div>
@@ -753,6 +754,9 @@
         <div class="blockquote-icon"></div>
         <p>Amet vitae egestas tellus eu enim, nibh condimentum in ut mauris arcu, tempus euismod aliquet dictum sollic itudin congue fringilla diam <span>highlighted words</span> diam nisi ut mauris arcu, tempus euismod aliquet dictum sollic  pharetra quis lorem ut viverra condimentum.</p>
     </blockquote>
+    <div class="trust-in-btn hide-desktop">
+        <a href="#" class="button">More About Responsiveness</a>
+    </div>
 </div>
 </div>
 </section>
