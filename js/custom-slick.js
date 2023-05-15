@@ -1,7 +1,7 @@
 
-var $ = jQuery.noConflict();
-$(document).ready(function(){
-    $('.glance-slider').slick({
+
+jQuery(document).ready(function(){
+    jQuery('.glance-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,

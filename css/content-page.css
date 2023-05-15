@@ -4,14 +4,14 @@
 .default-article > p:nth-child(2) > span{margin-bottom: 64px; font-size: 24px; line-height: 32px; color: var(--health-color); display: block;}
 .default-caption-main{margin: 64px 0 17px;}
 .default-caption-text{padding: 24px 24px 24px 40px; max-width: 785px; margin-left: auto; transform: translate(48px, -48px); color: var(--cement-color); font-size: 14px; line-height: 22px; background-color: var(--white); box-shadow: 8px 8px 0px rgba(233, 230, 222, 0.5); position: relative; z-index: 1;}
-.default-caption-text::before{width: 40px; height: 114px; top: 0; left: -20px; content: ""; background-image: url('../images/caption-stripe.svg'); background-repeat: no-repeat; background-size: contain; display: block; position: absolute;}
+.default-caption-text::before{width: 40px; height: 114px; top: 0; left: -20px; content: ""; background-image: url('./images/caption-stripe.svg'); background-repeat: no-repeat; background-size: contain; display: block; position: absolute;}
 .default-article hr{margin: 64px 0 64px;}
 
 .custom-quote-main{padding: 40px; margin: 0 0 59px; background-color: var(--sand-color);}
 .custom-quote-icon{max-width: 64px; margin-bottom: 24px;}
 .custom-quote-icon img{width: 100%; object-fit: cover;}
 .custom-quote-text{margin-bottom: 21px; font-size: 32px; line-height: 40px; letter-spacing: -.05em; font-weight: 800; font-family: 'Overpass', sans-serif;}
-.custom-stripe-frame{width: 181px; height: 48px; bottom: -22px; left: 40px; background-image: url('../images/custom-stripe-frame.svg'); background-repeat: no-repeat; background-size: contain; position: absolute;}
+.custom-stripe-frame{width: 181px; height: 48px; bottom: -22px; left: 40px; background-image: url('./images/custom-stripe-frame.svg'); background-repeat: no-repeat; background-size: contain; position: absolute;}
 
 .podcast-image{margin: 0 0 62px;}
 
@@ -19,7 +19,7 @@
 .core-text span:not(p span){font-size: 20px; line-height: 24px; margin-bottom: 8px; color: var(--corporate-color); font-weight: 800; letter-spacing: -.05em; font-family: 'Overpass', sans-serif;  display: block;}
 
 .default-article blockquote:not(span.optional-text){padding: 89px 42px 40px; margin-bottom: 64px; font-size: 32px; line-height: 40px;}
-.default-list-main{padding: 48px; margin: 63px 0 64px; background-image: url('../images/default-list-bg@2x.jpg'); background-repeat: no-repeat; background-size: cover;}
+.default-list-main{padding: 48px; margin: 63px 0 64px; background-image: url('./images/default-list-bg@2x.jpg'); background-repeat: no-repeat; background-size: cover;}
 .default-content-list{padding: 40px; color: var(--cement-color); font-size: 14px; line-height: 22px; background-color: var(--white);}
 
 
@@ -46,7 +46,7 @@ ul.aside_links > li > a:hover{color: var(--corporate-color); font-weight: 700;}
     .core-list{margin-bottom: 32px;}
     .core-icon{width: 64px; margin-right: 32px;}
     .core-text{width: calc(100% - 96px); padding-left: 32px; font-size: 16px; line-height: 24px;}
-    .core-text::before{width: 8px; height: 104px; left: 0; top: 0; background-image: url('../images/core-text-stripe.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block; position: absolute;}
+    .core-text::before{width: 8px; height: 104px; left: 0; top: 0; background-image: url('./images/core-text-stripe.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block; position: absolute;}
 }
 @media only screen and (min-width: 1024px){
     .default-content-main{gap: 80px; padding: 80px 0 80px;}
@@ -77,6 +77,6 @@ ul.aside_links > li > a:hover{color: var(--corporate-color); font-weight: 700;}
     .core-list{display: block; margin-bottom: 39px;}
     .core-icon{margin: 0 0 32px; max-width: 64px;}
     .core-text{font-size: 16px; line-height: 24px;}
-    .core-text::before{width: 100%; height: 8px; left: 0; top: 0; background-image: url('../images/core-stripe-mobile.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block;}
+    .core-text::before{width: 100%; height: 8px; left: 0; top: 0; background-image: url('./images/core-stripe-mobile.svg'); background-repeat: no-repeat; background-size: contain; content: ""; display: block;}
 
 }

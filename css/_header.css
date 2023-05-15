@@ -24,7 +24,7 @@ ul.main_menu > li > a{color: var(--corporate-color); display: inline-block; font
 ul.main_menu > li > a:hover{padding-left: 48px; color: var(--health-color);}
 ul.main_menu > li > a::before{left: 0; top: calc(50% - 2px); transform: translateY(-50%); opacity: 0; transition: all .45s ease-in-out; color: var(--white); content: "\f178"; font-size: 32px; line-height: 32px; font-weight: 400; font-family: "Font Awesome 6 Sharp"; position: absolute;}
 ul.main_menu > li > a:hover::before{opacity: 1;}
-ul.main_menu > li.current-menu-item > a::after{width: 303px; height: 24px; left: -5px; bottom: 0; background-image: url('../images/menu-item-stripe.svg'); background-position: left bottom; background-repeat: no-repeat; background-size: contain; content: ""; position: absolute; z-index: -1;}
+ul.main_menu > li.current-menu-item > a::after{width: 303px; height: 24px; left: -5px; bottom: 0; background-image: url('./images/menu-item-stripe.svg'); background-position: left bottom; background-repeat: no-repeat; background-size: contain; content: ""; position: absolute; z-index: -1;}
 ul.main_menu > li.current-menu-item > a{padding-left: 0; color: var(--slate-color);}
 ul.main_menu > li.current-menu-item > a::before{display: none;}
 

@@ -5,11 +5,11 @@
 .article-privacy-block{background-color: var(--privacy-color);}
 .article-tech-block{background-color: var(--tech-color);}
 .article-health-block{width: 256px; height: 260px; bottom: 80px; right: -80px; background-color: var(--health-color);}
-.article-banner-stripe{width: 48px; height: 300px; top: 80px; right: -24px; background-image: url('../images/article-banner-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute;}
-.article-banner-glow{width: 539px; height: 538px; top: 100px; right: -100px; background-image: url('../images/article-banner-glow.svg'); background-repeat: no-repeat; position: absolute;}
+.article-banner-stripe{width: 48px; height: 300px; top: 80px; right: -24px; background-image: url('./images/article-banner-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute;}
+.article-banner-glow{width: 539px; height: 538px; top: 100px; right: -100px; background-image: url('./images/article-banner-glow.svg'); background-repeat: no-repeat; position: absolute;}
 
 .article-banner-title h1{margin-bottom: 0;}
-.article-title-stripe{width: 312px; height: 48px; top: -24px; left: 0; position: absolute; background-image: url('../images/article-title-stripe.svg'); background-position: center top; background-repeat: no-repeat;}
+.article-title-stripe{width: 312px; height: 48px; top: -24px; left: 0; position: absolute; background-image: url('./images/article-title-stripe.svg'); background-position: center top; background-repeat: no-repeat;}
 
 
 

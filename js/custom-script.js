@@ -44,4 +44,23 @@ jQuery(document).ready(function(){
         }
     });
 
+    if(jQuery(window).width() >= 768){
+        jQuery('.team-member-list').each(function() {
+            let $this = $(this);
+            let descItem = $this.find('.team-member-desc');
+            $this.hover(function() {
+                descItem.slideDown('slow');
+            }, function() {
+                descItem.slideUp('slow');
+            });
+        });
+    }
+    if(jQuery(window).width() <= 767){
+        jQuery('.team-member-pos').on('click', function() {
+            jQuery(this).children('.team-member-arrow').addClass('active');
+            jQuery(this).parents().siblings().find('.team-member-desc').slideUp();
+            jQuery(this).siblings('.team-member-desc').slideDown();
+        });
+    }
+
 });

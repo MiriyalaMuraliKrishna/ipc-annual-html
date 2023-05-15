@@ -1,7 +1,7 @@
 
 
 
-body.home{background-attachment: fixed; background-image: url('../images/static-bg@2x.jpg'); background-size: cover;}
+body.home{background-attachment: fixed; background-image: url('./images/static-bg@2x.jpg'); background-size: cover;}
 
 
 /*-- media css starts here --*/

@@ -9,7 +9,7 @@
 .cta-block{position: absolute; z-index: 1; mix-blend-mode: multiply;}
 .cta-green-block{width: 168px; height: 168px; top: -84px; right: -81px; opacity: 0.9; background-color: var(--tech-color);}
 .cta-privacy-block{width: 256px; height: 260px; bottom: -32px; left: -32px; opacity: 0.8; background-color: var(--privacy-color);}
-.cta-stripe{ width: 312px; height: 48px; left: 224px; bottom: -24px; background-image: url('../images/common-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute; }
+.cta-stripe{ width: 312px; height: 48px; left: 224px; bottom: -24px; background-image: url('./images/common-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute; }
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){

@@ -20,10 +20,10 @@ figure.banner-left-thumb::after{width: 100%; height: 100%; top: 0; left: 0; opac
 	position: absolute;
 	z-index: -1;
 }
-.banner-left-stripe{width: 316px; height: 48px; left: -120px; top: 336px; background-image: url('../images/banner-left-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute; z-index: 1;}
+.banner-left-stripe{width: 316px; height: 48px; left: -120px; top: 336px; background-image: url('./images/banner-left-stripe.svg'); background-repeat: no-repeat; background-size: contain; position: absolute; z-index: 1;}
 .primary-center-block{top: 0; left: -240px; height: 119px;}
 .banner-left-block{height: 120px; opacity: 0.75; background-color: var(--slate-color); display: block;}
-.primary-banner-stripe{width: 352px; height: 48px; top: 0; right: 41px; background-image: url('../images/primary-banner-stripe.svg'); background-repeat: no-repeat; background-size: cover; position: absolute; z-index: 1;}
+.primary-banner-stripe{width: 352px; height: 48px; top: 0; right: 41px; background-image: url('./images/primary-banner-stripe.svg'); background-repeat: no-repeat; background-size: cover; position: absolute; z-index: 1;}
 
 .primary-image-right{width: 318px; top: 48px; right: 0; position: absolute;}
 .bright-tech-block{width: 240px; height: 240px; right: 0; top: 312px; background-color: var(--tech-color); position: absolute; z-index: 1;}
