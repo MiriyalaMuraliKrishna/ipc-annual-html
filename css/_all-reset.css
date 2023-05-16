@@ -67,7 +67,7 @@ textarea {overflow: auto; vertical-align: top;}
 table, th, td {border: 1px solid rgba(0, 0, 0, 0.1);}
 table {border-collapse: separate; border-spacing: 0; border-width: 1px; margin: 0 0 30px; max-width: 100%; width: 100%;}
 table tr td:first-child {padding-left: 15px; text-align: left;}
-table tr th:first-child {text-align: left; padding-left: 21px;}
+table:not(.annual-table) tr th:first-child {text-align: left; padding-left: 21px;}
 table tbody img {margin: 0 auto;}
 th {border-width: 0; padding: 14px 0 13px; background-color: var(--black); color: var(--white); border-radius: 0;}
 th span.icon{font-size: 14px; margin-left: 4px; top: 0px; position: relative; }

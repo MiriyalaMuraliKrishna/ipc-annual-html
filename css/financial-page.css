@@ -10,24 +10,6 @@
 .team-feature-txt{color: var(--slate-color); font-size:16px; line-height: 24px; font-weight: 400;}
 span.feature-title{display:block; color: var(--corporate-color); font-weight: 800; font-size: 24px; line-height: 28px; letter-spacing: -0.05em; margin-bottom: 16px; font-family: 'Overpass', sans-serif;}
 
-/* Annual Report section */
-.annual-report-main{padding: 0 0 55px;}
-.annual-table{margin: 0; color: var(--slate-color); border: none; font-family: 'Overpass', sans-serif;}
-.annual-table thead{position: relative;}
-.annual-table thead::before{max-width: 366px; width: 100%; height: 8px; bottom: 0; left: 0; opacity: 1; content: ""; display: block; background-color: var(--slate-color); position: absolute;}
-.annual-table thead::after{ width: 100%; height: 8px; bottom: 0; left: 0; opacity: 0.5; content: ""; display: block; background-color: var(--slate-color); position: absolute;}
-.annual-table tr th{padding: 24px 0 24px; background-color: transparent; color: var(--slate-color); font-weight: 800; font-size: 24px; line-height: 28px; letter-spacing: -0.05em; text-align: right;} 
-.annual-table tbody tr{position: relative;}
-.annual-table tbody tr::after { bottom: 0; left: 0; width: 100%; height: 2px; background: url('./images/dotted-line.svg') repeat-x center bottom; background-size: contain; content: ""; position: absolute; }
-.annual-table tbody tr:last-child::after{display: none;}
-.annual-table tr td{padding: 27px 10px 23px; border: none; font-weight: 600; font-size: 24px; line-height: 28px; text-align: right; } 
-.annual-table tr td:first-child{font-weight: 800; letter-spacing: -0.05em; text-align: left;}
-.annual-table td:not(:first-child){font-family: 'Overpass Mono', sans-serif;}
-.annual-table tbody tr:nth-child(even) td{background-color: transparent;}
-.annual-table tfoot tr td{color: var(--health-color);}
-.annual-table tfoot{position: relative;}
-.annual-table tfoot::before{max-width: 366px; width: 100%; height: 8px; top: 0; left: 0; opacity: 1; content: ""; display: block; background-color: var(--privacy-color); position: absolute;}
-.annual-table tfoot::after{ width: 100%; height: 8px; top: 0; left: 0; opacity: 0.5; content: ""; display: block; background-color: var(--privacy-color); position: absolute;}
 
 
 /* Team members section */
@@ -80,8 +62,6 @@ span.position a:hover{color: var(--slate-color);}
     .ipc-team-intro{gap: 50px;}
     .ipc-team-heading{flex: 0 0 460px;}
     .ipc-team-desc{flex: 0 0 calc(100% - 510px);}
-    .annual-table tr th{font-size: 20px;}
-    .annual-table tbody tr td{font-size: 20px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .deposit-list{display: block; padding: 0 0 25px;}
@@ -96,11 +76,6 @@ span.position a:hover{color: var(--slate-color);}
 
     .team-members-row{gap: 100px 96px;}
     .team-member-list{flex: 0 0 calc(50% - 48px);}
-    .annual-table tr th{font-size: 18px; line-height: 24px;}
-    .annual-table tr td{font-size: 18px; line-height: 24px;}
-
-
-    .team-member-text{left: 20px; max-width: 304px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .deposit-main{padding: 39px 0 0;}
@@ -127,17 +102,4 @@ span.position a:hover{color: var(--slate-color);}
     .team-member-pos{padding-right: 24px;}
     .team-member-arrow{width: 24px; height: 24px; right: 17px; top: 28px; font-size: 24px; line-height: 24px; color: var(--health-color); position: absolute; cursor: pointer; transition: all 0.45s ease-in-out;}
     .team-member-arrow.active span::before{content: "\f077";}
-
-    .annual-report-main { padding: 26px 0 40px; }
-    .annual-table{display: block;}
-    .annual-table thead, .annual-table thead tr, .annual-table thead th, .annual-table tbody, .annual-table tfoot{display: block;}
-    .annual-table thead th:first-child{display: none;}
-    .annual-table thead th{text-align: center;}
-    .annual-table thead th:nth-child(n+3){display: none;}
-    .annual-table tr{width: 100%; display: flex; flex-wrap: wrap;}
-    .annual-table tbody td:first-child{font-size: 16px; line-height: 20px;}
-    .annual-table tbody td:nth-child(n+3){display: none;}
-    .annual-table tfoot td:nth-child(n+3){display: none;}
-    .annual-table tr td{flex: 50%; font-size: 20px; line-height: 24px;}
-
 }
