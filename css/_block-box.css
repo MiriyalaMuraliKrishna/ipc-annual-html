@@ -1,17 +1,18 @@
 
 
 .white-block{background-color: var(--white); position: absolute;}
+.white-block.x-sm{width: 64px; height: 64px;}
 .white-block.top-left{top: 0; left: 0;}
 .white-block.top-right{top: 0; right: 0;}
 .white-block.bottom-right{bottom: 0; right: 0;}
-
-
 .frm-green-block{width: 208px; height: 208px; top: -32px; left: -32px; background-color: var(--tech-color); position: absolute; z-index: -1;}
 
 /*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .white-block.sm{width: 48px; height: 48px;}
+}
 @media only screen and (min-width: 1024px){
     .white-block{width: 80px; height: 80px; }
-    .white-block.sm{width: 48px; height: 48px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .white-block{width: 60px; height: 60px;}

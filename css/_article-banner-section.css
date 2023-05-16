@@ -34,10 +34,10 @@
     .article-banner-title{max-width: 650px; padding: 32px 32px 0 0;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .article-banner-main{ padding: 29px 0 0; }
+    .article-banner-main{ padding: 37px 0 0; }
     .article-privacy-block{width: 104px; height: 104px; bottom: -20px; left: -20px;}
     .article-tech-block { width: 80px; height: 80px; right: -20px; top: -20px; }
     .article-title-stripe { width: 156px; height: 24px; top: -13px; left: 84px; }
-    .article-banner-title{padding: 57px 0 47px;}
+    .article-banner-title{padding: 57px 0 44px;}
     .article-banner-title h1{font-size: 32px; line-height: 40px;}
 }

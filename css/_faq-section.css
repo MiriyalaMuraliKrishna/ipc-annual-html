@@ -1,5 +1,5 @@
 
-
+.accordion-main{padding: 22px 0 0;}
 .accordion-list{margin-bottom: 24px; border-bottom: 2px solid var(--slate-color); }
 .accordion-list:last-child{margin-bottom: 0;}
 .accordion-list.active{border-bottom: 4px solid var(--privacy-color);}

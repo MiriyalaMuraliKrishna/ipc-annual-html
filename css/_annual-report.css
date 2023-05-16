@@ -43,7 +43,7 @@
     .annual-table tr td{flex: 50%; font-size: 20px; line-height: 24px;}
     .table-annual-slider .slick-arrow{top: 14px; bottom: auto; width: 48px; height: 48px; box-shadow: 4px 4px 0px #C3E86C;}
     .table-annual-slider .slick-arrow.slick-disabled{box-shadow: 4px 4px 0px #727372;}
-    .annual-table tr th{padding: 24px 0 33px;}
+    .annual-table tr th{padding: 24px 50px 33px;}
     .annual-table thead::before{max-width: 160px;}
     .annual-table tfoot::before{max-width: 160px;}
 }

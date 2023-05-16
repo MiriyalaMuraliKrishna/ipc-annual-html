@@ -5,9 +5,8 @@
 .footer-stripe-left{width: 48px; height: 496px; top: calc(50% + 40px); transform: translateY(-50%); left: -24px; background-image: url('./images/stripe-left.svg'); background-repeat: no-repeat; background-size: contain; display: block; position: absolute;}
 .footer-green-block { width: 96px; height: 96px; top: 33px; right: 48px; opacity: .9; background-color: var(--tech-color); position: absolute; z-index: 1; }
 .footer-green-block::before{ width: 128px; height: 48px; right: 100%; top: 50%; transform: translateY(-50%); background-image: url('./images/footer-stripe-frame.svg'); background-position: left; content: ""; display: block; position: absolute; }
-.footer-white-block { width: 142px; height: 96px; top: 78px; right: -46px; opacity: 1; background-color: var(--white); border-top-right-radius: 50%; position: absolute; z-index: 0; }
 .footer-circle-glow { top: -116px; right: -197px; width: 586px; height: 582px; background-image: url('./images/footer-circle-glow.svg'); background-repeat: no-repeat; position: absolute; z-index: 1; }
-
+.footer-white-block{width: 96px; height: 96px; top: 0; right: 0; position: absolute; z-index: 1; background-color: var(--white);}
 .footer-privacy-block{width: 160px; height: 160px; bottom: 0; right: -80px; opacity: 0.8; background-color: var(--privacy-color); position: absolute;}
 .footer-logo{padding: 32px 24px; max-width: 324px; background-color: var(--slate-color);}
 .footer-logo img{max-width: 277px;}
@@ -21,6 +20,7 @@ ul.social-icons li a{font-size: 32px; line-height: 32px; display: inline-block; 
 ul.social-icons li a:hover{color: var(--privacy-color); transform: scaleX(-0.95);}
 
 .copyrights-main{font-size: 12px; line-height: 20px;}
+.copyrights-text p{margin-bottom: 15px;}
 ul.copyrights-links{margin: 0; gap: 10px 41px;}
 ul.copyrights-links > li::before{width: 1px; height: 20px; top: 0; left: -20px; opacity: 0.25; background-color: var(--white); }
 ul.copyrights-links > li:first-child::before{display: none;}
@@ -45,9 +45,11 @@ ul.copyrights-links > li > a:hover{color: var(--privacy-color);}
     .footer-text { padding-top: 48px; font-size: 22px; line-height: 32px; }
     .footer-btns{flex-direction: column;}
     .footer-btns .button{width: 100%;}
-    ul.social-icons { gap: 0 43px; }
+    ul.social-icons { gap: 0 43px; margin: 0 0 34px; }
     ul.social-icons li::before{left: -26px;}
     .footer-privacy-block { width: 88px; height: 88px; right: -20px; bottom: 0; }
     .footer-logo{max-width: 255px;}
     .footer-logo img{max-width: 228px;}
+    ul.copyrights-links > li:nth-child(3)::before{display: none;}
+    ul.copyrights-links > li:nth-child(5)::before{display: none;}
 }
