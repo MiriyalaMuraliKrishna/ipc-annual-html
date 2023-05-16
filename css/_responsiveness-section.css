@@ -18,6 +18,14 @@
     .responsiveness-text{bottom: 0; left: 0; width: 100%; padding: 40px 40px 30px; color: var(--white); position: absolute;}
     .responsiveness-text h2{font-size: 112px; line-height: 112px; margin-bottom: 0; color: var(--white);}
 }
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .responsiveness-image-wrap{margin-bottom: 60px;}
+    .res-cmt-block{width: 104px; height: 104px; left: -20px; bottom: -20px;}
+    .res-corporate-block{width: 80px; height: 80px; top: -20px; right: -20px;}
+    .res-vertical-stripe { width: 191px; height: 24px; left: 84px; bottom: -12px; background-image: url('./images/modern-hr-stripe.svg'); }
+    .responsiveness-text{padding-top: 56px;}
+    .responsiveness-text h2{color: var(--health-color);}
+}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .responsiveness-image-wrap{margin-bottom: 60px;}
     .res-cmt-block{width: 104px; height: 104px; left: -20px; bottom: -20px;}

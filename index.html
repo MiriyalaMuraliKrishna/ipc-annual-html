@@ -59,27 +59,40 @@
 </header>
 <main class="main-content">
 
-<section class="primary-banner-section" id="2022-in-review">
+<section class="primary-banner-section pos-relative" id="2022-in-review">
+<div class="primary-banner-bg"></div>
 <div class="container">
 <div class="primary-banner-main">
     <div class="primary-banner-images pos-relative">
         <div class="primary-image-list flex pos-relative">
             <div class="primary-image-left pos-relative">
                 <div class="primary-left-block primary-block"></div>
-                <figure class="banner-left-thumb object-fit">
-                    <img src="images/banner-left-thumb@2x.jpg" alt="banner-left-thumb">
-                </figure>
+                <picture class="banner-left-thumb object-fit">
+                    <source srcset="images/banner-left-thumb@2x.jpg" media="(min-width: 768px)">
+                    <img src="images/banner-left-mobile@2x.jpg" alt="banner-left-mobile">
+                </picture>
                 <div class="banner-left-block"></div>
                 <div class="bleft-privacy-block"></div>
                 <div class="banner-left-stripe"></div>
             </div>
+            <div class="primary-image-right">
+                <div class="bright-image-block"></div>
+                <picture class="banner-right-thumb object-fit">
+                    <source srcset="images/banner-right-thumb@2x.jpg" media="(min-width: 768px)">
+                    <img src="images/banner-right-mobile@2x.jpg" alt="banner-right-mobile">
+                </picture>
+                <div class="bright-tech-block"></div>
+                <div class="bright-privacy-block"></div>
+            </div>
             <div class="primary-image-center pos-relative">
+                <div class="primary-center-glow hide-mobile hide-tablet"></div>
                 <div class="primary-center-block primary-block"></div>
                 <div class="primary-banner-stripe"></div>
                 <div class="primary-banner-image pos-relative">
-                    <figure class="banner-center-thumb object-fit">
-                        <img src="images/banner-center@2x.jpg" alt="banner-center">
-                    </figure>
+                    <picture class="banner-center-thumb object-fit">
+                        <source srcset="images/banner-center@2x.jpg" media="(min-width: 768px)">
+                        <img src="images/banner-center-mobile@2x.jpg" alt="banner-center-mobile">
+                    </picture>
                     <div class="primary-banner-text">
                         <h1>The Vision<br> of a Modern and Effective Regulator</h1>
                     </div>
@@ -88,13 +101,6 @@
                     <li>2022</li>
                     <li>ANNUAL REPORT</li>
                 </ul>
-            </div>
-            <div class="primary-image-right">
-                <figure class="banner-right-thumb object-fit">
-                    <img src="images/banner-right-thumb@2x.jpg" alt="banner-right-thumb">
-                </figure>
-                <div class="bright-tech-block"></div>
-                <div class="bright-privacy-block"></div>
             </div>
         </div>
     </div>
@@ -199,11 +205,11 @@
 <section class="modern-privacy-section white-bg" id="privacy-transparency">
 <div class="container">
     <div class="modern-privacy-main">
-        <div class="custom-ipc-head flex flex-vcenter pos-relative">
-            <div class="custom-ipc-title">
+        <div class="custom-ipc-head flex flex-vcenter">
+            <div class="custom-ipc-title pos-relative">
                 <h2>Privacy and Transparency in a Modern Government</h2>
             </div>
-            <div class="custom-ipc-image">
+            <div class="custom-ipc-image pos-relative">
                 <picture class="custom-ipc-thumb object-fit">
                     <source srcset="images/ipc-post-image@2x.png" media="(min-width: 768px)">
                     <img src="images/ipc-post-mobile@2x.png" alt="ipc-post-mobile">
@@ -281,11 +287,11 @@
 <section class="children-and-youth-section white-bg" id="children-and-youth">
 <div class="container">
     <div class="children-and-youth-main">
-        <div class="custom-ipc-head flex flex-vcenter pos-relative">
-            <div class="custom-ipc-title">
+        <div class="custom-ipc-head flex flex-vcenter">
+            <div class="custom-ipc-title pos-relative">
                 <h2>Children and Youth<br> in a Digital World</h2>
             </div>
-            <div class="custom-ipc-image">
+            <div class="custom-ipc-image pos-relative">
                 <picture class="custom-ipc-thumb object-fit">
                     <source srcset="images/ipc-post-image@2x.png" media="(min-width: 768px)">
                     <img src="images/ipc-post-mobile@2x.png" alt="ipc-post-mobile">
@@ -430,11 +436,11 @@
 <section class="trust-in-section" id="trust-in-digital">
 <div class="container">
     <div class="trust-in-main">
-        <div class="custom-ipc-head flex flex-vcenter pos-relative">
-            <div class="custom-ipc-title">
+        <div class="custom-ipc-head flex flex-vcenter">
+            <div class="custom-ipc-title pos-relative">
                 <h2>Trust in Digital Health</h2>
             </div>
-            <div class="custom-ipc-image">
+            <div class="custom-ipc-image pos-relative">
                 <picture class="custom-ipc-thumb object-fit">
                     <source srcset="images/ipc-post-image@2x.png" media="(min-width: 768px)">
                     <img src="images/ipc-post-mobile@2x.png" alt="ipc-post-mobile">
@@ -485,11 +491,11 @@
 <section class="nxt-generation-section white-bg" id="nxt-generation-law">
 <div class="container">
     <div class="nxt-generation-main">
-        <div class="custom-ipc-head flex flex-vcenter pos-relative">
-            <div class="custom-ipc-title">
+        <div class="custom-ipc-head flex flex-vcenter">
+            <div class="custom-ipc-title pos-relative">
                 <h2>Next Generation Law Enforcement</h2>
             </div>
-            <div class="custom-ipc-image">
+            <div class="custom-ipc-image pos-relative">
                 <picture class="custom-ipc-thumb object-fit">
                     <source srcset="images/ipc-post-image@2x.png" media="(min-width: 768px)">
                     <img src="images/ipc-post-mobile@2x.png" alt="ipc-post-mobile">
@@ -552,11 +558,11 @@
             <h2>RESPONSIVENESS</h2>
         </div>
     </div>
-    <div class="trust-in-head flex flex-vcenter pos-relative">
-        <div class="trust-in-title">
+    <div class="trust-in-head flex flex-vcenter">
+        <div class="trust-in-title pos-relative">
             <h2>Addressing complaints and appeals in a fair, timely and meaningful manner</h2>
         </div>
-        <div class="trust-in-btn hide-mobile">
+        <div class="trust-in-btn hide-mobile hide-tablet">
             <a href="#" class="button">More About Responsiveness</a>
         </div>
     </div>
@@ -673,6 +679,9 @@
             </div>
         </div>
     </div>
+    <div class="trust-in-btn hide-desktop">
+        <a href="#" class="button">More About Responsiveness</a>
+    </div>
 </div>
 </div>
 </section>
@@ -699,11 +708,11 @@
             <h2>ACCOUNTABILITY</h2>
         </div>
     </div>
-    <div class="trust-in-head flex flex-vcenter pos-relative">
-        <div class="trust-in-title">
+    <div class="trust-in-head flex flex-vcenter">
+        <div class="trust-in-title pos-relative">
             <h2>Maintaining confidence in the organizational excellence of the IPC</h2>
         </div>
-        <div class="trust-in-btn hide-mobile">
+        <div class="trust-in-btn hide-mobile hide-tablet">
             <a href="#" class="button">More About Responsiveness</a>
         </div>
     </div>

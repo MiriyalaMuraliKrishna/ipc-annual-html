@@ -16,6 +16,16 @@
     .modern-education-block{width: 396px; height: 396px; left: 80px; top: -80px; opacity: 0.5;}
     .modern-vertical-stripe{width: 48px; height: 300px; right: -24px; top: 80px; background-image: url('./images/modern-vertical-stripe.svg'); }
 }
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .modern-privacy-main{padding: 20px 0 0;}
+    .modern-advocacy-main{padding: 40px 0 0;}
+    .modern-image-wrap{padding-bottom: 41px;}
+    .modern-corporate-block { width: 80px; height: 80px; right: -20px; top: -20px; }
+    .modern-education-block { width: 104px; height: 104px; left: -20px; bottom: -20px; top: auto; opacity: 0.8; }
+    .modern-vertical-stripe{width: 191px; height: 24px; left: 84px; bottom: -12px; background-image: url('./images/modern-hr-stripe.svg'); }
+    .modern-featured-text{padding-top: 56px;}
+    .modern-featured-text h2{color: var(--education-color);}
+}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .modern-privacy-main{padding: 20px 0 0;}
     .modern-advocacy-main{padding: 40px 0 0;}

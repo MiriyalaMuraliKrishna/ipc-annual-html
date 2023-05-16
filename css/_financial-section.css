@@ -22,8 +22,14 @@ span.ellipse-5{background-color: var(--cement-color);}
     .financial-graph{flex: 0 0 560px;}
     .financial-title h2{margin-bottom: 0;}
 }
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .financial-main{gap: 20px; padding: 80px 0 32px; flex-direction: row-reverse;}
+    .financial-text{flex: 0 0 calc(100% - 380px);}
+    .financial-title{margin-bottom: 32px;}
+    .financial-graph{flex: 0 0 360px;}
+}
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .financial-main{padding: 39px 0 0; display: block;}
+    .financial-main{padding: 39px 0 20px; display: block;}
     .financial-graph{margin-bottom: 40px;}
     .financial-title h2{font-size: 32px; line-height: 40px;}
 }

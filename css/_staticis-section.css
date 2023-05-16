@@ -14,8 +14,10 @@
     .statistics-list{flex: 0 0 calc(25% - 40px);}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
+    .statistics-wrap { padding: 60px 0 61px; }
     .statistics-row{gap: 28px;}
     .statistics-list{flex: 0 0 calc(50% - 14px);}
+    .statistics-btn{padding-top: 48px; text-align: center;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .statistics-wrap { padding: 40px 0 40px; }
@@ -24,7 +26,7 @@
     .statistics-list{margin-bottom: 20px;}
     .statistics-list:last-child{margin-bottom: 0;}
     .statistics-btn{padding-top: 48px;}
-    .statistics-btn .button{width: 100%;}
+
 }
 
 
