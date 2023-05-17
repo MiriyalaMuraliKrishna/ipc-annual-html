@@ -10,6 +10,7 @@
 
 .primary-image-right{right: 0; position: absolute; z-index: 1;}
 .bright-tech-block{background-color: var(--tech-color); position: absolute; z-index: 1;}
+.bright-tech-block::after{width: 119px; height: 48px; bottom: 0; right: 0; content: ""; background-image: url('../images/stripe-frame-sm.svg'); background-repeat: no-repeat; background-size: cover; position: absolute;}
 .bright-privacy-block{background-color: var(--privacy-color); position: absolute; z-index: 1;}
 
 .primary-banner-text{max-width: 575px; padding: 60px 64px 28px; bottom: 0; left: 0; width: 100%; position: absolute;}

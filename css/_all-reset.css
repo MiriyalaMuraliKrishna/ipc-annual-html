@@ -26,7 +26,7 @@ p:last-child{margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 15px; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
 pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 24px; max-width: 100%; overflow: auto; padding: 12px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
 blockquote, q {-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none; }
-blockquote:not(span.optional-text){padding: 30px 64px 38px; font-weight: 800; font-size: 40px; line-height: 48px; font-style: normal; position: relative; letter-spacing: -0.05em; border-radius: 0; margin: 0 0 80px; font-family: 'Overpass', sans-serif; background-color: var(--health-color); color: var(--white);}
+blockquote:not(span.optional-text){padding: 30px 64px 63px; font-weight: 800; font-size: 40px; line-height: 48px; font-style: normal; position: relative; letter-spacing: -0.05em; border-radius: 0; margin: 0 0 80px; font-family: 'Overpass', sans-serif; background-color: var(--health-color); color: var(--white);}
 .blockquote-icon{width: 74px; height: 64px; background-image: url("./images/quote-icon.svg"); background-repeat: no-repeat; background-size: contain; content: ""; display: block;}
 blockquote p span{color: var(--tech-color); background-image: linear-gradient(to top, rgb(36 45 56 / 50%) 20px, transparent 0px); background-position: 0 0px;}
 blockquote p::after{top: 0ex; content: "”"; display: inline; color: var(--tech-color); position: relative;}
@@ -151,7 +151,7 @@ img.aligncenter{margin: 25px 0;}
 .grid{display: grid; display: -moz-grid; display: -ms-grid;}
 
 body{font-size: 18px; line-height: 26px; font-family: 'HelveticaNeueLTStd-Roman', sans-serif; overflow: hidden; color: var(--slate-color); background-color: transparent;}
-span.optional-text{margin-bottom: 49px; color: var(--cement-color); font-size: 1rem; line-height: 20px; letter-spacing: 0.1em; font-weight: 400; display: block; font-family: 'League Gothic', sans-serif; text-transform: uppercase;}
+span.optional-text{margin-bottom: 24px; color: var(--cement-color); font-size: 1rem; line-height: 20px; letter-spacing: 0.1em; font-weight: 400; display: block; font-family: 'League Gothic', sans-serif; text-transform: uppercase;}
 span.optional-text.black{margin-bottom: 46px; padding-right: 80px; text-align: right; color: var(--slate-color);}
 
 .radius-8{border-radius: 8px;}

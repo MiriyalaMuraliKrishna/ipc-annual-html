@@ -11,7 +11,7 @@
 @media only screen and (min-width: 1024px){
     .responsiveness-image-wrap{margin-bottom: 80px;}
     .res-cmt-block{width: 160px; height: 160px; left: -80px; top: 50%; transform: translateY(-50%); }
-    .res-privacy-block{width: 460px; height: 460px; top: -80px; right: 176px; mix-blend-mode: normal; background-color: var(--privacy-color);}
+    .res-privacy-block{width: 460px; height: 460px; top: -80px; right: 176px; mix-blend-mode: normal; background-color: var(--privacy-color); opacity: 0.5;}
     .res-corporate-block{width: 256px; height: 260px; top: 380px; right: -80px;}
     .res-glow{width: 539px; height: 538px; top: 110px; right: -95px; background-image: url('./images/article-banner-glow.svg'); background-repeat: no-repeat; position: absolute;}
     .res-vertical-stripe{width: 48px; height: 300px; right: -24px; top: 80px; background-image: url('./images/modern-vertical-stripe.svg');}

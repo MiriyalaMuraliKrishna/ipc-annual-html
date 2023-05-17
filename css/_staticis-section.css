@@ -1,13 +1,10 @@
 
-
-.statistics-wrap{padding: 125px 0 128px;}
 .statistics-list{padding: 40px; font-size: 14px; line-height: 22px; color: var(--cement-color); background-color: var(--white); }
-
-
 
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
+    .statistics-wrap{padding: 127px 0 128px;}
     .statistics-title{padding-right: 256px;;}
     .statistics-btn{top: 3px; right: 0; position: absolute; z-index: 1;}
     .statistics-row{gap: 48px; padding-top: 24px;}
