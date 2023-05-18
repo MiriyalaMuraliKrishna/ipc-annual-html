@@ -82,6 +82,7 @@ ul.report_list > li:last-child{flex: 1; background-color: var(--health-color);}
 	ul.report_list > li{margin: 0; padding: 25px 74px 26px; flex: 0 236px; font-size: 48px; line-height: 56px; } 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
+	.primary-banner-bg{height: 370px;}
 	.primary-banner-main{padding: 46px 0 55px;}
 	.primary-banner-images{max-width: 311px; margin: 0 auto;}
 	.primary-image-list{display: block;}

@@ -9,8 +9,8 @@
 @media only screen and (min-width: 1024px){
     .outreach-wrap{padding: 128px 0 54px;}
     .outreach-title{padding-right: 304px;}
-    .outreach-btn{right: 0; top: 0; position: absolute;}
-    .outreach-row{gap: 48px; margin: 46px 0 73px;}
+    .outreach-btn{right: 0; top: 5px; position: absolute;}
+    .outreach-row{gap: 48px; margin: 48px 0 73px;}
     .outreach-list{flex: 0 0 calc(25% - 36px);}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
@@ -30,7 +30,7 @@
     .outreach-row{display: block; padding-top: 23px;}
     .outreach-list{margin-bottom: 23px;}
     .outreach-list:last-child{margin-bottom: 0;}
-    .outreach-btn{padding-top: 39px;}
+    .outreach-btn{padding-top: 48px;}
     .outreach-list.no_color{min-height: 250px;}
     .outreach-main .full-width-wrap{padding: 23px 0 0;}
 }

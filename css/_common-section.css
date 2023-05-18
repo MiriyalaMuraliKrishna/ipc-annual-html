@@ -71,7 +71,7 @@
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .custom-ipc-head{display: block; margin-bottom: 40px;}
     .custom-ipc-title{padding-left: 20px; margin-bottom: 20px;}
-    .custom-ipc-title::before{left: -20px; width: 20px; height: 100%;} 
+    .custom-ipc-title::before{left: -20px; width: 20px; height: 100%; background-size: auto;} 
     .custom-ipc-title h2{font-size: 32px; line-height: 40px;}
     .custom-ipc-image{width: calc(100% + 40px); left: -20px; position: relative;}
     .custom-ipc-image::after{top: 20px; right: 20px;}
@@ -84,11 +84,14 @@
     .optional-repeater-text h2 { font-size: 24px; line-height: 28px; margin-bottom: 22px; }
 
     .children-and-youth-main .common-grid-row{padding-bottom: 2px;}
-   .responsiveness-wrap .common-grid-row{padding-bottom: 1px;}
+   .responsiveness-main .common-grid-row{padding-bottom: 1px;}
     .common-grid-row{display: block; padding: 0 0 40px;}
     .common-grid-list{margin-bottom: 40px;}
 
     .children-and-youth-main{padding: 40px 0 0;}
     .nxt-generation-main{padding: 39px 0 2px;}
     .full-width-wrap{padding: 20px 0;}
+}
+@media only screen and (max-width: 370px) and (min-width: 200px){
+    .custom-ipc-title h2{font-size: 28px; line-height: 34px;}    
 }

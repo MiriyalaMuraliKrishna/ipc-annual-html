@@ -10,7 +10,7 @@
 .footer-privacy-block{width: 160px; height: 160px; bottom: 0; right: -80px; opacity: 0.8; background-color: var(--privacy-color); position: absolute;}
 .footer-logo{padding: 32px 24px; max-width: 324px; background-color: var(--slate-color);}
 .footer-logo img{max-width: 277px;}
-.footer-text{max-width: 515px; padding-top: 48px; font-size: 40px; line-height: 48px; font-family: 'Overpass', sans-serif; }
+.footer-text{max-width: 515px; padding-top: 48px; font-size: 40px; line-height: 48px; font-weight: 700; font-family: 'Overpass', sans-serif; }
 .footer-btns{margin: 52px 0 55px; gap: 20px;}
 
 ul.social-icons{margin: 0 0 51px; gap: 0 68px;}
@@ -52,4 +52,10 @@ ul.copyrights-links > li > a:hover{color: var(--privacy-color);}
     .footer-logo img{max-width: 228px;}
     ul.copyrights-links > li:nth-child(3)::before{display: none;}
     ul.copyrights-links > li:nth-child(5)::before{display: none;}
+}
+@media only screen and (max-width: 370px) and (min-width: 200px){
+    ul.social-icons{gap: 0 30px;}
+    ul.social-icons li::before { left: -19px; }
+    ul.social-icons li a{font-size: 28px;}
+    ul.copyrights-links > li::before{display: none;}
 }

@@ -1,6 +1,7 @@
 
 
 .white-block{background-color: var(--white); position: absolute;}
+.white-block{width: 80px; height: 80px; }
 .white-block.x-sm{width: 64px; height: 64px;}
 .white-block.top-left{top: 0; left: 0;}
 .white-block.top-right{top: 0; right: 0;}
@@ -12,13 +13,10 @@
     .white-block.sm{width: 48px; height: 48px;}
 }
 @media only screen and (min-width: 1024px){
-    .white-block{width: 80px; height: 80px; }
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
-    .white-block{width: 60px; height: 60px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .white-block{width: 40px; height: 40px;}
 }
 
 

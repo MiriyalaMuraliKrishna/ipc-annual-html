@@ -13,8 +13,9 @@ jQuery(document).ready(function(){
         focusOnSelect: true,
         responsive: [
             {
-            breakpoint: 1023,
+            breakpoint: 767,
                 settings: {
+                    infinite: true,
                 }
             },
         ],

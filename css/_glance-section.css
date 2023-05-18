@@ -1,7 +1,7 @@
 
 .glance-main{padding: 80px 0 66px;}
 .glance-head{margin-bottom: 47px;}
-.glance-slider .slick-track::before, .glance-slider .slick-track::after{ top: 34px; left: 0; width: 100vw; height: 2px; background-color: var(--slate-color); content: ""; display: block; position: absolute; z-index: -1; }
+.glance-slider .slick-track::before, .glance-slider .slick-track::after{ top: 34px; left: 0; width: 1000vw; height: 2px; background-color: var(--slate-color); content: ""; display: block; position: absolute; z-index: -1; }
 .glance-slider .slick-track::after { top: 34px; left: 100vw; }
 
 .glance-slider .slick-list{width: 100vw;}

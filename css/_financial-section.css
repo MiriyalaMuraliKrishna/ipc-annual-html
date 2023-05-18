@@ -3,7 +3,8 @@
 table.financial-table{border: none;}
 table.financial-table tr{position: relative;}
 table.financial-table tr::after { top: 0; left: 0; width: 100%; height: 2px; background: url('./images/dotted-line.svg') no-repeat center bottom; background-size: cover; content: ""; position: absolute; }
-table.financial-table td{padding: 23px 8px 26px; border: none;}
+table.financial-table tr:first-child::after{display: none;}
+table.financial-table td{padding: 25px 8px 23px; border: none;}
 table.financial-table td:first-child{padding-left: 0; padding-right: 0; width: 24px;}
 table.financial-table tr:nth-child(even) td{background: none;}
 table.financial-table td:last-child{flex: 0 0 300px; padding-right: 0; text-align: right; color: var(--slate-color); font-weight: 800; font-family: 'Overpass Mono', sans-serif;}
@@ -16,9 +17,9 @@ span.ellipse-5{background-color: var(--cement-color);}
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .financial-main{gap: 96px; padding: 80px 0 32px; flex-direction: row-reverse;}
-    .financial-text{flex: 0 0 calc(100% - 656px);}
-    .financial-title{flex: 0 0 calc(100% - 290px); margin-bottom: 32px;}
-    .financial-btn{flex: 0 0 250px; text-align: right;}
+    .financial-text{flex: 0 0 calc(100% - 656px); margin-top: 46px;}
+    .financial-title{margin-bottom: 30px; padding-right: 290px;}
+    .financial-btn{top: 0; right: 0; position: absolute;}
     .financial-graph{flex: 0 0 560px;}
     .financial-title h2{margin-bottom: 0;}
 }
@@ -31,6 +32,6 @@ span.ellipse-5{background-color: var(--cement-color);}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .financial-main{padding: 39px 0 20px; display: block;}
     .financial-graph{margin-bottom: 40px;}
-    .financial-title h2{font-size: 32px; line-height: 40px;}
+    .financial-title h2{font-size: 32px; line-height: 40px; margin-bottom: -2px;}
 }
 
