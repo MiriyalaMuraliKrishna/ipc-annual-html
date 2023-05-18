@@ -16,7 +16,6 @@
 .default-caption-stripe{ width: 312px; height: 48px; left: 0; top: -24px; content: ""; display: block; background-image: url('./images/common-stripe.svg'); background-repeat: no-repeat; background-size: cover; position: absolute; }
 .caption-green-block{width: 160px; height: 160px; left: -80px; bottom: 80px; opacity: 0.9; mix-blend-mode: multiply; background-color: var(--tech-color); position: absolute;}
 .caption-privacy-block{width: 96px; height: 96px; right: -48px; top: 47px; opacity: 0.75; mix-blend-mode: multiply; background-color: var(--privacy-color); position: absolute;}
-.caption-glow { width: 491px; height: 490px; left: -166px; top: calc(50% - 8px); transform: translateY(-50%); background: url('./images/footer-circle-glow.svg') no-repeat; background-size: cover; display: block; position: absolute; }
 
 .custom-quote-main{padding: 40px; margin: 0 0 64px; background-color: var(--sand-color);}
 .custom-quote-icon{max-width: 64px; margin-bottom: 24px;}
@@ -66,6 +65,7 @@ ul.aside_links > li > a:hover{color: var(--corporate-color); font-weight: 700;}
     .default-list-main{gap: 48px;}
     .default-content-list{flex: 0 0 calc(50% - 24px);}
     .default-caption-image{max-width: 817px;}
+    .caption-glow { width: 491px; height: 490px; left: -166px; top: calc(50% - 8px); transform: translateY(-50%); background: url('./images/footer-circle-glow.svg') no-repeat; background-size: cover; display: block; position: absolute; }
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .default-list-main{gap: 30px; padding: 30px;} 
@@ -92,7 +92,8 @@ ul.aside_links > li > a:hover{color: var(--corporate-color); font-weight: 700;}
     .default-caption-main { margin: 64px 0 48px; }
     .default-caption-text{transform: translate(16px,-16px);}
     .default-caption-image { width: calc(100% - 16px); }
-    .caption-privacy-block { width: 64px; height: 64px; right: -32px; top: 40px; }
+    .default-caption-image .white-block{width: 32px; height: 32px;}
+    .caption-privacy-block { width: 64px; height: 64px; right: -32px; top: 32px; }
     .default-caption-stripe { width: 312px; height: 24px; left: 0; top: -12px; background-size: cover; }
     .caption-green-block { width: 40px; height: 40px; left: -20px; bottom: 29px; }
 

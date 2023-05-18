@@ -38,7 +38,7 @@
     .custom-cta-text hr{margin: 15px 0 23px;}
     .custom-cta-btns{display: block;}
     .custom-cta-btns span{display: block; margin-bottom: 16px;}
-    .cta-stripe{width: 191px; height: 24px; left: 84px; bottom: -11px; background-image: url('../images/common-stripe-mobile.svg');}
+    .cta-stripe{width: 191px; height: 24px; left: 84px; bottom: -11px; background-image: url('./images/common-stripe-mobile.svg');}
 }
 
 

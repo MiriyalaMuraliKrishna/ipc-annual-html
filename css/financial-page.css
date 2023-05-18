@@ -78,8 +78,8 @@ span.position a:hover{color: var(--slate-color);}
     .team-member-list{flex: 0 0 calc(50% - 48px);}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .deposit-main{padding: 39px 0 0;}
-    .deposit-list{display: block;}
+    .deposit-main{padding: 39px 0 21px;}
+    .deposit-list{display: block; padding-bottom: 19px;}
     .deposit-text{padding-bottom: 39px;}
     .deposit-text h2{font-size: 32px; line-height: 40px; max-width: 235px;}
 

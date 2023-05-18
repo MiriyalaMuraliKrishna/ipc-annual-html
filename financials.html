@@ -299,9 +299,10 @@
                 <p>Appeal fees are payable to the Minister of Finance and these fees are not transferred to the Information and Privacy Commissioner of Ontario (IPC). Therefore, IPC’s Financial Statement does not include appeal fees.</p>
             </div>
             <div class="deposit-image">
-                <figure class="deposit-thumb">
-                    <img src="images/deposit-chart.svg" alt="deposit-svg">
-                </figure>
+                <picture class="deposit-thumb">
+                    <source srcset="images/deposit-chart.svg" media="(min-width: 768px)">
+                    <img src="images/deposit-chart-mobile.svg" alt="deposit-chart">
+                </picture>
             </div>
         </div>
         <div class="full-width-wrap"><span class="full-width-stripe"></span></div>
@@ -568,7 +569,7 @@
         <div class="footer-center-glow"></div>
         <div class="footer-privacy-block"></div>
         <div class="footer-bg background-bg">
-            <div class="footer-white-block"></div>
+            <div class="footer-white-block hide-mobile"></div>
             <picture class="footer-bg-image object-fit">
                 <source srcset="images/footer-bg@2x.jpg" media="(min-width: 768px)">
                 <img src="images/footer-bg-mobile@2x.jpg" alt="footer-bg-mobile">
@@ -607,7 +608,6 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
 <script src="./dist/core.bundle.js"></script>
 </body>
 </html>
