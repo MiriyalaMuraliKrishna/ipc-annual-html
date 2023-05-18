@@ -29,19 +29,20 @@ jQuery(document).ready(function(){
         jQuery(this).parent().siblings().find(".accordion-content").slideUp(500);
     });
 
-    let headerHeight = jQuery(".main-header").outerHeight(true);
-    jQuery("a[href*=#]:not([href=#])").click(function(){
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = jQuery(this.hash);
-            target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                jQuery("html,body").animate({
-                    scrollTop: target.offset().top - headerHeight
-                }, 1000);
-                return false;
-            }
-        }
-    });
+    // let headerHeight = jQuery(".main-header").outerHeight(true);
+    // jQuery("a[href*=#]:not([href=#])").click(function(){
+    //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    //         var target = jQuery(this.hash);
+    //         target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+    //         if (target.length) {
+    //             jQuery("html, body").animate({
+    //                 scrollTop: target.offset().top - headerHeight
+    //             }, 1000);
+    //             window.location.hash = target;
+    //         }
+    //     }
+    // });
+    
 
     if(jQuery(window).width() >= 768){
         jQuery(".team-member-list").each(function() {
@@ -58,8 +59,24 @@ jQuery(document).ready(function(){
         jQuery(".team-member-pos").on("click", function() {
             jQuery(this).children(".team-member-arrow").addClass("active");
             jQuery(this).parents().siblings().find(".team-member-desc").slideUp();
-            jQuery(this).siblings(".team-member-desc").slideDown();
+            jQuery(this).siblings(".team-member-desc").slideToggle();
         });
     }
 
+});
+
+
+let headerHeight = jQuery(".main-header").outerHeight(true);
+jQuery('a[href*=\\#]').on('click',function(e) {
+    var target = this.hash;
+    var $target = jQuery(target);
+    var targetname = target.slice(1, target.length);
+    if(document.getElementById(targetname) != null) {
+         e.preventDefault();
+    }
+    jQuery('html, body').stop().animate({
+        'scrollTop': $target.offset().top - headerHeight,
+    }, 900, 'swing', function () {
+        window.location.hash = target;
+  });
 });

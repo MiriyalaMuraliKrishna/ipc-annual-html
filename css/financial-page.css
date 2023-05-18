@@ -97,7 +97,8 @@ span.position a:hover{color: var(--slate-color);}
     .team-members-row{display: block;}
     .team-member-list{margin-bottom: 118px;}
     .team-member-list:last-child{margin-bottom: 0;}
-    .team-member-text{padding: 17px 24px 16px; bottom: -70px; left: 11px; max-width: 308px;}
+    .team-member-text{padding: 17px 24px 16px 34px; bottom: -70px; left: 11px; max-width: 308px;}
+    .team-member-text::before { width: 32px; left: -11px; }
     .team-member-text h4{margin-bottom: -4px;}
     .team-member-pos{padding-right: 24px;}
     .team-member-arrow{width: 24px; height: 24px; right: 17px; top: 28px; font-size: 24px; line-height: 24px; color: var(--health-color); position: absolute; cursor: pointer; transition: all 0.45s ease-in-out;}

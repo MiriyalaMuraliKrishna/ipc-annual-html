@@ -2,21 +2,18 @@
 .default-banner-main{align-items: flex-start;}
 .default-banner-text{color: var(--cement-color); line-height: 28px; font-size: 20px; font-weight: 400; font-style: normal; }
 .default-banner-text span{margin-bottom: 40px;}
-.default-banner-text h1{color: var(--corporate-color); margin-bottom: 45px; font-size: 48px; line-height: 56px; font-weight: 800;}
+.default-banner-text h1{color: var(--corporate-color); margin-bottom: 39px; font-size: 48px; line-height: 56px; font-weight: 800;}
 .default-banner-text hr{max-width: 128px; margin-bottom: 38px;}
 .banner-green-block{background-color: var(--tech-color); position: absolute; z-index: 1; opacity: 0.8; mix-blend-mode: multiply;}
 .banner-blue-block{position: absolute; background-color: var( --link-color); opacity: 0.8; mix-blend-mode: multiply; }
 .banner-stripe{width: 312px; height: 48px; bottom: -24px; left: 192px; position: absolute; background-image: url("./images/banner-stripe-frame.svg"); background-repeat: no-repeat;} 
 
 
-
-
 /*-- media starts here --*/
 @media only screen and (min-width: 1024px){
-    .financials-page .default-banner-main{padding-bottom: 117px;}
-    .default-banner-main{gap: 160px; padding: 96px 0 140px; flex-direction: row-reverse;}
+    .default-banner-main{gap: 160px; padding: 80px 0 140px; flex-direction: row-reverse;}
     .default-banner-text{flex: 0 0 calc(100% - 752px);}
-    .default-banner-image{flex: 0 0 592px;}
+    .default-banner-image{flex: 0 0 592px; margin-top: 16px;}
     .banner-green-block{width: 168px; height: 168px; top: -85px; right: -80px;}
     .banner-blue-block{width: 256px; height: 260px; bottom: -80px; left: -64px; }
 }

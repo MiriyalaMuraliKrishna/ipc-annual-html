@@ -1,5 +1,4 @@
 
-
 .white-block{background-color: var(--white); position: absolute;}
 .white-block{width: 80px; height: 80px; }
 .white-block.x-sm{width: 64px; height: 64px;}
@@ -12,11 +11,8 @@
 @media only screen and (min-width: 768px){
     .white-block.sm{width: 48px; height: 48px;}
 }
-@media only screen and (min-width: 1024px){
-}
-@media only screen and (max-width: 1023px) and (min-width: 768px){
-}
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    .white-block.x-sm-mobile{width: 40px; height: 40px;}
 }
 
 

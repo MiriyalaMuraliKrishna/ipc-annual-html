@@ -2,9 +2,8 @@ body.by-the-numbers-page{background-attachment: fixed; background-image: url('./
 .by-outreach-main{padding-top: 40px;}
 
 /* feature overview section */
-.feature-overview-main{padding: 75px 0;}
+.feature-overview-main{padding: 75px 0 33px;}
 .feature-overview-text h2{font-size: 32px; line-height: 40px; color: var( --slate-color);}
-.feature-overview-list:nth-child(even){flex-direction: row-reverse;}
 .feature-overview-text p{margin-bottom: 24px;}
 .feature-overview-text span{display:block; margin-bottom: 24px;}
 .chart-vertical-stripe { width: 48px; height: calc(100% - 100px); top: 50%; left: -24px; transform: translateY(-50%); position: absolute; background-image: url("./images/chart-vertical-stripe-frame.svg"); background-repeat: no-repeat; background-size: cover; background-position: center; }
@@ -13,8 +12,15 @@ body.by-the-numbers-page{background-attachment: fixed; background-image: url('./
 
 
 /*-- media starts here --*/
+@media only screen and (min-width: 768px){
+    .first-reach .outreach-row{margin-bottom: 30px;}
+    .by-outreach-main.second-reach{padding-top: 32px;}
+    .second-reach .outreach-row{margin: 0 0 32px;}
+    .feature-last .feature-overview-main{padding-bottom: 82px;}
+}
 @media only screen and (min-width: 1024px){
-    .feature-overview-list{gap: 80px; margin-bottom: 112px;}
+    .feature-overview-list{gap: 80px; margin-bottom: 112px; flex-direction: row-reverse;}
+    .feature-overview-list:nth-child(even){flex-direction: row;}
     .feature-overview-list:last-child{margin-bottom: 0;}
     .feature-overview-text{flex: 0 0 calc(100% - 680px);}
     .feature-overview-image{flex: 0 0 600px;}
@@ -33,11 +39,12 @@ body.by-the-numbers-page{background-attachment: fixed; background-image: url('./
     .feature-overview-text h2{font-size: 24px; line-height: 28px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .feature-overview-main{padding: 40px 0 0;}
-    .feature-overview-list{display: block; margin-bottom: 56px;}
+    .feature-overview-main{padding: 40px 0 20px;}
+    .feature-overview-list{display: block; margin-bottom: 64px;}
     .feature-overview-list:last-child{margin-bottom: 0;}
     .feature-overview-image{margin-bottom: 30px;}
-    .feature-overview-text h2{font-size: 24px; line-height: 28px;}
+    .feature-overview-text h2{font-size: 24px; line-height: 28px; margin-top: 24px;}
+    .first-reach .outreach-row{margin-bottom: 24px;}
     .by-outreach-main.second-reach{padding-top: 0;}
     .by-outreach-main.third-reach{padding-top: 0;}
     .feature-last{padding-bottom: 34px;}
