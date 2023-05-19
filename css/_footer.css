@@ -49,7 +49,6 @@ ul.copyrights-links > li > a:hover{color: var(--privacy-color);}
     ul.social-icons { gap: 0 43px; margin: 0 0 34px; }
     ul.social-icons li::before{left: -26px;}
     .footer-privacy-block { width: 88px; height: 88px; right: -20px; bottom: 0; }
-    .footer-logo{max-width: 255px;}
     .footer-logo img{max-width: 228px;}
     ul.copyrights-links > li:nth-child(3)::before{display: none;}
     ul.copyrights-links > li:nth-child(5)::before{display: none;}

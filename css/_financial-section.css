@@ -1,13 +1,13 @@
 
 .financial-section{background-color: var(--white);}
 table.financial-table{border: none;}
-table.financial-table tr{position: relative;}
+table.financial-table tr{position: relative; display: flex; flex-wrap: wrap; width: 100%;}
 table.financial-table tr::after { top: 0; left: 0; width: 100%; height: 2px; background: url('./images/dotted-line.svg') no-repeat center bottom; background-size: cover; content: ""; position: absolute; }
 table.financial-table tr:first-child::after{display: none;}
-table.financial-table td{padding: 25px 8px 23px; border: none;}
-table.financial-table td:first-child{padding-left: 0; padding-right: 0; width: 24px;}
+table.financial-table td{padding: 25px 8px 23px; flex: 1; border: none;}
+table.financial-table td:first-child{padding-left: 0; padding-right: 0; width: 24px; flex: 0 0 24px;}
 table.financial-table tr:nth-child(even) td{background: none;}
-table.financial-table td:last-child{flex: 0 0 300px; padding-right: 0; text-align: right; color: var(--slate-color); font-weight: 800; font-family: 'Overpass Mono', sans-serif;}
+table.financial-table td:last-child{flex: 0 0 200px; padding-right: 0; text-align: right; color: var(--slate-color); font-weight: 800; font-family: 'Overpass Mono', sans-serif;}
 span.ellipse{width: 24px; height: 24px; display: block; background-color: var(--slate-color); border-radius: 50%;}
 span.ellipse-2{background-color: var(--health-color);}
 span.ellipse-3{background-color: var(--privacy-color);}
@@ -23,15 +23,23 @@ span.ellipse-5{background-color: var(--cement-color);}
     .financial-graph{flex: 0 0 560px;}
     .financial-title h2{margin-bottom: 0;}
 }
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .financial-main{gap: 40px;}
+    .financial-graph { flex: 0 0 450px; }
+    .financial-text { flex: 0 0 calc(100% - 490px); }
+}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .financial-main{gap: 20px; padding: 80px 0 32px; flex-direction: row-reverse;}
-    .financial-text{flex: 0 0 calc(100% - 380px);}
+    .financial-text{flex: 0 0 calc(100% - 340px);}
     .financial-title{margin-bottom: 32px;}
-    .financial-graph{flex: 0 0 360px;}
+    .financial-graph{flex: 0 0 320px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .financial-main{padding: 39px 0 20px; display: block;}
     .financial-graph{margin-bottom: 40px;}
     .financial-title h2{font-size: 32px; line-height: 40px; margin-bottom: -2px;}
+    table.financial-table tr{display: flex; flex-wrap: wrap; width: 100%;}
+    table.financial-table td{flex: 1;}
+    table.financial-table td:last-child{flex: 0 0 100px;}
 }
 

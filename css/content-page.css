@@ -38,9 +38,10 @@ ul.default-social-icons li a:hover{color: var(--privacy-color); transform: scale
 
 ul.aside_links{margin: 0; padding-top: 11px;}
 ul.aside_links > li{margin-bottom: 12px;}
-ul.aside_links > li::before{width: 3px; height: 100%; left: 0; top: 50%; transform: translateY(-50%); background-color: var(--privacy-color); border-radius: 0;}
-ul.aside_links > li:hover::before{width: 8px; background-color: var(--corporate-color);}
+ul.aside_links > li::before{display: none;}
 ul.aside_links > li > a{padding: 8px 0 7px 20px; font-size: 16px; line-height: 16px; letter-spacing: -0.05em; font-weight: 500; color: var(--cement-color); display: inline-block; font-family: 'Overpass', sans-serif;}
+ul.aside_links > li > a::before{width: 3px; height: 100%; left: 0; top: 50%; transform: translateY(-50%); background-color: var(--privacy-color); border-radius: 0; content: ""; position: absolute; transition: width 0.45s ease-in-out;}
+ul.aside_links > li > a:hover::before{width: 8px; background-color: var(--corporate-color);}
 ul.aside_links > li > a:hover{color: var(--corporate-color); font-weight: 700;}
 
 .aside-btns{gap: 20px; }
@@ -102,5 +103,5 @@ ul.aside_links > li > a:hover{color: var(--corporate-color); font-weight: 700;}
     .custom-stripe-frame { width: 287px; height: 32px; bottom: -15px; left: 24px; background-image: url('./images/custom-stripe-mobile.svg'); }
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    ul.default-social-icons{gap: 52px;}
+    ul.default-social-icons{gap: 52px; justify-content: space-between; max-width: 340px;}
 }

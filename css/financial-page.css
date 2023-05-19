@@ -64,6 +64,7 @@ span.position a:hover{color: var(--slate-color);}
     .ipc-team-desc{flex: 0 0 calc(100% - 510px);}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
+    .deposit-main{padding: 86px 0 0;}
     .deposit-list{display: block; padding: 0 0 25px;}
     .deposit-image{margin-top: 40px;}
 

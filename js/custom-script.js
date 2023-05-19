@@ -29,21 +29,6 @@ jQuery(document).ready(function(){
         jQuery(this).parent().siblings().find(".accordion-content").slideUp(500);
     });
 
-    // let headerHeight = jQuery(".main-header").outerHeight(true);
-    // jQuery("a[href*=#]:not([href=#])").click(function(){
-    //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-    //         var target = jQuery(this.hash);
-    //         target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
-    //         if (target.length) {
-    //             jQuery("html, body").animate({
-    //                 scrollTop: target.offset().top - headerHeight
-    //             }, 1000);
-    //             window.location.hash = target;
-    //         }
-    //     }
-    // });
-    
-
     if(jQuery(window).width() >= 768){
         jQuery(".team-member-list").each(function() {
             let $this = $(this);
@@ -65,18 +50,19 @@ jQuery(document).ready(function(){
 
 });
 
-
-let headerHeight = jQuery(".main-header").outerHeight(true);
-jQuery('a[href*=\\#]').on('click',function(e) {
-    var target = this.hash;
-    var $target = jQuery(target);
-    var targetname = target.slice(1, target.length);
-    if(document.getElementById(targetname) != null) {
-         e.preventDefault();
-    }
-    jQuery('html, body').stop().animate({
-        'scrollTop': $target.offset().top - headerHeight,
-    }, 900, 'swing', function () {
-        window.location.hash = target;
-  });
+jQuery(document).ready(function(){
+    let headerHeight = jQuery(".main-header").outerHeight(true);
+    jQuery("a[href*=#]:not([href=#])").click(function(event){
+        event.preventDefault();
+        let myattr = jQuery(this).attr("href");
+        let target = jQuery(myattr);
+        if (target.length) {
+            jQuery("html, body").animate({
+                scrollTop: target.offset().top - headerHeight
+            }, 2000);
+            return false;
+        } else {
+            window.location.href = "index.html" + myattr;
+        }
+    });
 });

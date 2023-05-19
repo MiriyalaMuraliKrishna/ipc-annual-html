@@ -12,5 +12,5 @@ body.home{background-attachment: fixed; background-image: url('./images/static-b
 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    
+    body.home{background-position: center top;}
 }
