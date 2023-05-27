@@ -20,13 +20,19 @@ body.home .main-header{background-color: transparent;}
 ul.main_menu{margin: 0;}
 ul.main_menu > li{margin: 0 0 32px;}
 ul.main_menu > li::before{display: none;}
-ul.main_menu > li > a{color: var(--corporate-color); display: inline-block; font-size: 28px; line-height: 36px; letter-spacing: -0.05em; font-weight: 800; font-family: 'Overpass', sans-serif;}
+ul.main_menu > li > a{color: var(--corporate-color); display: inline-block; font-size: 28px; line-height: 36px; letter-spacing: -0.05em; font-weight: 800; font-family: 'Overpass', sans-serif; position: relative;}
 ul.main_menu > li > a:hover{padding-left: 48px; color: var(--health-color);}
 ul.main_menu > li > a::before{left: 0; top: calc(50% - 2px); transform: translateY(-50%); opacity: 0; transition: all .45s ease-in-out; color: var(--white); content: "\f178"; font-size: 32px; line-height: 32px; font-weight: 400; font-family: "Font Awesome 6 Sharp"; position: absolute;}
 ul.main_menu > li > a:hover::before{opacity: 1;}
 ul.main_menu > li.current-menu-item > a::after{width: 303px; height: 24px; left: -5px; bottom: 0; background-image: url('./images/menu-item-stripe.svg'); background-position: left bottom; background-repeat: no-repeat; background-size: contain; content: ""; position: absolute; z-index: -1;}
 ul.main_menu > li.current-menu-item > a{padding-left: 0; color: var(--slate-color);}
 ul.main_menu > li.current-menu-item > a::before{display: none;}
+ul.main_menu > li > ul{display: none;}
+ul.main_menu > li > ul > li{font-size: 24px; line-height: 32px; letter-spacing: -0.02em; color: var(--corporate-color); font-weight: 800; font-family: 'Overpass', sans-serif;}
+ul.main_menu > li > ul > li > a{color: var(--corporate-color);}
+ul.main_menu > li > ul > li > ul{display: none;}
+ul.main_menu > li > ul > li > ul > li{font-size: 20px; line-height: 28px; letter-spacing: -0.02em; color: var(--corporate-color); font-weight: 800; font-family: 'Overpass', sans-serif;}
+ul.main_menu > li > ul > li > ul > li > a{color: var(--corporate-color);}
 
 .sticky_header .header{position: relative; z-index: 900;}
 .sticky_header .header::before{ content: ""; display: block; width: 200vw; height: 100%; top: 0; left: -100%;  z-index: 899; position: absolute; background-color: var(--tech-color); transition: all 0.45s ease-in-out;}

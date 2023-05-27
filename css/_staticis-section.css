@@ -10,6 +10,10 @@
     .statistics-row{gap: 48px; padding-top: 24px;}
     .statistics-list{flex: 0 0 calc(25% - 40px);}
 }
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .statistics-row{gap: 30px;}
+    .statistics-list { flex: 0 0 calc(25% - 31px); padding: 30px;}
+}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .statistics-wrap { padding: 60px 0 61px; }
     .statistics-row{gap: 28px;}

@@ -18,6 +18,10 @@
     .responsiveness-text{bottom: 0; left: 0; width: 100%; padding: 40px 40px 30px; color: var(--white); position: absolute;}
     .responsiveness-text h2{font-size: 112px; line-height: 112px; margin-bottom: 0; color: var(--white);}
 }
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .responsiveness-text{max-width: 675px;}
+    .responsiveness-text h2{font-size: 72px; line-height: 80px;}
+}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .responsiveness-image-wrap{margin-bottom: 60px;}
     .res-cmt-block{width: 104px; height: 104px; left: -20px; bottom: -20px;}

@@ -16,6 +16,10 @@
     .modern-education-block{width: 396px; height: 396px; left: 80px; top: -80px; opacity: 0.5;}
     .modern-vertical-stripe{width: 48px; height: 300px; right: -24px; top: 80px; background-image: url('./images/modern-vertical-stripe.svg'); }
 }
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .modern-featured-thumb img{min-height: 720px;}
+    .modern-featured-text{max-width: 675px;}
+}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .modern-privacy-main{padding: 20px 0 0;}
     .modern-advocacy-main{padding: 40px 0 0;}

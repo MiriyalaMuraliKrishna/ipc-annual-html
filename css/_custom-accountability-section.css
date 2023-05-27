@@ -20,6 +20,10 @@
     .accountability-text{bottom: 0; left: 0; width: 100%; padding: 40px 40px 22px; color: var(--white); position: absolute;}
     .accountability-text h2{font-size: 112px; line-height: 112px; margin-bottom: 0; color: var(--white);}
 }
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .accountability-thumb img{min-height: 720px;}
+    .accountability-text h2{font-size: 72px; line-height: 80px;}
+}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .accountability-main{padding: 0 0 20px;}
     .accountability-image-wrap{margin-bottom: 60px;}
