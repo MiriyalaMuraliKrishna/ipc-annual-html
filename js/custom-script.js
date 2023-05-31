@@ -58,7 +58,26 @@ $(document).ready(function(){
 $(window).on("load", function(){
     $("ul.main_menu a, a[rel='m_PageScroll2id']").mPageScroll2id({
         highlightSelector:"ul.main_menu a",
-        crollSpeed: 2000,
+        scrollSpeed: 2000,
         offset: 104,
+    });
+    $("ul.aside_links > li > a").on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        let scrolltoHome = window.location.href = "/index.html" + target; 
+        $.mPageScroll2id("scrollTo", scrolltoHome, {
+            offset: {
+                top: 104,
+            }
+        });
+    });    
+});
+$(document).ready(function(){
+    $("ul.main_menu a[href*='by-the-numbers.html']").on('click', function(e){
+        let target = $(this).attr('href');
+        let height = $('.main-header').outerHeight(true);  
+        $.mPageScroll2id("scrollTo", target, {
+            offset: height
+        });
     });
 });
