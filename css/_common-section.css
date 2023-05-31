@@ -22,8 +22,9 @@
 .common-grid-image{margin-bottom: 33px;}
 .common-grid-icon{ width: 80px; height: 80px; bottom: 0; left: 0; align-items: flex-end; justify-content: flex-start; background-color: var(--white); position: absolute;}
 .common-grid-icon img{max-width: 64px; width: 100%; object-fit: cover;}
-.common-grid-text{font-size: 24px; line-height: 28px; letter-spacing: -0.05em; font-weight: 800; font-family: 'Overpass', sans-serif;}
+/* .common-grid-text{font-size: 24px; line-height: 28px; letter-spacing: -0.05em; font-weight: 800; font-family: 'Overpass', sans-serif;} */
 .common-grid-text p span{color: var(--privacy-color);}
+.common-grid-text span.sub-heading{font-size: 24px; line-height: 28px;}
 
 .full-width-wrap{padding: 48px 0;}
 .full-width-stripe{width: 100%; height: 48px; margin: 0; opacity: 0.3; background-image: url("./images/full-width-stripe-frame.svg"); background-repeat: no-repeat; background-size: cover; display: block;}
@@ -48,6 +49,8 @@
 
     .common-grid-row{gap: 80px; padding-bottom: 80px;}
     .common-grid-list{flex: 0 0 calc(33.3333% - 54px);}
+    .grid1-of-2 .common-grid-list{flex: 0 0 calc(50% - 40px);}
+
     .modern-advocacy-bg{height: calc(100% - 144px);}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
@@ -61,6 +64,7 @@
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .common-grid-row{gap: 20px; padding-bottom: 60px;}
     .common-grid-list{flex: 0 0 calc(33.3333% - 14px);}
+    .grid1-of-2 .common-grid-list{flex: 0 0 calc(50% - 10px);}
 
     .optional-repeater-list{display: block; padding: 0 0 78px;}
     .optional-repeater-image{margin-bottom: 64px;}

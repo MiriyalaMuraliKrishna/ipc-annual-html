@@ -27,10 +27,15 @@ ul.main_menu > li > a:hover::before{opacity: 1;}
 ul.main_menu > li.current-menu-item > a::after{width: 303px; height: 24px; left: -5px; bottom: 0; background-image: url('./images/menu-item-stripe.svg'); background-position: left bottom; background-repeat: no-repeat; background-size: contain; content: ""; position: absolute; z-index: -1;}
 ul.main_menu > li.current-menu-item > a{padding-left: 0; color: var(--slate-color);}
 ul.main_menu > li.current-menu-item > a::before{display: none;}
-ul.main_menu > li > ul{display: none;}
+ul.main_menu > li > ul{display: block;}
+ul.main_menu > li > ul > li::before{display: none;}
 ul.main_menu > li > ul > li{font-size: 24px; line-height: 32px; letter-spacing: -0.02em; color: var(--corporate-color); font-weight: 800; font-family: 'Overpass', sans-serif;}
 ul.main_menu > li > ul > li > a{color: var(--corporate-color);}
+ul.main_menu > li > ul > li > a::before { left: 0; top: calc(50% - 2px); transform: translateY(-50%); opacity: 0; transition: all .45s ease-in-out; color: var(--white); content: "\f178"; font-size: 32px; line-height: 32px; font-weight: 400; font-family: "Font Awesome 6 Sharp"; position: absolute; }
+ul.main_menu > li > ul > li > a.mPS2id-clicked::before, ul.main_menu > li > ul > li > a:hover::before{opacity: 1;}
+ul.main_menu > li > ul > li > a.mPS2id-clicked, ul.main_menu > li > ul > li > a:hover{padding-left: 48px; color: var(--health-color);}
 ul.main_menu > li > ul > li > ul{display: none;}
+ul.main_menu > li > ul > li > ul > li::before{display: none;}
 ul.main_menu > li > ul > li > ul > li{font-size: 20px; line-height: 28px; letter-spacing: -0.02em; color: var(--corporate-color); font-weight: 800; font-family: 'Overpass', sans-serif;}
 ul.main_menu > li > ul > li > ul > li > a{color: var(--corporate-color);}
 

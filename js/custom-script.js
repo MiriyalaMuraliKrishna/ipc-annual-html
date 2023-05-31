@@ -11,20 +11,19 @@ $(document).ready(function(){
         $(".main-header").toggleClass("sticky_header");
         $(".navigation").toggleClass("open");
     });
-    $("ul.main_menu > li > a").on("click", function(e){
-        e.preventDefault();
+    $("ul.main_menu > li > a").on("click", function(){
         $(this).parent("li").addClass("current-menu-item");
         $(this).parent().siblings('li').removeClass('current-menu-item');
-        // $(".toggle_menu").removeClass("active");
-        // $(".main-header").removeClass("sticky_header");
-        // $(".navigation").removeClass("open");
-        $(this).parent().siblings("li").find("ul").slideUp();
-        $(this).siblings("ul").slideToggle();
+        $(".toggle_menu").removeClass("active");
+        $(".main-header").removeClass("sticky_header");
+        $(".navigation").removeClass("open");
     });
-    let level2 = $("ul.main_menu li > ul > li.menu-item-has-children > a");
-    level2.on("click", function(){
-        $(this).parent().siblings("li.menu-item-has-children").find("ul").slideUp();
-        $(this).siblings("ul").slideToggle();
+    $("ul.main_menu > li > ul > li > a").on("click", function(){
+        $(this).parent("li").addClass("current-menu-item");
+        $(this).parent().siblings('li').removeClass('current-menu-item');
+        $(".toggle_menu").removeClass("active");
+        $(".main-header").removeClass("sticky_header");
+        $(".navigation").removeClass("open");
     });
     $(".accordion-header").on("click", function(e){
         e.preventDefault();
@@ -56,19 +55,10 @@ $(document).ready(function(){
     }
 });
 
-$(document).ready(function(){
-    let headerHeight = $(".main-header").outerHeight(true);
-    $("a[href*=#]:not([href=#])").click(function(event){
-        event.preventDefault();
-        let myattr = $(this).attr("href");
-        let target = $(myattr);
-        if (target.length) {
-            $("html, body").animate({
-                scrollTop: target.offset().top - headerHeight
-            }, 2000);
-            return false;
-        } else {
-            window.location.href = "index.html" + myattr;
-        }
+$(window).on("load", function(){
+    $("ul.main_menu a, a[rel='m_PageScroll2id']").mPageScroll2id({
+        highlightSelector:"ul.main_menu a",
+        crollSpeed: 2000,
+        offset: 104,
     });
 });

@@ -7,8 +7,9 @@
 .glance-slider .slick-list{width: 100vw;}
 .glance-slider .slick-slide{width: 284px;}
 .glance-slide-year{width: 72px; height: 72px; margin-bottom: 32px; }
+.no_circle .glance-year{opacity: 0;}
 .glance-year{opacity: 1; width: 100%; height: 100%; background-color: var(--health-color); border: 4px solid #FFFFFF; border-radius: 50%; font-size: 20px; line-height: 20px; font-weight: 700; font-family: 'Overpass Mono', sans-serif; color: var(--white); text-transform: uppercase; z-index: 1; position: relative;}
-.glance-down-arrow{width: 2px; height: 76px; top: 34px; left: 50%; transform: translateX(-50%); position: absolute; background-color: var(--slate-color);}
+.glance-down-arrow{width: 2px; height: 80px; top: 30px; left: 50%; transform: translateX(-50%); position: absolute; background-color: var(--slate-color);}
 .glance-down-arrow::before{width: 10px; height: 10px; left: 50%; transform: translateX(-50%); background-color: var(--slate-color); border-radius: 50%; content: ""; position: absolute;}
 .glance-down-arrow::after{ left: 50%; transform: translateX(-50%) rotate(45deg); bottom: 0; width: 0; height: 0; border-width: 0px 0 12px 12px; border-style: solid; border-color: transparent; border-bottom-color: var(--slate-color); content: ""; display: block; position: absolute;}
 .glance-slider .glance-slide{margin-right: 48px; padding-bottom: 8px;}
