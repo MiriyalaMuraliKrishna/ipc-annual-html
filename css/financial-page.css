@@ -4,6 +4,7 @@
 .deposit-text{color: var( --cement-color); font-weight: 400; font-size: 16px; line-height: 24px;}
 
 /* Ipc team section */
+.teams-feature-main{padding: 0 0 73px;}
 .ipc-team-heading span{margin-bottom: 24px;}
 .ipc-team-desc{color: var( --cement-color); font-size:20px; font-Weight: 400; line-height: 28px;}
 .team-feature-icon{width: 64px; height: 64px; margin-bottom: 16px;}

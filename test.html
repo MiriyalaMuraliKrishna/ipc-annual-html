@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js" crossorigin="anonymous"></script>
+<script src="./dist/core.bundle.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type = "text/javascript">
+    google.charts.load('current', {packages: ['corechart']});     
+ </script>
+<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+// Set Data
+
+var data = google.visualization.arrayToDataTable([
+          ['Year', 'Access Appeals', 'Privacy Files'],
+          [2018,  9.4, 4.3],
+        [2019,  9.2, 4.6],
+        [2020,  10.9, 7.8],
+        [2021,  12.0,  7.3],
+        [2022,  12.5,  8.1],
+        ]);
+
+        var data = new google.visualization.DataView(data);
+        data.setColumns([0,
+    1, {
+      calc: function (dt, row) {
+        return dt.getValue(row, 1);
+      },
+      type: "number",
+      role: "annotation"
+    },
+    2, {
+      calc: function (dt, row) {
+        return dt.getValue(row, 2);
+      },
+      type: "number",
+      role: "annotation"
+    },
+    
+  ]);
+
+// Set Options
+var options = {
+    displayAnnotations: true,
+
+  title: '',
+  hAxis: {title:'Years',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
+  vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
+  legend: 'bottom',
+  pointSize: 5,
+  tooltip: {isHtml: true}
+
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+</body>
+</html>

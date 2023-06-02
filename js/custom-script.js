@@ -64,10 +64,11 @@ $(window).on("load", function(){
     $("ul.aside_links > li > a").on('click', function(e) {
         e.preventDefault();
         var target = $(this).attr('href');
+        let height = $('.main-header').outerHeight(true);  
         let scrolltoHome = window.location.href = "/index.html" + target; 
         $.mPageScroll2id("scrollTo", scrolltoHome, {
             offset: {
-                top: 104,
+                top: height,
             }
         });
     });    

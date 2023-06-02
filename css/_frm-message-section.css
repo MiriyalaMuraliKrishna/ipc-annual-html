@@ -5,15 +5,17 @@
 .frm-author-block{width: 104px; height: 104px; bottom: -32px; right: -32px; opacity: 0.75; position: absolute; mix-blend-mode: multiply; background-color: var(--health-color); z-index: 1;}
 .frm-author-text{font-size: 16px; line-height: 24px;}
 .frm-author-text p{margin-bottom: 13px;}
+.frm-message-main blockquote:not(span.optional-text){margin: 40px 0 0;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .frm-message-wrap{padding-bottom: 200px;}
+    .frm-message-wrap{padding-bottom: 122px;}
     .frm-message-main h2{margin-bottom: 48px;}
     .frm-message-main span.optional-text{margin-bottom: 49px;}
     .frm-author-main{gap: 88px; padding-top: 22px;}
     .frm-author-image{flex: 0 0 228px;}
     .frm-author-text{flex: 0 0 calc(100% - 316px);}
+    .frm-author-image-new{max-width: 428px; width: 100%; margin: 7px 70px 60px 0;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .frm-message-wrap{padding-bottom: 118px;}
@@ -22,6 +24,8 @@
     .frm-message-wrap{padding-bottom: 84px;}
     .frm-author-main{display: block; padding-top: 22px;}
     .frm-author-image{max-width: 228px; margin-bottom: 60px;}
+    .frm-author-image-new{max-width: 228px; width: 100%; margin: 7px 60px 60px 0;}
+    .frm-message-main{padding: 60px 30px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .frm-message-wrap{padding-bottom: 84px;}
@@ -30,4 +34,5 @@
     .frm-author-main{display: block;}
     .frm-author-image{max-width: 228px; margin-bottom: 56px;}
     .frm-author-block{mix-blend-mode: normal;}
+    .frm-author-image-new{float: none; margin-bottom: 56px;}
 }

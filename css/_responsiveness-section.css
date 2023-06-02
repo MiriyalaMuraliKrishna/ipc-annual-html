@@ -4,8 +4,8 @@
 .res-cmt-block{ background-color: var(--cement-color);}
 .res-corporate-block{background-color: var(--corporate-color);}
 .res-vertical-stripe{background-repeat: no-repeat; background-size: contain; position: absolute; }
-
-
+.res-vertical-overlay{ opacity: 0.5; width: 100%; height: 100%; top: 0; left: 0; content: ""; background: var(--privacy-color); display: block; position: absolute; }
+.responsiveness-image .white-block{z-index: 1;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){

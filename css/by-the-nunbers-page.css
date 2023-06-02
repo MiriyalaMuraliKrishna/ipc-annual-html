@@ -11,12 +11,14 @@ body.by-the-numbers-page{background-attachment: fixed; background-image: url('./
 .feature-last{padding-bottom: 38px;}
 
 
+
 /*-- media starts here --*/
 @media only screen and (min-width: 768px){
     .first-reach .outreach-row{margin-bottom: 30px;}
     .by-outreach-main.second-reach{padding-top: 32px;}
     .second-reach .outreach-row{margin: 0 0 32px;}
     .feature-last .feature-overview-main{padding-bottom: 82px;}
+    .feature-overview-chart{ width: 100%; height: 100%; min-height: 500px; }
 }
 @media only screen and (min-width: 1024px){
     .feature-overview-list{gap: 80px; margin-bottom: 112px; flex-direction: row-reverse;}

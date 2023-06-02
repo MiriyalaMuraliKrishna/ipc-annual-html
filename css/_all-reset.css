@@ -26,7 +26,9 @@ p:last-child{margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 15px; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
 pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 24px; max-width: 100%; overflow: auto; padding: 12px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
 blockquote, q {-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none; }
-blockquote:not(span.optional-text){padding: 30px 64px 63px; font-weight: 800; font-size: 40px; line-height: 48px; font-style: normal; position: relative; letter-spacing: -0.05em; border-radius: 0; margin: 0 0 80px; font-family: 'Overpass', sans-serif; background-color: var(--health-color); color: var(--white);}
+blockquote:not(span.optional-text){padding: 84px 80px 63px 64px; font-weight: 800; font-size: 40px; line-height: 48px; font-style: normal; position: relative; letter-spacing: -0.05em; border-radius: 0; margin: 0 0 80px; font-family: 'Overpass', sans-serif; background-color: var(--health-color); color: var(--white);}
+blockquote:not(span.optional-text) .btn-link{color: var(--white);}
+blockquote:not(span.optional-text) .btn-link:hover{color: var(--corporate-color);}
 .blockquote-icon{width: 74px; height: 64px; background-image: url("./images/quote-icon.svg"); background-repeat: no-repeat; background-size: contain; content: ""; display: block;}
 blockquote p span{color: var(--tech-color); background-image: linear-gradient(to top, rgb(36 45 56 / 50%) 20px, transparent 0px); background-position: 0 0px;}
 blockquote p::after{top: 0ex; content: "”"; display: inline; color: var(--tech-color); position: relative;}
@@ -107,7 +109,7 @@ button:hover, .button:hover, body .frm_forms .frm_form_fields .frm_submit button
 .button.white{color: var(--white); border-color: var(--privacy-color);}
 .button.white:hover:after{background-color: var(--privacy-color);}
 
-.btn-link{padding-right: 20px; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; color: var(--corporate-color); text-transform: uppercase; font-family: 'League Gothic', sans-serif; position: relative;}
+.btn-link{padding-right: 20px; font-size: 1rem; line-height: 1.5; letter-spacing: 0.05em; color: var(--corporate-color); text-transform: uppercase; font-weight: normal; font-family: 'League Gothic', sans-serif; position: relative;}
 .btn-link:hover{color: var(--privacy-color); padding-right: 25px;}
 .btn-link::after{right: 0; top: 50%; transform: translateY(-50%); content: "\f061"; display: block; font-family: "Font Awesome 6 Pro"; position: absolute;}
 .btn-link.btn-white-bg{padding: 11px 39px 10px 16px; background-color: var(--white); display: inline-block;}
