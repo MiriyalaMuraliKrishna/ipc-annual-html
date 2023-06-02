@@ -1,2 +1,8 @@
 
 body.fr .glance-year{font-size: 12px;}
+body.fr .primary-banner-text h1 { font-size: 52px; line-height: 60px; }
+
+@media only screen and (min-width: 1024px){
+    body.fr ul.report_list > li{padding: 25px 40px 26px; font-size: 40px; line-height: 50px; min-width: 400px;}
+}
+

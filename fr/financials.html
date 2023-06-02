@@ -17,6 +17,19 @@
 <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Overpass+Mono:wght@400;500;600;700&family=Overpass:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" media="all">
 <link rel="stylesheet" href="./core.bundle.css" media="all">
+<script>
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+    var u="//analytics.ipc.on.ca/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
 </head>
 <body class="financials-page">
 <header class="main-header">
@@ -173,10 +186,7 @@
             </picture>
         </div>
         <div class="default-banner-text">
-            <span class="optional-text">2023 FINANCIAL STATEMENT</span>
-            <h1>Short introduction to the financial statement and numbers below</h1>
-            <hr>
-            <p>Accumsan ut fames et eget tincidunt leo sit amet amet. Posuere id vitae sed amet mattis donec. Nibh ipsum in vel nunc massa pulvinar volutpat. Ut elementum ultrices vivamus pellentes.</p>
+            <h1>État financier</h1>
         </div>
     </div>
 </div>

@@ -1,0 +1,195 @@
+
+.team-ipc-head{ margin-bottom: 60px;}
+.team-ipc-head h3{margin-bottom: 0; position: relative; display: inline-block;}
+.team-ipc-head h3::before, .team-ipc-head h3::after{top: calc(50% - 5px); transform: translateY(-50%); background-repeat: no-repeat; background-size: cover; content: ""; display: block; position: absolute;}
+.team-ipc-head h3::before{width: 38px; height: 24px; left: -50px;  background-image: url("./images/team-left-icon@2x.png"); }
+.team-ipc-head h3::after{width: 12px; height: 24px; right: -24px; background-image: url("./images/team-right-icon@2x.png"); }
+
+/*-- circle --*/
+.team-ipc-centner{width: 150px; height: auto; margin: 0 auto; text-align: center;}
+.team-ipc-circle{width: 124px; height: 124px; margin: 0 auto; border: 12px solid #00a49a; border-radius: 50%;}
+.team-ipc-desc{font-size: 14px; line-height: 18px; margin-bottom: 15px;}
+span.optional-team{color: var(--health-color); font-size: 18px; line-height: 24px; letter-spacing: 1px; font-weight: 500; display: block; font-family: 'League Gothic',sans-serif; text-transform: uppercase;}
+.team-ipc-desc p{font-size: 13px; color: var(--cement-color);}
+.team-icon{width: 40px;}
+.team-icon img{width: 100%; object-fit: cover;}
+
+/*-- sm circle --*/
+.team-circlec-centner{width: 130px; height: auto; margin: 0 auto; text-align: center;}
+.team-circle-sm{width: 78px; height: 78px; margin: 0 auto 15px; border: 8px solid #00a49a; border-radius: 50%; background-color: var(--white); z-index: 1;}
+.team-circle-sm.x-sm{width: 62px; height: 62px;}
+.team-circle-desc{font-size: 14px; line-height: 18px; position: relative; z-index: 1;}
+.team-circle-desc p{font-size: 13px; color: var(--cement-color);}
+span.optional-team{color: var(--health-color); font-size: 18px; line-height: 24px; letter-spacing: 1px; font-weight: 500; display: block; font-family: 'League Gothic',sans-serif; text-transform: uppercase;}
+.team-circle-icon{width: 28px;}
+.team-circle-icon img{width: 100%; object-fit: cover;}
+.x-sm .team-circle-icon{width: 20px;}
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px) {
+	ul.tree-vertical{margin: 0; padding: 0; position: relative;}
+	ul.tree-vertical::before, ul.tree-vertical::after{ height: 160px; top: 132px; content: ""; display: block; background-color: transparent; position: absolute; }
+	ul.tree-vertical::before { width: calc(50% - 294px); left: calc(25% - 100px); border-top: 2px solid var(--line-color); border-left: 2px solid var(--line-color); }
+	ul.tree-vertical::after { width: calc(50% - 294px); left: calc(50% + 72px); border-top: 2px solid var(--line-color); border-right: 2px solid var(--line-color); }
+	ul.tree-vertical > li::before{display: none;}
+
+	/*-- 1st level --*/
+	ul.tree-vertical > li > ul{margin: 0; padding-top: 105px; align-items: flex-start; position: relative;}
+	ul.tree-vertical > li > ul::before{width: 2px; height: 80px; top: 13px; position: absolute; content: ""; display: block; background-color: var(--line-color);}
+	ul.tree-vertical > li > ul > li{flex: 0 0 33%;}
+	ul.tree-vertical > li > ul > li::before, ul.tree-vertical > li > ul > li::after{ height: 160px; top: 40px; position: absolute; content: ""; display: block; background-color: transparent; border-radius: 0; }
+	ul.tree-vertical > li > ul > li::before { width: calc(50% - 52px); left: 0; border-top: 2px solid var(--line-color); border-left: 2px solid var(--line-color); }
+	ul.tree-vertical > li > ul > li::after { width: calc(50% - 52px); right: 0; border-top: 2px solid var(--line-color); border-right: 2px solid var(--line-color); }
+	ul.tree-vertical > li > ul > li:nth-child(2)::before{display: none;}
+	ul.tree-vertical > li > ul > li:nth-child(2)::after{display: none;}
+
+
+	/*-- 2nd level --*/
+	ul.tree-vertical > li > ul > li > ul{margin: 0; width: calc(100% + 100px); left: -50px; padding-top: 41px; gap: 5px; position: relative;}
+	ul.tree-vertical > li > ul > li > ul > li::before{display: none;}
+	ul.tree-vertical > li > ul > li > ul > li{width: 130px; margin: 0; flex: 1;}
+	ul.tree-vertical > li > ul > li > ul > li span.optional-team{letter-spacing: 0.5px;}
+
+
+	.tree-vertical-image{ position: absolute;}
+	.tree-vertical-image.left{left: 219px;}
+	.tree-vertical-image.right{right: 219px;}
+
+
+
+
+}
+@media only screen and (max-width: 1340px) and (min-width: 1024px){
+	.team-ipc-main{max-width: 1002px; margin: 0 auto;}
+	.tree-vertical-image.left{left: 163px;}
+	.tree-vertical-image.right{right: 163px;}
+	ul.tree-vertical::before { width: calc(50% - 238px); left: calc(25% - 78px); }
+	ul.tree-vertical::after { width: calc(50% - 238px); left: calc(50% + 72px); }
+	ul.tree-vertical > li > ul > li > ul > li { width: 136px; margin: 0 0 20px; flex: none;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+
+	ul.tree-vertical{margin: 0; gap: 20px;}
+	ul.tree-vertical > li:first-child{width: 150px;}
+	ul.tree-vertical > li{width: calc(100% - 170px);}
+	ul.tree-vertical > li::before{display: none;}
+	ul.tree-vertical > li > ul{margin: 0;}
+
+
+	ul.taem-leve2 > li{margin: 0;}
+	ul.taem-leve2 > li::before{ height: 50%; top: 37px; left: 38px; width: 2px; border-left: 2px solid var(--line-color);  position: absolute; content: ""; display: block; background-color: transparent; border-radius: 0; }
+	ul.taem-leve2 > li::after {
+		width: 2px;
+		height: 50%;
+		left: 38px;
+		bottom: 37px;
+		border-left: 2px solid var(--line-color);
+		position: absolute;
+		content: "";
+		display: block;
+		background-color: transparent;
+		border-radius: 0;
+	}
+	ul.taem-leve2 > li:nth-child(2){padding: 10px 0 0 38px;}
+	ul.taem-leve2 > li:nth-child(2)::before{display: none;}
+	ul.taem-leve2 > li:nth-child(2)::after{display: none;}
+
+	ul.taem-leve3{margin: 0; width: calc(100% - 260px);} 
+	ul.taem-leve3 > li::before{display: none;}
+	ul.taem-leve3 > li{margin: 0 0 30px; padding-left: 40px;}
+	ul.taem-leve3 > li:last-child{margin-bottom: 0;}
+	ul.taem-leve3 > li:first-child::before {
+		height: 2px;
+		top: 50%;
+		left: -221px;
+		width: 250px;
+		position: absolute;
+		content: "";
+		display: block;
+		background-color: var(--line-color);
+		border-radius: 0;
+	}
+	ul.taem-leve3 > li:last-child::before {
+		height: 2px;
+		top: 50%;
+		left: -221px;
+		width: 250px;
+		position: absolute;
+		content: "";
+		display: block;
+		background-color: var(--line-color);
+		border-radius: 0;
+	}
+	.team-circle-centner{width: 260px;}
+
+	/*-- sm circle --*/
+	.team-circle-sm{width: 78px; }
+	.team-circle-desc{width: calc(100% - 94px);}
+	.team-circle-sm.x-sm{width: 62px;}
+	.team-circle-sm.x-sm .team-circle-desc{width: calc(100% - 62px);}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+	ul.tree-vertical{margin: 0; gap: 20px;}
+	ul.tree-vertical > li:first-child{width: 150px;}
+	ul.tree-vertical > li{width: calc(100% - 170px);}
+	ul.tree-vertical > li::before{display: none;}
+	ul.tree-vertical > li > ul{margin: 0;}
+
+
+	ul.taem-leve2 > li{margin: 15px 0;}
+	
+	ul.taem-leve2 > li:nth-child(2)::before{display: none;}
+	ul.taem-leve2 > li:nth-child(2)::after{display: none;}
+
+
+	ul.taem-leve3 > li::before{display: none;}
+	ul.taem-leve3 > li{margin: 0 0 30px; padding-left: 40px;}
+	ul.taem-leve3 > li:last-child{margin-bottom: 0;}
+	.team-ipc-centner{width: 130px;}
+	ul.tree-vertical > li:first-child {
+		width: 130px;
+	}
+	ul.tree-vertical > li {
+		width: calc(100% - 150px);
+	}
+	ul.taem-leve2 > li:nth-child(2){padding: 0;}
+	ul.taem-leve2 > li::before {
+		top: 40px;
+		left: -65%;
+		position: absolute;
+		content: "";
+		display: block;
+		background-color: transparent;
+		border-radius: 0;
+	}
+	ul.taem-leve2 > li::after{display: none;}
+	ul.taem-leve3 {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		padding-top: 30px;
+		margin: 0;
+	}
+	ul.taem-leve3 > li:first-child::before {display: none;}
+	ul.taem-leve3 > li:last-child::before {display: none;}
+	ul.taem-leve3 > li {
+		margin: 0 0 30px;
+		padding-left: 0;
+		flex: 0 0 46%;
+	}
+
+
+
+	.team-circle-centner{display: block; width: auto;}
+	.team-circle-sm{margin: 0 0 15px;}
+
+
+
+	
+}
+
+
+
+
+
