@@ -420,7 +420,7 @@ function phipaChart2() {
         ['Plaintes relatives à l’accès ou à la rectification',  180],
         ['Plaintes relatives à la collecte, à l’utilisation ou à la divulgation',      163],
         ['Dossiers de plainte concernant la collecte, l’utilisation ou la divulgation ouverts par le CIPVP',      29],
-        ['Plainte déposée par la commissaire',      1],
+        ['Plainte déposée par la commissaire',      1]
       ]);
 
       var options = {
@@ -429,7 +429,8 @@ function phipaChart2() {
         colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
         legend: {
           position: 'right',
-        },       
+        },     
+        sliceVisibilityThreshold: 0,  
       };
 
       
