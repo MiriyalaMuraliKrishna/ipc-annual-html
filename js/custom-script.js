@@ -65,7 +65,7 @@ $(window).on("load", function(){
         e.preventDefault();
         var target = $(this).attr('href');
         let height = $('.main-header').outerHeight(true);  
-        let scrolltoHome = window.location.href = "/index.html" + target; 
+        let scrolltoHome = window.location.href = "./index.html" + target; 
         $.mPageScroll2id("scrollTo", scrolltoHome, {
             offset: {
                 top: height,
@@ -74,7 +74,7 @@ $(window).on("load", function(){
     });    
 });
 $(document).ready(function(){
-    $("ul.main_menu a[href*='by-the-numbers.html']").on('click', function(e){
+    $("ul.main_menu a[href*='by-the-numbers.html'], ul.ipc-vision-links li a").on('click', function(e){
         let target = $(this).attr('href');
         let height = $('.main-header').outerHeight(true);  
         $.mPageScroll2id("scrollTo", target, {

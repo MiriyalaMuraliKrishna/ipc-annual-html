@@ -22,5 +22,5 @@ function check_if_in_view() {
     }
   });
 }
-$window.on('scroll load', check_if_in_view);
-$window.trigger('scroll load');
+$window.on('load scroll orientationchange', check_if_in_view);
+$window.trigger('load scroll orientationchange');
