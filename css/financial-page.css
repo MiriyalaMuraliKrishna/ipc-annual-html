@@ -8,10 +8,14 @@
 .ipc-team-heading span{margin-bottom: 24px;}
 .ipc-team-desc{color: var( --cement-color); font-size:20px; font-Weight: 400; line-height: 28px;}
 .team-feature-icon{width: 64px; height: 64px; margin-bottom: 16px;}
-.team-feature-txt{color: var(--slate-color); font-size:16px; line-height: 24px; font-weight: 400;}
+.team-feature-thumb{max-width: 64px;}
+.team-feature-thumb img{object-fit: contain;}
+.team-feature-txt{color: var(--slate-color); font-size: 16px; line-height: 24px; font-weight: 400;}
 span.feature-title{display:block; color: var(--corporate-color); font-weight: 800; font-size: 24px; line-height: 28px; letter-spacing: -0.05em; margin-bottom: 16px; font-family: 'Overpass', sans-serif;}
-
-
+.teams-feature-main.white_bg{padding: 17px 14px 15px; background-color: var(--white);}
+.white_bg .team-feature-icon{height: auto;}
+.white_bg .team-feature-thumb{max-width: 48px;}
+.white_bg .team-feature-txt{font-size: 14px; line-height: 20px;}
 
 /* Team members section */
 .team-members-main{padding: 0 0 128px;}
@@ -63,6 +67,8 @@ span.position a:hover{color: var(--slate-color);}
     .ipc-team-intro{gap: 50px;}
     .ipc-team-heading{flex: 0 0 460px;}
     .ipc-team-desc{flex: 0 0 calc(100% - 510px);}
+    .white_bg .team-features-row{gap: 20px 30px;}
+    .white_bg .team-features-list{flex: 0 0 calc(33.3333% - 26px);}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .deposit-main{padding: 86px 0 0;}
