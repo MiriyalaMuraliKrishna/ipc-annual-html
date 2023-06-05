@@ -118,10 +118,10 @@
                 <a href="#ipc-glance">IPC's Year at a Glance</a>
             </li>
             <li>
-                <a href="#ipc-statics">Statistics</a>
+                <a href="by-the-numbers.html">Statistics</a>
             </li>
             <li>
-                <a href="#financial-2022">2022 Financials</a>
+                <a href="financials.html">2022 Financials</a>
             </li>
         </ul>
     </nav>
@@ -212,7 +212,7 @@
 </div>
 </div>
 </section>
-<section class="ipc-vision-section">
+<section class="ipc-vision-section" id="our-vision-mandate">
     <div class="container">
         <div class="ipc-vision-main">
             <div class="ipc-vision-row row-1 flex">
@@ -1358,9 +1358,7 @@
 <div class="container">
     <div class="financial-main flex flex-vcenter">
         <div class="financial-graph">
-            <figure class="object-fit">
-                <img src="images/pie-chart.svg" alt="pie-chart">
-            </figure>
+           <div class="financial-2022-chart" id="financial-2022-chart"></div>
         </div>
         <div class="financial-text pos-relative">
             <div class="financial-title">
@@ -1391,6 +1389,11 @@
                     <td><span class="ellipse ellipse-5"></span></td>
                     <td>Supplies and Equipment</td>
                     <td>$137,000</td>
+                </tr>
+                <tr>
+                    <td><span class="ellipse ellipse-6"></span></td>
+                    <td>Total</td>
+                    <td>22,632,300$</td>
                 </tr>
             </table>
             <div class="financial-btn">
@@ -1452,5 +1455,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js" crossorigin="anonymous"></script>
 <script src="./dist/core.bundle.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script type = "text/javascript">
+    google.charts.load('current', {packages: ['corechart']});     
+ </script>
+<script src="dist/ipc-chart.js"></script>
 </body>
 </html>
