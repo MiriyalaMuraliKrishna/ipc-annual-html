@@ -206,50 +206,45 @@ function drawChart5() {
       ['Autre',  162, 0, 0, 0]
   ]);
   var data = new google.visualization.DataView(data);
-  data.setColumns([0,
-  1, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 1);
+  data.setColumns([
+    0,
+    1,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 1);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
     },
-    type: "number",
-    role: "annotation"
-  },
-  2, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 2);
+    2,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 2);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
     },
-    type: "number",
-    role: "annotation"
-  },
-  3, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 3);
+    3,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 3);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
     },
-    type: "number",
-    role: "annotation"
-  },
-  4, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 4);
-    },
-    type: "number",
-    role: "annotation"
-  },
-  {
-    calc: function (dt, row) {
-      return 0;
-    },
-    label: "Total",
-    type: "number",
-  },
-  {
-    calc: function (dt, row) {
-      return dt.getValue(row, 1) + dt.getValue(row, 2) + dt.getValue(row, 3) + dt.getValue(row, 4);
-    },
-    type: "number",
-    role: "annotation"
-  }
-]);
+    4,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 4);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
+    }
+  ]);
 
   var options = {
       title: '1,258 Total', 
@@ -350,50 +345,45 @@ function phipaChart1() {
       ['Dossiers non sécurisés',  3, 0, 0, 0]
   ]);
   var data = new google.visualization.DataView(data);
-  data.setColumns([0,
-  1, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 1);
+  data.setColumns([
+    0,
+    1,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 1);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
     },
-    type: "number",
-    role: "annotation"
-  },
-  2, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 2);
+    2,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 2);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
     },
-    type: "number",
-    role: "annotation"
-  },
-  3, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 3);
+    3,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 3);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
     },
-    type: "number",
-    role: "annotation"
-  },
-  4, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 4);
-    },
-    type: "number",
-    role: "annotation"
-  },
-  {
-    calc: function (dt, row) {
-      return 0;
-    },
-    label: "Total",
-    type: "number",
-  },
-  {
-    calc: function (dt, row) {
-      return dt.getValue(row, 1) + dt.getValue(row, 2) + dt.getValue(row, 3) + dt.getValue(row, 4);
-    },
-    type: "number",
-    role: "annotation"
-  }
-]);
+    4,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 4);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
+    }
+  ]);
 
   var options = {
       title: '493 Total', 
@@ -481,50 +471,45 @@ function cyfsaChart1() {
       ['Cyberattaques',  3, 0, 0, 0],
   ]);
   var data = new google.visualization.DataView(data);
-  data.setColumns([0,
-  1, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 1);
+  data.setColumns([
+    0,
+    1,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 1);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
     },
-    type: "number",
-    role: "annotation"
-  },
-  2, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 2);
+    2,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 2);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
     },
-    type: "number",
-    role: "annotation"
-  },
-  3, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 3);
+    3,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 3);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
     },
-    type: "number",
-    role: "annotation"
-  },
-  4, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 4);
-    },
-    type: "number",
-    role: "annotation"
-  },
-  {
-    calc: function (dt, row) {
-      return 0;
-    },
-    label: "Total",
-    type: "number",
-  },
-  {
-    calc: function (dt, row) {
-      return dt.getValue(row, 1) + dt.getValue(row, 2) + dt.getValue(row, 3) + dt.getValue(row, 4);
-    },
-    type: "number",
-    role: "annotation"
-  }
-]);
+    4,
+    {
+      calc: function (dt, row) {
+        var value = dt.getValue(row, 4);
+        return value === 0 ? null : value;
+      },
+      type: "number",
+      role: "annotation"
+    }
+  ]);
 
   var options = {
       title: '46 Total', 
@@ -855,6 +840,26 @@ function lineChart3() {
           chart.draw(data, options);
           }
             
-    
-    
-    
+          function financialchart() {
+            // Define the chart to be drawn.
+            var data = google.visualization.arrayToDataTable([
+                  ['Task', 'Hours per Day'],
+                  ['Traitements et salaires',     14900500],
+                  ['Avantages sociaux',      3980400],
+                  ['Transport et communications',      122000],
+                  ['Services',      3492400],
+                  ['Fournitures et matériel',      137000],
+                  ['Total',      22632300],
+                ]);
+          
+                var options = {
+                  title: '22,632,300$',
+                  pieHole: 0.4,
+                  colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372', '#00a49a'],
+                };
+          
+                var chart = new google.visualization.PieChart(document.getElementById('financial-2022-chart'));
+          
+                chart.draw(data, options);
+          }
+          google.charts.setOnLoadCallback(financialchart);
