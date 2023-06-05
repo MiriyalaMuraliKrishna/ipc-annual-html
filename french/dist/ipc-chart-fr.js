@@ -140,6 +140,15 @@ function drawChart2() {
         textStyle: {
           fontSize: 10  // Adjust the font size of the legend
         }
+      },
+      annotations: {
+        annotationPosition: 'outside', 
+        textStyle: {
+          fontSize: 9
+        }
+      },
+      chartArea: {
+        height: '90%'
       }
   };  
 
@@ -840,26 +849,25 @@ function lineChart3() {
           chart.draw(data, options);
           }
             
-          function financialchart() {
-            // Define the chart to be drawn.
-            var data = google.visualization.arrayToDataTable([
-                  ['Task', 'Hours per Day'],
-                  ['Traitements et salaires',     14900500],
-                  ['Avantages sociaux',      3980400],
-                  ['Transport et communications',      122000],
-                  ['Services',      3492400],
-                  ['Fournitures et matériel',      137000],
-                  ['Total',      22632300],
-                ]);
-          
-                var options = {
-                  title: '22,632,300$',
-                  pieHole: 0.4,
-                  colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372', '#00a49a'],
-                };
-          
-                var chart = new google.visualization.PieChart(document.getElementById('financial-2022-chart'));
-          
-                chart.draw(data, options);
-          }
-          google.charts.setOnLoadCallback(financialchart);
+function financialchart() {
+  // Define the chart to be drawn.
+  var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Traitements et salaires',     14900500],
+        ['Avantages sociaux',      3980400],
+        ['Transport et communications',      122000],
+        ['Services',      3492400],
+        ['Fournitures et matériel',      137000]
+      ]);
+
+      var options = {
+        title: '22 632 300$',
+        pieHole: 0.4,
+        colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372'],
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('financial-2022-chart'));
+
+      chart.draw(data, options);
+}
+google.charts.setOnLoadCallback(financialchart);

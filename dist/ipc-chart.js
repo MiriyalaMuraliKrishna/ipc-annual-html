@@ -140,6 +140,15 @@ function drawChart2() {
         textStyle: {
           fontSize: 10  // Adjust the font size of the legend
         }
+      },
+      annotations: {
+        annotationPosition: 'outside', 
+        textStyle: {
+          fontSize: 9
+        }
+      },
+      chartArea: {
+        height: '90%'
       }
   };  
 
@@ -883,14 +892,13 @@ function financialchart() {
         ['Employee Benefits',      3980400],
         ['Transportation and Communications',      122000],
         ['Services',      3492400],
-        ['Supplies and Equipment',      137000],
-        ['Total',      22632300],
+        ['Supplies and Equipment',      137000]
       ]);
 
       var options = {
         title: '22,632,300$',
         pieHole: 0.4,
-        colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372', '#00a49a'],
+        colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372'],
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('financial-2022-chart'));
