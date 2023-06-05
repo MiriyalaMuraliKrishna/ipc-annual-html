@@ -5,7 +5,7 @@
 .acc-corporate-block{background-color: var(--corporate-color);}
 .acc-block-grow{width: 539px; height: 538px; top: 0; left: -80px; background-image: url('./images/article-banner-glow.svg'); background-repeat: no-repeat; background-size: cover; position: absolute;}
 .acc-verticle-stripe{background-repeat: no-repeat; background-size: contain; position: absolute; }
-
+.accountability-image-wrap.no_space{margin-bottom: 0;}
 
 
 /*-- media css starts here --*/
@@ -20,6 +20,7 @@
     .accountability-text{bottom: 0; left: 0; width: 100%; padding: 40px 40px 22px; max-width: 1060px; color: var(--white); position: absolute;}
     .accountability-text h2{font-size: 112px; line-height: 112px; margin-bottom: 0; color: var(--white);}
     .accountability-text.sm h2{font-size: 64px; line-height: 64px;}
+    .accountability-thumb img{min-height: 750px;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .accountability-thumb img{min-height: 720px;}

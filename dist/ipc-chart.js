@@ -426,12 +426,6 @@ function phipaChart1() {
       chartArea: {
         left: 270,
      },
-     annotations: {
-      textStyle: {
-        color: 'transparent',
-        auraColor: 'none'
-      },
-     }
   };  
   //Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('phipa-chart1'));
@@ -447,22 +441,19 @@ function phipaChart2() {
         ['Access/Correction Complaint',     180],
         ['Collection/Use/Disclosure Complaint',  163],
         ['Commissioner Initiated',      1],
-        ['IPC Initiated Collection/Use/Disclosure Complaint',      29],
+        ['IPC-Initiated Collection/Use/Disclosure Complaint',      29],
         ['Reported Breach',      492],
       ]);
 
       var options = {
         title: '865 Total',
         pieHole: 0.4,
-        colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        colors: ['#182853', '#357975', '#00a49a', '#c3db70', '#727372'],
         legend: {
           position: 'right',
         },       
+        sliceVisibilityThreshold: 0,
       };
-
-      
-
-
 
 
 
@@ -473,28 +464,48 @@ function phipaChart2() {
 google.charts.setOnLoadCallback(phipaChart2);
 
 
+
+
+
+
 function phipaChart3() {
-  // Define the chart to be drawn.
+  // Define the chart data.
   var data = google.visualization.arrayToDataTable([
-        ['Task', 'Hours per Day'],
-        ['Resolved',     745],
-        ['Screened Out / Dismissed',      75],
-        ['Withdrawn',      67],
-        ['Abandoned',      58],
-        ['Order/Decision Issued*',      20],
-      ]);
+    ['Task', 'Hours per Day'],
+    ['Resolved', 745],
+    ['Screened Out / Dismissed', 75],
+    ['Withdrawn', 67],
+    ['Abandoned', 58],
+    ['Order/Decision Issued*', 20]
+  ]);
 
-      var options = {
-        title: '965 Total',
-        pieHole: 0.4,
-        colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      };
+  var options = {
+    title: '965 Total',
+    pieHole: 0.4,
+    colors: ['#182853', '#357975', '#00a49a', '#c3db70', '#727372'],
+    chartArea: {
+      width: '80%',
+    },
+    sliceVisibilityThreshold: 0.0001, // Adjust the slice visibility threshold
+  };
 
-      var chart = new google.visualization.PieChart(document.getElementById('phipa-chart3'));
+  var chart = new google.visualization.PieChart(document.getElementById('phipa-chart3'));
 
-      chart.draw(data, options);
+  chart.draw(data, options);
 }
+
 google.charts.setOnLoadCallback(phipaChart3);
+
+
+
+
+
+
+
+
+
+
+
 
 
 function cyfsaChart1() {
