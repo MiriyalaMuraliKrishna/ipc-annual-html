@@ -425,7 +425,7 @@ function phipaChart2() {
       var options = {
         title: '865 Total',
         pieHole: 0.4,
-        colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        colors: ['#182853', '#357975', '#00a49a', '#c3db70', '#727372'],
         legend: {
           position: 'right',
         },     
