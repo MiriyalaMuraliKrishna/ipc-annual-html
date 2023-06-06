@@ -17,10 +17,15 @@
         var options = {
           title: 'Indian Language Use',
           pieSliceText: 'percentage',
+          pieHole: 0.4,
           pieSliceTextStyle: {
-            color: '#000000' // Set the color of the text value for all slices
+            color: '#000000',
+            fontSize: 10
           },
           sliceVisibilityThreshold: 0,
+          pieStartAngle: 95,
+
+
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));

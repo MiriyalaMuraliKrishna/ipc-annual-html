@@ -191,7 +191,7 @@ function drawChart4() {
       ]);
 
       var options = {
-        title: '1,347 Total',
+        title: '1 347 Total',
         pieHole: 0.4,
         colors: ['#00a49a', '#182853', '#357975', '#cadf81'],
       };
@@ -256,7 +256,7 @@ function drawChart5() {
   ]);
 
   var options = {
-    title: '1,258 Total',
+    title: '1 258 Total',
     isStacked: true,
     colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
     hAxis: {
@@ -449,10 +449,14 @@ function phipaChart2() {
         title: '865 Total',
         pieHole: 0.4,
         colors: ['#182853', '#357975', '#00a49a', '#c3db70', '#727372'],
+        pieSliceTextStyle: {
+            fontSize: 10
+        },
         legend: {
           position: 'right',
         },       
         sliceVisibilityThreshold: 0,
+        pieStartAngle: 95,
       };
 
 
@@ -470,23 +474,25 @@ google.charts.setOnLoadCallback(phipaChart2);
 
 function phipaChart3() {
   // Define the chart data.
-  var data = google.visualization.arrayToDataTable([
-    ['Task', 'Hours per Day'],
-    ['Resolved', 745],
-    ['Screened Out / Dismissed', 75],
-    ['Withdrawn', 67],
-    ['Abandoned', 58],
-    ['Order/Decision Issued*', 20]
-  ]);
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Resolved', 745],
+      ['Screened Out / Dismissed', 75],
+      ['Withdrawn', 67],
+      ['Abandoned', 58],
+      ['Order/Decision Issued*', 20]
+    ]);
 
   var options = {
     title: '965 Total',
     pieHole: 0.4,
     colors: ['#182853', '#357975', '#00a49a', '#c3db70', '#727372'],
-    chartArea: {
-      width: '80%',
+    pieSliceText: 'percentage',
+    pieSliceTextStyle: {
+        fontSize: 6
     },
-    sliceVisibilityThreshold: 0.0001, // Adjust the slice visibility threshold
+    sliceVisibilityThreshold: 0,
+    pieStartAngle: 90,
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('phipa-chart3'));
@@ -907,7 +913,7 @@ function financialchart() {
       ]);
 
       var options = {
-        title: '22,632,300$',
+        title: '$ 22632300',
         pieHole: 0.4,
         colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372'],
       };

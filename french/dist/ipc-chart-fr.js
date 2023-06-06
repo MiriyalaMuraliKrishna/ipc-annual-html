@@ -1,7 +1,7 @@
 function drawChart() {
   // Define the chart to be drawn.
   var data = google.visualization.arrayToDataTable([
-      ['Year', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
+      ['Année', 'LAIPVP', 'LAIMPVP', 'LPRPS', 'LSEJF'],
       ['2018',  761, 986, 869,  0],
       ['2019',  732, 1047, 1035, 0],
       ['2020',  923,  768, 926, 151],
@@ -46,10 +46,16 @@ function drawChart() {
     type: "number",
   },
   {
-    calc: function (dt, row) {
-      return dt.getValue(row, 1) + dt.getValue(row, 2) + dt.getValue(row, 3) + dt.getValue(row, 4);
+    calc: function(dt, row) {
+      var total =
+        dt.getValue(row, 1) +
+        dt.getValue(row, 2) +
+        dt.getValue(row, 3) +
+        dt.getValue(row, 4);
+        return total === 0 ? '' : total.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+    
     },
-    type: "number",
+    type: "string",
     role: "annotation"
   }
 ]);
@@ -58,14 +64,27 @@ function drawChart() {
       title: 'Dossiers ouverts, 2018-2022', 
       isStacked: true,
       colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Years', titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
+      hAxis: {title:'Année', titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
       legend: {
         position: 'right',
         textStyle: {
           fontSize: 10  // Adjust the font size of the legend
         }
+      },
+      annotations: {
+        textStyle: {
+          color: '#FFFFFF'  // last bar color
+        }
+      },
+      series: {
+        4: {
+          annotations: {
+            textStyle: {
+              color: '#242D38' // Set the desired color for the 4th bar text
+            }
+          }
+        }
       }
-      
   };  
   //Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('overall-chart1'));
@@ -74,10 +93,11 @@ function drawChart() {
 google.charts.setOnLoadCallback(drawChart);
 
 
+
 function drawChart2() {
   // Define the chart to be drawn.
   var data = google.visualization.arrayToDataTable([
-      ['Year', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
+      ['Année', 'LAIPVP', 'LAIMPVP', 'LPRPS', 'LSEJF'],
       ['2018',  752, 939, 727,  0],
       ['2019',  743, 947, 1002, 0],
       ['2020',  771, 569, 624, 55],
@@ -122,10 +142,16 @@ function drawChart2() {
     type: "number",
   },
   {
-    calc: function (dt, row) {
-      return dt.getValue(row, 1) + dt.getValue(row, 2) + dt.getValue(row, 3) + dt.getValue(row, 4);
+    calc: function(dt, row) {
+      var total =
+        dt.getValue(row, 1) +
+        dt.getValue(row, 2) +
+        dt.getValue(row, 3) +
+        dt.getValue(row, 4);
+        return total === 0 ? '' : total.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+    
     },
-    type: "number",
+    type: "string",
     role: "annotation"
   }
 ]);
@@ -134,7 +160,7 @@ function drawChart2() {
       title: 'Dossiers fermés, 2018-2022', 
       isStacked: true,
       colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Years',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
+      hAxis: {title:'Année',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
       legend: {
         position: 'right',
         textStyle: {
@@ -144,12 +170,32 @@ function drawChart2() {
       annotations: {
         annotationPosition: 'outside', 
         textStyle: {
-          fontSize: 9
+          fontSize: 10,
+          auraColor: 'transparent'
         }
       },
-      chartArea: {
-        height: '90%'
-      }
+      // chartArea: {
+      //   height: '80%'
+      // },
+      series: {
+        3: {
+          annotations: {
+            textStyle: {
+              color: 'transparent'
+            }
+          }
+        },
+        4: {
+          annotations: {
+            textStyle: {
+              color: '#242D38'
+            },
+            stem: {
+              length: 5  // Adjust the length of the stems
+            }
+          }
+        }
+      },
   };  
 
 
@@ -169,9 +215,11 @@ function drawChart3() {
       ]);
 
       var options = {
-        title: '1,258 Total',
+        title: '1 258 Total',
         pieHole: 0.4,
         colors: ['#182853', '#357975'],
+        pieSliceText: 'percentage',
+        format:'#,## %'
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('overall-chart3'));
@@ -206,7 +254,7 @@ google.charts.setOnLoadCallback(drawChart4);
 function drawChart5() {
   // Define the chart to be drawn.
   var data = google.visualization.arrayToDataTable([
-      ['Year', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
+      ['Année', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
       ['Exceptions',  595, 0, 0, 0],
       ['Caractère raisonnable des recherches',  145, 0, 0, 0],
       ['Avis réputé donné du refus',  143, 0, 0, 0],
@@ -259,7 +307,7 @@ function drawChart5() {
       title: '1,258 Total', 
       isStacked: true,
       colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Years',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
+      hAxis: {title:'Année',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
       legend: { position: "none" },
       chartArea: {
         left: 170,
@@ -345,7 +393,7 @@ google.charts.setOnLoadCallback(overallChart10);
 function phipaChart1() {
   // Define the chart to be drawn.
   var data = google.visualization.arrayToDataTable([
-      ['Year', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
+      ['Année', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
       ['Renseignements personnels mal dirigés ou perdus',  163, 0, 0, 0],
       ['Consultations sans autorisation',  143, 0, 0, 0],
       ['Collectes, utilisations ou divulgations non autorisées',  122, 0, 0, 0],
@@ -398,7 +446,7 @@ function phipaChart1() {
       title: '493 Total', 
       isStacked: true,
       colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Years',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
+      hAxis: {title:'Année',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
       legend: { position: "none" },
       chartArea: {
         left: 270,
@@ -472,7 +520,7 @@ google.charts.setOnLoadCallback(phipaChart3);
 function cyfsaChart1() {
   // Define the chart to be drawn.
   var data = google.visualization.arrayToDataTable([
-      ['Year', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
+      ['Année', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
       ['Collectes, utilisations ou divulgations non autorisées',  16, 0, 0, 0],
       ['Renseignements personnels mal dirigés ou perdus',  16, 0, 0, 0],
       ['Consultations sans autorisation',  8, 0, 0, 0],
@@ -524,7 +572,7 @@ function cyfsaChart1() {
       title: '46 Total', 
       isStacked: true,
       colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Years',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
+      hAxis: {title:'Année',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
       legend: { 
         position: "left",
       },
@@ -598,7 +646,7 @@ google.charts.setOnLoadCallback(cyfsaChart3);
 google.charts.setOnLoadCallback(drawChart1);
 function drawChart1() {
 var data = google.visualization.arrayToDataTable([
-        ['Year', 'Access Appeals', 'Privacy Files'],
+        ['Année', 'Access Appeals', 'Privacy Files'],
         [2018,  9.4, 4.3],
       [2019,  9.2, 4.6],
       [2020,  10.9, 7.8],
@@ -630,7 +678,7 @@ var options = {
   displayAnnotations: true,
 
 title: '',
-hAxis: {title:'Years',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
+hAxis: {title:'Année',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
 vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
 legend: 'bottom',
 pointSize: 5,
@@ -650,7 +698,7 @@ chart.draw(data, options);
 google.charts.setOnLoadCallback(lineChart2);
 function lineChart2() {
 var data = google.visualization.arrayToDataTable([
-        ['Year', 'Dossiers ouverts', 'Dossiers fermés'],
+        ['Année', 'Dossiers ouverts', 'Dossiers fermés'],
         [2018, 561, 575],
       [2019,  615, 579],
       [2020,  815, 691],
@@ -682,7 +730,7 @@ var options = {
   displayAnnotations: true,
 
 title: '',
-hAxis: {title:'Years',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
+hAxis: {title:'Année',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
 vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
 legend: 'bottom',
 pointSize: 5,
@@ -701,7 +749,7 @@ chart.draw(data, options);
 google.charts.setOnLoadCallback(lineChart3);
 function lineChart3() {
   var data = google.visualization.arrayToDataTable([
-    ['Year', 'Dossiers ouverts', 'Dossiers fermés'],
+    ['Année', 'Dossiers ouverts', 'Dossiers fermés'],
             [2018,  697, 772],
           [2019,  791, 777],
           [2020,  579, 445],
@@ -733,7 +781,7 @@ function lineChart3() {
       displayAnnotations: true,
   
     title: '',
-    hAxis: {title:'Years',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
+    hAxis: {title:'Année',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
     vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
     legend: 'bottom',
     pointSize: 5,
@@ -752,7 +800,7 @@ function lineChart3() {
   google.charts.setOnLoadCallback(lineChart4);
   function lineChart4() {
       var data = google.visualization.arrayToDataTable([
-                ['Year', 'Dossiers ouverts', 'Dossiers fermés'],
+                ['Année', 'Dossiers ouverts', 'Dossiers fermés'],
                 [2018,  121, 156],
               [2019,  121, 129],
               [2020,  113, 80],
@@ -784,7 +832,7 @@ function lineChart3() {
           displayAnnotations: true,
       
         title: '',
-        hAxis: {title:'Years',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
+        hAxis: {title:'Année',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
         vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
         legend: 'bottom',
         pointSize: 5,
@@ -804,7 +852,7 @@ function lineChart3() {
       google.charts.setOnLoadCallback(lineChart5);
       function lineChart5() {
           var data = google.visualization.arrayToDataTable([
-                  ['Year', 'Dossiers ouverts', 'Dossiers fermés'],
+                  ['Année', 'Dossiers ouverts', 'Dossiers fermés'],
                   [2018,  219, 294],
                   [2019,  238, 244],
                   [2020,  195, 124],
@@ -836,7 +884,7 @@ function lineChart3() {
               displayAnnotations: true,
           
             title: '',
-            hAxis: {title:'Years',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
+            hAxis: {title:'Année',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
             vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
             legend: 'bottom',
             pointSize: 5,
@@ -861,7 +909,7 @@ function financialchart() {
       ]);
 
       var options = {
-        title: '22 632 300$',
+        title: '22 632 300 $',
         pieHole: 0.4,
         colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372'],
       };
