@@ -1,11 +1,15 @@
 
 body.fr .glance-year{font-size: 12px;}
 body.fr .primary-banner-text h1 { font-size: 52px; line-height: 60px; }
+body.fr .blockquote-icon{background-image: url("./images/open-quote-french.svg");}
+body.fr blockquote p::after { width: 29px; height: 25px; top: 0; right: -10px; transform: rotate(180deg); content: ""; background-image: url("./images/open-quote-french.svg"); background-repeat: no-repeat; background-size: contain; display: inline-block; position: relative; }
 
+/*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     body.fr .ipc-vision-row{gap: 20px;}
     body.fr .ipc-vision-left{flex: 0 0 222px;}
     body.fr .ipc-vision-right{flex: 0 0 calc(100% - 243px);}
     body.fr span.feature-title{font-size: 20px; line-height: 24px;}
     body.fr ul.report_list > li{padding: 25px 40px 26px; font-size: 40px; line-height: 50px; min-width: 400px;}
+    body.fr .blockquote-icon{top: -32px;}
 }

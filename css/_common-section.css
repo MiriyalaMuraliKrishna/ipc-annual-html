@@ -39,6 +39,8 @@ blockquote:not(span.optional-text).grid-quote{margin-top: 80px;}
 .optional-repeater-list.top{align-items: flex-start;}
 .optional-image-top{margin-bottom: 60px;}
 .optional-repeater-list.no_space{margin-bottom: 0;}
+.optional-text-icon{max-width: 120px; margin-right: 20px; width: 100%;}
+.optional-text-icon img{width: 100%; object-fit: cover;}
 
 
 /*-- media css starts here --*/

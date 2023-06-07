@@ -171,8 +171,16 @@ function drawChart3() {
       var options = {
         title: '1,258 Total',
         pieHole: 0.4,
-        colors: ['#182853', '#357975'],
+        colors: ['#182853', '#357975']
       };
+
+      var formatter = new google.visualization.NumberFormat({
+        prefix: '$', negativeColor: 'red', negativeParens: true,
+        decimalSymbol  : ',',
+        groupingSymbol : '.'
+    });
+    formatter.format(data, 1); 
+     
 
       var chart = new google.visualization.PieChart(document.getElementById('overall-chart3'));
 
@@ -913,7 +921,7 @@ function financialchart() {
       ]);
 
       var options = {
-        title: '$ 22632300',
+        title: '$22,632,300',
         pieHole: 0.4,
         colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372'],
       };
