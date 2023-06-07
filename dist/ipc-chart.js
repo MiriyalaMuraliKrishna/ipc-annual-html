@@ -210,96 +210,44 @@ function drawChart4() {
 }
 google.charts.setOnLoadCallback(drawChart4);
 
+
+
+
 function drawChart5() {
-  // Define the chart to be drawn.
+  // Define the chart data.
   var data = google.visualization.arrayToDataTable([
-    ['Year', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
-    ['Exemptions',  595, 0, 0, 0],
-    ['Reasonable Search',  145, 0, 0, 0],
-    ['Deemed Refusal',  143, 0, 0, 0],
-    ['Act Does Not Apply',  117, 0, 0, 0],
-    ['Third Party Appeals',  96, 0, 0, 0],
-    ['Other',  162, 0, 0, 0]
+    ["Année", "FIPPA", { role: "style" } ],
+    ["Exemptions", 595, "#182853"],
+    ["Reasonable Search", 145, "#357975"],
+    ["Deemed Refusal", 143, "#00a49a"],
+    ["Act Does Not Apply", 117, "#a2bc5d"],
+    ["Third Party Appeals", 96, "#727372"],
+    ["Other", 162, "#9899a0"],
   ]);
-
-  var dataView = new google.visualization.DataView(data);
-  dataView.setColumns([
-    0,
-    1,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 1);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    2,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 2);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    3,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 3);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    4,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 4);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    }
-  ]);
-
+  var view = new google.visualization.DataView(data);
+  view.setColumns([0, 1,
+  { 
+    calc: "stringify",
+    sourceColumn: 1,
+    type: "string",
+    role: "annotation" },
+  2]);
   var options = {
-    title: '1 258 Total',
+    title: '1, 258 Total',
     isStacked: true,
-    colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-    hAxis: {
-      title: 'Years',
-      titleTextStyle: {
-        color: '#FFFFFF'
-      },
-      textStyle: {
-        color: '#FFF'
-      },
-      gridlines: {
-        count: 0
-      },
-      baselineColor: '#FFF'
-    },
-    legend: {
-      position: "none"
-    },
-    chartArea: {
-      left: 170
-    },
-    annotations: {
-      textStyle: {
-        color: 'transparent',
-        auraColor: 'none'
-      }
-    },
+    hAxis: { title: 'Année', titleTextStyle: { color: '#FFFFFF' }, textStyle: { color: '#FFF' }, gridlines: { count: 0 }, baselineColor: '#FFF' },
+    legend: { position: "none" },
+    chartArea: { left: 180, },
+    textStyle: {
+      color: '#FFFFFF' // Set the text color here
+    }
   };
-
   // Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('overall-chart5'));
-  chart.draw(dataView, options);
+  chart.draw(view, options);
 }
-
 google.charts.setOnLoadCallback(drawChart5);
+
 
 
 
@@ -374,73 +322,39 @@ google.charts.setOnLoadCallback(overallChart10);
 
 
 function phipaChart1() {
-  // Define the chart to be drawn.
+  // Define the chart data.
   var data = google.visualization.arrayToDataTable([
-      ['Year', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
-      ['Misdirected or Lost Personal Information',  163, 0, 0, 0],
-      ['Snooping',  143, 0, 0, 0],
-      ['General Unauthorized Collection/Use/Disclosure',  122, 0, 0, 0],
-      ['Stolen Personal Information',  33, 0, 0, 0],
-      ['Cyberattack*',  29, 0, 0, 0],
-      ['Unsecured Records',  3, 0, 0, 0]
+    ["Année", "FIPPA", { role: "style" } ],
+    ["Misdirected or Lost Personal Information", 163, "#182853"],
+    ["Snooping", 143, "#357975"],
+    ["General Unauthorized Collection/Use/Disclosure", 122, "#00a49a"],
+    ["Stolen Personal Information", 33, "#a2bc5d"],
+    ["Cyberattack*", 29, "#727372"],
+    ["Unsecured Records", 3, "#9899a0"],
   ]);
-  var data = new google.visualization.DataView(data);
-  data.setColumns([
-    0,
-    1,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 1);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    2,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 2);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    3,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 3);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    4,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 4);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    }
-  ]);
-
+  var view = new google.visualization.DataView(data);
+  view.setColumns([0, 1,
+  { 
+    calc: "stringify",
+    sourceColumn: 1,
+    type: "string",
+    role: "annotation" },
+  2]);
   var options = {
-      title: '493 Total', 
-      isStacked: true,
-      colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Years',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
-      legend: { position: "none" },
-      chartArea: {
-        left: 270,
-     },
-  };  
-  //Instantiate and draw the chart.
+    title: '493 Total',
+    isStacked: true,
+    hAxis: { title: 'Année', titleTextStyle: { color: '#FFFFFF' }, textStyle: { color: '#FFF' }, gridlines: { count: 0 }, baselineColor: '#FFF' },
+    legend: { position: "none" },
+    chartArea: { left: 180, },
+    textStyle: {
+      color: '#FFFFFF' // Set the text color here
+    }
+  };
+  // Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('phipa-chart1'));
-  chart.draw(data, options);
+  chart.draw(view, options);
 }
 google.charts.setOnLoadCallback(phipaChart1);
-
 
 function phipaChart2() {
   // Define the chart to be drawn.
@@ -512,93 +426,42 @@ google.charts.setOnLoadCallback(phipaChart3);
 
 
 
-
-
-
-
-
-
-
-
-
-
 function cyfsaChart1() {
-  // Define the chart to be drawn.
+  // Define the chart data.
   var data = google.visualization.arrayToDataTable([
-      ['Year', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
-      ['General Unauthorized Collection/Use/Disclosure',  16, 0, 0, 0],
-      ['Misdirected or Lost Personal Information',  16, 0, 0, 0],
-      ['Snooping',  8, 0, 0, 0],
-      ['Stolen Personal Information',  3, 0, 0, 0],
-      ['Cyberattack*',  3, 0, 0, 0],
+    ["Année", "FIPPA", { role: "style" } ],
+    ["General Unauthorized Collection/Use/Disclosure", 16, "#182853"],
+    ["Misdirected or Lost Personal Information", 16, "#357975"],
+    ["Snooping", 8, "#00a49a"],
+    ["Stolen Personal Information", 3, "#a2bc5d"],
+    ["Cyberattack*", 3, "#727372"],
   ]);
-  var data = new google.visualization.DataView(data);
-  data.setColumns([
-    0,
-    1,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 1);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    2,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 2);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    3,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 3);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    4,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 4);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    }
-  ]);
+  var view = new google.visualization.DataView(data);
+  view.setColumns([0, 1,
+  { 
+    calc: "stringify",
+    sourceColumn: 1,
+    type: "string",
+    role: "annotation" },
+  2]);
   var options = {
-      title: '46 Total', 
-      isStacked: true,
-      colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Years',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
-      legend: { 
-        position: "left",
-      },
-      vAxis: {
-        maxTextLines: 2,
-        minTextLines: 2
-      },
-      chartArea:{
-        left: 300
-      },
-      annotations: {
-        textStyle: {
-          color: 'transparent',
-          auraColor: 'none'
-        },
-       }
-  };  
-  //Instantiate and draw the chart.
+    title: '46 Total',
+    isStacked: true,
+    hAxis: { title: 'Année', titleTextStyle: { color: '#FFFFFF' }, textStyle: { color: '#FFF' }, gridlines: { count: 0 }, baselineColor: '#FFF' },
+    legend: { position: "none" },
+    chartArea: { left: 180, },
+    textStyle: {
+      color: '#FFFFFF' // Set the text color here
+    }
+  };
+  // Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('cyfsa-chart1'));
-  chart.draw(data, options);
+  chart.draw(view, options);
 }
 google.charts.setOnLoadCallback(cyfsaChart1);
+
+
+
 
 
 function cyfsaChart2() {

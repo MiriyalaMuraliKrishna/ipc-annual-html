@@ -61,17 +61,6 @@ $(window).on("load", function(){
         scrollSpeed: 2000,
         offset: 104,
     });
-    $("ul.aside_links > li > a").on('click', function(e) {
-        e.preventDefault();
-        var target = $(this).attr('href');
-        let height = $('.main-header').outerHeight(true);  
-        let scrolltoHome = window.location.href = "./index.html" + target; 
-        $.mPageScroll2id("scrollTo", scrolltoHome, {
-            offset: {
-                top: height,
-            }
-        });
-    });    
 });
 $(document).ready(function(){
     $("ul.main_menu a[href*='by-the-numbers.html'], ul.ipc-vision-links li a").on('click', function(e){

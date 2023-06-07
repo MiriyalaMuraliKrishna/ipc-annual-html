@@ -205,28 +205,34 @@ function drawChart2() {
 }
 google.charts.setOnLoadCallback(drawChart2);
 
-
 function drawChart3() {
-  // Define the chart to be drawn.
   var data = google.visualization.arrayToDataTable([
-        ['Task', 'Hours per Day'],
-        ['PROVINCIAL',     567],
-        ['MUNICIPAL',      697],
-      ]);
+    ['Task', 'Hours per Day'],
+    ['PROVINCIAL', 567],
+    ['MUNICIPAL', 697],
+  ]);
 
-      var options = {
-        title: '1 258 Total',
-        pieHole: 0.4,
-        colors: ['#182853', '#357975'],
-        pieSliceText: 'percentage',
-        format:'#,## %'
-      };
+  var formatter = new google.visualization.NumberFormat({
+    pattern: '#,##0,0 \'%\'',
+  });
+  formatter.format(data, 1);
 
-      var chart = new google.visualization.PieChart(document.getElementById('overall-chart3'));
+  var options = {
+    title: '1 258 Total',
+    pieHole: 0.4,
+    colors: ['#182853', '#357975'],
+    pieSliceText: 'value',
+    pieSliceTextStyle: {
+      color: 'white', 
+    },
+  };
 
-      chart.draw(data, options);
+  var chart = new google.visualization.PieChart(document.getElementById('overall-chart3'));
+  chart.draw(data, options);
 }
+
 google.charts.setOnLoadCallback(drawChart3);
+
 
 
 function drawChart4() {
@@ -238,10 +244,19 @@ function drawChart4() {
         ['Arbitrage',      326],
       ]);
 
+      var formatter = new google.visualization.NumberFormat({
+        pattern: '#,##0,0 \'%\'',
+      });
+      formatter.format(data, 1);
+
       var options = {
         title: '1,347 Total',
         pieHole: 0.4,
         colors: ['#00a49a', '#182853', '#357975', '#cadf81'],
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+          color: 'white', 
+        },
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('overall-chart4'));
@@ -252,70 +267,37 @@ google.charts.setOnLoadCallback(drawChart4);
 
 
 function drawChart5() {
-  // Define the chart to be drawn.
+  // Define the chart data.
   var data = google.visualization.arrayToDataTable([
-      ['Année', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
-      ['Exceptions',  595, 0, 0, 0],
-      ['Caractère raisonnable des recherches',  145, 0, 0, 0],
-      ['Avis réputé donné du refus',  143, 0, 0, 0],
-      ['Non-application de la loi',  117, 0, 0, 0],
-      ['Appels de tiers',  96, 0, 0, 0],
-      ['Autre',  162, 0, 0, 0]
+    ["Année", "FIPPA", { role: "style" } ],
+    ["Exceptions", 595, "#182853"],
+    ["Caractère raisonnable desrecherches", 145, "#357975"],
+    ["Avis réputé donné du refus", 143, "#00a49a"],
+    ["Non-application de la loi", 117, "#a2bc5d"],
+    ["Appels de tiers", 96, "#727372"],
+    ["Autre", 162, "#9899a0"],
   ]);
-  var data = new google.visualization.DataView(data);
-  data.setColumns([
-    0,
-    1,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 1);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    2,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 2);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    3,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 3);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    4,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 4);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    }
-  ]);
-
+  var view = new google.visualization.DataView(data);
+  view.setColumns([0, 1,
+  { 
+    calc: "stringify",
+    sourceColumn: 1,
+    type: "string",
+    role: "annotation" },
+  2]);
   var options = {
-      title: '1,258 Total', 
-      isStacked: true,
-      colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Année',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
-      legend: { position: "none" },
-      chartArea: {
-        left: 170,
-     },
-  };  
-  //Instantiate and draw the chart.
+    title: '1, 258 Total',
+    isStacked: true,
+    hAxis: { title: 'Année', titleTextStyle: { color: '#FFFFFF' }, textStyle: { color: '#FFF' }, gridlines: { count: 0 }, baselineColor: '#FFF' },
+    legend: { position: "none" },
+    chartArea: { left: 180, },
+    textStyle: {
+      color: '#FFFFFF' // Set the text color here
+    }
+  };
+  // Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('overall-chart5'));
-  chart.draw(data, options);
+  chart.draw(view, options);
 }
 google.charts.setOnLoadCallback(drawChart5);
 
@@ -332,10 +314,19 @@ function overallChart6() {
         ['Autre',      2],
       ]);
 
+      var formatter = new google.visualization.NumberFormat({
+        pattern: '#,##0,0 \'%\'',
+      });
+      formatter.format(data, 1);
+
       var options = {
         title: '262 Total',
         pieHole: 0.4,
         colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+          color: 'white', 
+        }
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('overall-chart6'));
@@ -355,10 +346,19 @@ function overallChart9() {
         ['Production d’un rapport',      8],
       ]);
 
+      var formatter = new google.visualization.NumberFormat({
+        pattern: '#,##0,0 \'%\'',
+      });
+      formatter.format(data, 1);
+
       var options = {
         title: '298 Total',
         pieHole: 0.4,
-        colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        colors: ['#182853', '#357975', '#00a49a', '#c3db70'],              
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+          color: 'white', 
+        }
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('overall-chart9'));
@@ -377,10 +377,19 @@ function overallChart10() {
 
       ]);
 
+      var formatter = new google.visualization.NumberFormat({
+        pattern: '#,##0,0 \'%\'',
+      });
+      formatter.format(data, 1);
+
       var options = {
         title: '152 Total',
         pieHole: 0.4,
         colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+          color: 'white', 
+        }
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('overall-chart10'));
@@ -391,70 +400,37 @@ google.charts.setOnLoadCallback(overallChart10);
 
 
 function phipaChart1() {
-  // Define the chart to be drawn.
+  // Define the chart data.
   var data = google.visualization.arrayToDataTable([
-      ['Année', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
-      ['Renseignements personnels mal dirigés ou perdus',  163, 0, 0, 0],
-      ['Consultations sans autorisation',  143, 0, 0, 0],
-      ['Collectes, utilisations ou divulgations non autorisées',  122, 0, 0, 0],
-      ['Renseignements personnels volés',  33, 0, 0, 0],
-      ['Cyberattaques*',  29, 0, 0, 0],
-      ['Dossiers non sécurisés',  3, 0, 0, 0]
+    ["Année", "FIPPA", { role: "style" } ],
+    ["Renseignements personnels mal dirigés ou perdus", 163, "#182853"],
+    ["Consultations sans autorisation", 143, "#357975"],
+    ["Collectes, utilisations ou divulgations non autorisées", 122, "#00a49a"],
+    ["Renseignements personnels volés", 33, "#a2bc5d"],
+    ["Cyberattaques*", 29, "#727372"],
+    ["Dossiers non sécurisés", 3, "#9899a0"],
   ]);
-  var data = new google.visualization.DataView(data);
-  data.setColumns([
-    0,
-    1,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 1);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    2,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 2);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    3,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 3);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    4,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 4);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    }
-  ]);
-
+  var view = new google.visualization.DataView(data);
+  view.setColumns([0, 1,
+  { 
+    calc: "stringify",
+    sourceColumn: 1,
+    type: "string",
+    role: "annotation" },
+  2]);
   var options = {
-      title: '493 Total', 
-      isStacked: true,
-      colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Année',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
-      legend: { position: "none" },
-      chartArea: {
-        left: 270,
-     },
-  };  
-  //Instantiate and draw the chart.
+    title: '493 Total',
+    isStacked: true,
+    hAxis: { title: 'Année', titleTextStyle: { color: '#FFFFFF' }, textStyle: { color: '#FFF' }, gridlines: { count: 0 }, baselineColor: '#FFF' },
+    legend: { position: "none" },
+    chartArea: { left: 180, },
+    textStyle: {
+      color: '#FFFFFF' // Set the text color here
+    }
+  };
+  // Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('phipa-chart1'));
-  chart.draw(data, options);
+  chart.draw(view, options);
 }
 google.charts.setOnLoadCallback(phipaChart1);
 
@@ -469,6 +445,10 @@ function phipaChart2() {
         ['Dossiers de plainte concernant la collecte, l’utilisation ou la divulgation ouverts par le CIPVP',      29],
         ['Plainte déposée par la commissaire',      1]
       ]);
+      var formatter = new google.visualization.NumberFormat({
+        pattern: '#,##0,0 \'%\'',
+      });
+      formatter.format(data, 1);
 
       var options = {
         title: '865 Total',
@@ -478,6 +458,10 @@ function phipaChart2() {
           position: 'right',
         },     
         sliceVisibilityThreshold: 0,  
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+          color: 'white', 
+        },
       };
 
       
@@ -503,11 +487,19 @@ function phipaChart3() {
         ['Abandon',      58],
         ['Ordonnance/décision rendue',      20],
       ]);
-
+      var formatter = new google.visualization.NumberFormat({
+        pattern: '#,##0,0 \'%\'',
+      });
+      formatter.format(data, 1);
+    
       var options = {
         title: '965 Total',
         pieHole: 0.4,
         colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+          color: 'white', 
+        },
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('phipa-chart3'));
@@ -518,75 +510,36 @@ google.charts.setOnLoadCallback(phipaChart3);
 
 
 function cyfsaChart1() {
-  // Define the chart to be drawn.
+  // Define the chart data.
   var data = google.visualization.arrayToDataTable([
-      ['Année', 'FIPPA', 'MFIPPA', 'PHIPA', 'CYFSA'],
-      ['Collectes, utilisations ou divulgations non autorisées',  16, 0, 0, 0],
-      ['Renseignements personnels mal dirigés ou perdus',  16, 0, 0, 0],
-      ['Consultations sans autorisation',  8, 0, 0, 0],
-      ['Renseignements personnels volés',  3, 0, 0, 0],
-      ['Cyberattaques',  3, 0, 0, 0],
+    ["Année", "FIPPA", { role: "style" } ],
+    ["Collectes, utilisations ou divulgations non autorisées", 16, "#182853"],
+    ["Renseignements personnels mal dirigés ou perdus", 16, "#357975"],
+    ["Consultations sans autorisation", 8, "#00a49a"],
+    ["Renseignements personnels volés", 3, "#a2bc5d"],
+    ["Cyberattaques", 3, "#727372"],
   ]);
-  var data = new google.visualization.DataView(data);
-  data.setColumns([
-    0,
-    1,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 1);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    2,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 2);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    3,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 3);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    },
-    4,
-    {
-      calc: function (dt, row) {
-        var value = dt.getValue(row, 4);
-        return value === 0 ? null : value;
-      },
-      type: "number",
-      role: "annotation"
-    }
-  ]);
-
+  var view = new google.visualization.DataView(data);
+  view.setColumns([0, 1,
+  { 
+    calc: "stringify",
+    sourceColumn: 1,
+    type: "string",
+    role: "annotation" },
+  2]);
   var options = {
-      title: '46 Total', 
-      isStacked: true,
-      colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Année',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
-      legend: { 
-        position: "left",
-      },
-      vAxis: {
-        maxTextLines: 2,
-        minTextLines: 2
-      },
-      chartArea:{
-        left: 300
-      }
-  };  
-  //Instantiate and draw the chart.
+    title: '46 Total',
+    isStacked: true,
+    hAxis: { title: 'Année', titleTextStyle: { color: '#FFFFFF' }, textStyle: { color: '#FFF' }, gridlines: { count: 0 }, baselineColor: '#FFF' },
+    legend: { position: "none" },
+    chartArea: { left: 180, },
+    textStyle: {
+      color: '#FFFFFF' // Set the text color here
+    }
+  };
+  // Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('cyfsa-chart1'));
-  chart.draw(data, options);
+  chart.draw(view, options);
 }
 google.charts.setOnLoadCallback(cyfsaChart1);
 
@@ -601,10 +554,19 @@ function cyfsaChart2() {
         ['Dossiers de plainte concernant la collecte, l’utilisation ou la divulgation ouverts par le CIPVP',      46],
       ]);
 
+      var formatter = new google.visualization.NumberFormat({
+        pattern: '#,##0,0 \'%\'',
+      });
+      formatter.format(data, 1);
+      
       var options = {
         title: '92 Total',
         pieHole: 0.4,
         colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+          color: 'white', 
+        },
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('cyfsa-chart2'));
@@ -625,11 +587,19 @@ function cyfsaChart3() {
         ['Abandon',      5],
         ['Ordonnance/décision rendue',      4],
       ]);
+      var formatter = new google.visualization.NumberFormat({
+        pattern: '#,##0,0 \'%\'',
+      });
+      formatter.format(data, 1);
 
       var options = {
         title: '95 Total',
         pieHole: 0.4,
         colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        pieSliceText: 'value',
+        pieSliceTextStyle: {
+          color: 'white', 
+        },      
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('cyfsa-chart3'));

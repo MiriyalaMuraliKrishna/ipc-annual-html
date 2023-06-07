@@ -6,7 +6,7 @@ body.by-the-numbers-page{background-attachment: fixed; background-image: url('./
 .feature-overview-text h2{font-size: 32px; line-height: 40px; color: var( --slate-color);}
 .feature-overview-text p{margin-bottom: 24px;}
 .feature-overview-text span{display:block; margin-bottom: 24px;}
-.chart-vertical-stripe { width: 48px; height: calc(100% - 100px); top: 50%; left: -24px; transform: translateY(-50%); position: absolute; background-image: url("./images/chart-vertical-stripe-frame.svg"); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.chart-vertical-stripe { width: 48px; height: calc(100% - 100px); top: 50%; left: -40px; transform: translateY(-50%); position: absolute; background-image: url("./images/chart-vertical-stripe-frame.svg"); background-repeat: no-repeat; background-size: cover; background-position: center; }
 .feature-overview-list:nth-child(even) .chart-vertical-stripe{left: auto; right: -24px;}
 .feature-last{padding-bottom: 38px;}
 
