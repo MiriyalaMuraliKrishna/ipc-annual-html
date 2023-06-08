@@ -9,8 +9,8 @@
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .modern-privacy-main{padding: 80px 0 0;}
-    .modern-featured-text{bottom: 0; left: 0; padding: 40px 40px 20px; max-width: 990px; position: absolute; color: var(--white);}
-    .modern-featured-text h2{font-size: 64px; line-height: 68px; margin-bottom: 0; color: var(--white);}
+    .modern-featured-text{bottom: 0; left: 0; padding: 40px 40px 40px; max-width: 990px; position: absolute; color: var(--white);}
+    .modern-featured-text h2{font-size: 112px; line-height: 112px; margin-bottom: 0; color: var(--white);}
     .modern-featured-text.sm h2{font-size: 44px; line-height: 48px;}
     .modern-hlth-block{width: 160px; height: 160px; left: -80px; top: 315px; background-color: var(--health-color);}
     .modern-block-grow{width: 667px; height: 666px; top: -15px; left: 128px; background-image: url('./images/article-banner-glow.svg'); background-repeat: no-repeat; background-size: cover; position: absolute;}

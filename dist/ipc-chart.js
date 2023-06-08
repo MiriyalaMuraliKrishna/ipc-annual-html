@@ -64,8 +64,8 @@ function drawChart() {
         textStyle: {
           fontSize: 10  // Adjust the font size of the legend
         }
-      }
-      
+      },
+      tooltip: {trigger: 'none'}
   };  
   //Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('overall-chart1'));
@@ -146,7 +146,8 @@ function drawChart2() {
         textStyle: {
           fontSize: 9
         }
-      }
+      },
+      tooltip: {trigger: 'none'}
   };  
 
 
@@ -168,7 +169,8 @@ function drawChart3() {
       var options = {
         title: '1,258 Total',
         pieHole: 0.4,
-        colors: ['#182853', '#357975']
+        colors: ['#182853', '#357975'],
+        tooltip: {trigger: 'none'}
       };
 
       var formatter = new google.visualization.NumberFormat({
@@ -196,9 +198,10 @@ function drawChart4() {
       ]);
 
       var options = {
-        title: '1 347 Total',
+        title: '1,347 Total',
         pieHole: 0.4,
         colors: ['#00a49a', '#182853', '#357975', '#cadf81'],
+        tooltip: {trigger: 'none'}
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('overall-chart4'));
@@ -230,14 +233,15 @@ function drawChart5() {
     role: "annotation" },
   2]);
   var options = {
-    title: '1, 258 Total',
+    title: '1,258 Total',
     isStacked: true,
     hAxis: { title: 'Année', titleTextStyle: { color: '#FFFFFF' }, textStyle: { color: '#FFF' }, gridlines: { count: 0 }, baselineColor: '#FFF' },
     legend: { position: "none" },
     chartArea: { left: 180, },
     textStyle: {
       color: '#FFFFFF' // Set the text color here
-    }
+    },
+    tooltip: {trigger: 'none'}
   };
   // Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('overall-chart5'));
@@ -263,7 +267,8 @@ function overallChart6() {
       var options = {
         title: '262 Total',
         pieHole: 0.4,
-        colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        colors: ['#182853', '#357975', '#00a49a', '#c3db70', '#727372'],
+        tooltip: {trigger: 'none'}
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('overall-chart6'));
@@ -286,7 +291,8 @@ function overallChart9() {
       var options = {
         title: '298 Total',
         pieHole: 0.4,
-        colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        colors: ['#182853', '#357975', '#00a49a', '#c3db70', '#727372'],
+        tooltip: {trigger: 'none'}
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('overall-chart9'));
@@ -309,6 +315,7 @@ function overallChart10() {
         title: '152 Total',
         pieHole: 0.4,
         colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        tooltip: {trigger: 'none'}
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('overall-chart10'));
@@ -345,7 +352,8 @@ function phipaChart1() {
     chartArea: { left: 260, },
     textStyle: {
       color: '#FFFFFF' // Set the text color here
-    }
+    },
+    tooltip: {trigger: 'none'}
   };
   // Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('phipa-chart1'));
@@ -359,8 +367,7 @@ function phipaChart2() {
         ['Task', 'Hours per Day'],
         ['Access/Correction Complaint',     180],
         ['Collection/Use/Disclosure Complaint',  163],
-        ['Commissioner Initiated',      1],
-        ['IPC-Initiated Collection/Use/Disclosure Complaint',      29],
+        ['IPC-Initiated',      30],
         ['Reported Breach',      492],
       ]);
 
@@ -376,6 +383,7 @@ function phipaChart2() {
         },       
         sliceVisibilityThreshold: 0,
         pieStartAngle: 95,
+        tooltip: {trigger: 'none'}
       };
 
 
@@ -408,10 +416,14 @@ function phipaChart3() {
     colors: ['#182853', '#357975', '#00a49a', '#c3db70', '#727372'],
     pieSliceText: 'percentage',
     pieSliceTextStyle: {
-        fontSize: 6
+        fontSize: 9
     },
     sliceVisibilityThreshold: 0,
     pieStartAngle: 90,
+    tooltip: {trigger: 'none'},
+    chartArea:{
+      width: '90%'
+    }
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('phipa-chart3'));
@@ -449,7 +461,8 @@ function cyfsaChart1() {
     chartArea: { left: 180, },
     textStyle: {
       color: '#FFFFFF' // Set the text color here
-    }
+    },
+    tooltip: {trigger: 'none'}
   };
   // Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('cyfsa-chart1'));
@@ -475,6 +488,7 @@ function cyfsaChart2() {
         title: '92 Total',
         pieHole: 0.4,
         colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        tooltip: {trigger: 'none'}
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('cyfsa-chart2'));
@@ -499,7 +513,8 @@ function cyfsaChart3() {
       var options = {
         title: '95 Total',
         pieHole: 0.4,
-        colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
+        colors: ['#182853', '#357975', '#00a49a', '#c3db70', '#727372'],
+        tooltip: {trigger: 'none'}
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('cyfsa-chart3'));
@@ -552,7 +567,7 @@ hAxis: {title:'Years',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
 vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
 legend: 'bottom',
 pointSize: 5,
-tooltip: {isHtml: true},
+tooltip: {trigger: 'none'},
 colors: ['#c3db70', '#337975'],
 
 };
@@ -599,14 +614,14 @@ var data = google.visualization.arrayToDataTable([
 var options = {
   displayAnnotations: true,
 
-title: '',
-hAxis: {title:'Years',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
-vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
-legend: 'bottom',
-pointSize: 5,
-tooltip: {isHtml: true},
-colors: ['#c3db70', '#337975'],
-
+  title: '',
+  hAxis: {title:'Years',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
+  vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
+  legend: 'bottom',
+  pointSize: 5,
+  tooltip: {isHtml: true},
+  colors: ['#c3db70', '#337975'],
+  tooltip: {trigger: 'none'}
 };
 // Draw
 var chart = new google.visualization.LineChart(document.getElementById('line-chart2'));
@@ -655,9 +670,8 @@ function lineChart3() {
     vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
     legend: 'bottom',
     pointSize: 5,
-    tooltip: {isHtml: true},
     colors: ['#c3db70', '#337975'],
-  
+    tooltip: {trigger: 'none'}
   };
   // Draw
   var chart = new google.visualization.LineChart(document.getElementById('line-chart3'));
@@ -706,9 +720,8 @@ function lineChart3() {
         vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
         legend: 'bottom',
         pointSize: 5,
-        tooltip: {isHtml: true},
         colors: ['#c3db70', '#337975'],
-      
+        tooltip: {trigger: 'none'}
       };
       // Draw
       var chart = new google.visualization.LineChart(document.getElementById('line-chart4'));
@@ -758,9 +771,8 @@ function lineChart3() {
             vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
             legend: 'bottom',
             pointSize: 5,
-            tooltip: {isHtml: true},
             colors: ['#c3db70', '#337975'],
-          
+            tooltip: {trigger: 'none'}
           };
           // Draw
           var chart = new google.visualization.LineChart(document.getElementById('line-chart5'));
@@ -784,6 +796,7 @@ function financialchart() {
         title: '$22,632,300',
         pieHole: 0.4,
         colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372'],
+        tooltip: {trigger: 'none'}
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('financial-2022-chart'));
