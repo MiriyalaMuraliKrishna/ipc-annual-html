@@ -55,7 +55,7 @@ function drawChart() {
 ]);
 
   var options = {
-      title: 'Overall Opened Files 2018-2022', 
+      title: 'Overall Opened Files 2018 - 2022', 
       isStacked: true,
       colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
       hAxis: {title:'Years', titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
@@ -131,10 +131,10 @@ function drawChart2() {
 ]);
 
   var options = {
-      title: 'Overall Opened Files 2018-2022', 
+      title: 'Overall Closed Files 2018 - 2022', 
       isStacked: true,
       colors: ['#182853', '#357975', '#00a49a', '#c3db70'],
-      hAxis: {title:'Years',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#FFF'},
+      hAxis: {title:'Years', titleTextStyle: { color: '#242D38'}, textStyle:{color: '#242D38'},gridlines: { count: 0 },baselineColor:'#FFF'},
       legend: {
         position: 'right',
         textStyle: {
@@ -146,9 +146,6 @@ function drawChart2() {
         textStyle: {
           fontSize: 9
         }
-      },
-      chartArea: {
-        height: '90%'
       }
   };  
 
@@ -345,7 +342,7 @@ function phipaChart1() {
     isStacked: true,
     hAxis: { title: 'Année', titleTextStyle: { color: '#FFFFFF' }, textStyle: { color: '#FFF' }, gridlines: { count: 0 }, baselineColor: '#FFF' },
     legend: { position: "none" },
-    chartArea: { left: 180, },
+    chartArea: { left: 260, },
     textStyle: {
       color: '#FFFFFF' // Set the text color here
     }

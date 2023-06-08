@@ -8,34 +8,36 @@ function drawChart() {
       ['2021',  736, 1029, 993, 165],
       ['2022',  682, 916, 884,  92]
   ]);
+
+  
   var data = new google.visualization.DataView(data);
   data.setColumns([0,
   1, {
     calc: function (dt, row) {
-      return dt.getValue(row, 1);
+      return dt.getValue(row, 1).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
     },
-    type: "number",
+    type: "string",
     role: "annotation"
   },
   2, {
     calc: function (dt, row) {
-      return dt.getValue(row, 2);
+      return dt.getValue(row, 2).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
     },
-    type: "number",
+    type: "string",
     role: "annotation"
   },
   3, {
     calc: function (dt, row) {
-      return dt.getValue(row, 3);
+      return dt.getValue(row, 3).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
     },
-    type: "number",
+    type: "string",
     role: "annotation"
   },
   4, {
     calc: function (dt, row) {
-      return dt.getValue(row, 4);
+      return dt.getValue(row, 4).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
     },
-    type: "number",
+    type: "string",
     role: "annotation"
   },
   {
@@ -84,7 +86,14 @@ function drawChart() {
             }
           }
         }
-      }
+      },
+      // tooltip: {
+      //   isHtml: true,
+      //   textStyle: {
+      //     color: '#f00',
+      //     fontSize: 12
+      //   },
+      // }
   };  
   //Instantiate and draw the chart.
   var chart = new google.visualization.BarChart(document.getElementById('overall-chart1'));
@@ -108,30 +117,30 @@ function drawChart2() {
   data.setColumns([0,
   1, {
     calc: function (dt, row) {
-      return dt.getValue(row, 1);
+      return dt.getValue(row, 1).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
     },
-    type: "number",
+    type: "string",
     role: "annotation"
   },
   2, {
     calc: function (dt, row) {
-      return dt.getValue(row, 2);
+      return dt.getValue(row, 2).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
     },
-    type: "number",
+    type: "string",
     role: "annotation"
   },
   3, {
     calc: function (dt, row) {
-      return dt.getValue(row, 3);
+      return dt.getValue(row, 3).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
     },
-    type: "number",
+    type: "string",
     role: "annotation"
   },
   4, {
     calc: function (dt, row) {
-      return dt.getValue(row, 4);
+      return dt.getValue(row, 4).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
     },
-    type: "number",
+    type: "string",
     role: "annotation"
   },
   {
@@ -149,7 +158,6 @@ function drawChart2() {
         dt.getValue(row, 3) +
         dt.getValue(row, 4);
         return total === 0 ? '' : total.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
-    
     },
     type: "string",
     role: "annotation"
@@ -250,7 +258,7 @@ function drawChart4() {
       formatter.format(data, 1);
 
       var options = {
-        title: '1,347 Total',
+        title: '1 347 Total',
         pieHole: 0.4,
         colors: ['#00a49a', '#182853', '#357975', '#cadf81'],
         pieSliceText: 'value',
@@ -286,7 +294,7 @@ function drawChart5() {
     role: "annotation" },
   2]);
   var options = {
-    title: '1, 258 Total',
+    title: '1 258 Total',
     isStacked: true,
     hAxis: { title: 'Année', titleTextStyle: { color: '#FFFFFF' }, textStyle: { color: '#FFF' }, gridlines: { count: 0 }, baselineColor: '#FFF' },
     legend: { position: "none" },
@@ -610,57 +618,69 @@ google.charts.setOnLoadCallback(cyfsaChart3);
 
 
 
-
-
-
-google.charts.setOnLoadCallback(drawChart1);
 function drawChart1() {
-var data = google.visualization.arrayToDataTable([
-        ['Année', 'Access Appeals', 'Privacy Files'],
-        [2018,  9.4, 4.3],
-      [2019,  9.2, 4.6],
-      [2020,  10.9, 7.8],
-      [2021,  12.0,  7.3],
-      [2022,  12.5,  8.1],
-      ]);
+  var data = google.visualization.arrayToDataTable([
+    ['Année', 'Access Appeals', 'Privacy Files'],
+    [2018,  9.4, 4.3],
+    [2019,  9.2, 4.6],
+    [2020,  10.9, 7.8],
+    [2021,  12.0, 7.3],
+    [2022,  12.5, 8.1],
+  ]);
 
-      var data = new google.visualization.DataView(data);
-      data.setColumns([0,
-  1, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 1);
+  var dataView = new google.visualization.DataView(data);
+  dataView.setColumns([
+    0,
+    1,
+    {
+      calc: function (dt, row) {
+        return dt.getValue(row, 1).toString().replace('.', ',');
+      },
+      type: "string",
+      role: "annotation"
     },
-    type: "number",
-    role: "annotation"
-  },
-  2, {
-    calc: function (dt, row) {
-      return dt.getValue(row, 2);
+    2,
+    {
+      calc: function (dt, row) {
+        return dt.getValue(row, 2).toString().replace('.', ',');
+      },
+      type: "string",
+      role: "annotation"
+    }
+  ]);
+
+
+
+  var options = {
+    type: 'line',
+    displayAnnotations: true,
+    sliceVisibilityThreshold: 0,
+    title: '',
+    hAxis: {
+      title: 'Année',
+      format: '',
+      gridlines: { count: 0 },
+      baselineColor: '#CCC'
     },
-    type: "number",
-    role: "annotation"
-  },
-  
-]);
+    vAxis: {
+      title: 'Months',
+      format: '',
+      titleTextStyle: { color: '#FFFFFF' },
+      textStyle: { color: '#FFF' },
+      gridlines: { count: 0 },
+      baselineColor: '#000'
+    },
+    legend: 'bottom',
+    pointSize: 0,
+    colors: ['#c3db70', '#337975'],
 
-// Set Options
-var options = {
-  displayAnnotations: true,
+  };
 
-title: '',
-hAxis: {title:'Année',format: '',gridlines: { count: 0 },baselineColor:'#CCC'},
-vAxis: {title: 'Months',titleTextStyle: { color: '#FFFFFF'}, textStyle:{color: '#FFF'},gridlines: { count: 0 },baselineColor:'#000'},
-legend: 'bottom',
-pointSize: 5,
-tooltip: {isHtml: true},
-colors: ['#c3db70', '#337975'],
-
-};
-// Draw
-var chart = new google.visualization.LineChart(document.getElementById('line-chart1'));
-chart.draw(data, options);
+  var chart = new google.visualization.LineChart(document.getElementById('line-chart1'));
+  chart.draw(dataView, options);
 }
 
+google.charts.setOnLoadCallback(drawChart1);
 
 
 

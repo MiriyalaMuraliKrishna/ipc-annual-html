@@ -18,7 +18,7 @@ li.vision-link-orange::after{content: ""; position: absolute; left: 0; top: 0; w
 .ipc-enhance-main{background-color: var(--white); padding: 25px;}
 .ipc-enhance h3{font-size: 24px; line-height: 27px; margin-bottom: 0; color: var(--slate-color); background-color: var(--white); display: block; text-transform: uppercase; padding: 10px 14px 15px; }
 .ipc-enhance-icon{flex: 0 0 50px; margin-right: 10px;}
-.ipc-enhance-title h4{flex: 0 0 calc(100% - 60px); font-size: 19px; line-height: 20px;}
+.ipc-enhance-title h4{flex: 0 0 calc(100% - 60px); color: var(--orange-color); font-size: 19px; line-height: 20px;}
 .green .ipc-enhance-title h4{color: var(--health-color);}
 .lightgreen .ipc-enhance-title h4{color: var(--light-green-color);}
 
