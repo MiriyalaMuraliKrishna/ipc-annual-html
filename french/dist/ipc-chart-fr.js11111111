@@ -692,11 +692,11 @@ google.charts.setOnLoadCallback(lineChart2);
 function lineChart2() {
 var data = google.visualization.arrayToDataTable([
         ['Année', 'Dossiers ouverts', 'Dossiers fermés'],
-        [2018, 628, 641],
-      [2019,  569, 580],
+        [2018, 561, 575],
+      [2019,  615, 579],
       [2020,  815, 691],
-      [2021,  615,  579],
-      [2022,  561,  575],
+      [2021,  569,  580],
+      [2022,  628,  641],
       ]);
 
       var data = new google.visualization.DataView(data);
@@ -905,14 +905,9 @@ function financialchart() {
         title: '22 632 300 $',
         pieHole: 0.4,
         colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372'],
-          // pieSliceText: 'value',
-          pieSliceTextStyle: {
-          color: 'white', 
-          },
-          tooltip: {trigger: 'none'}
       };
 
-            var chart = new google.visualization.PieChart(document.getElementById('financial-2022-chart'));
+      var chart = new google.visualization.PieChart(document.getElementById('financial-2022-chart'));
 
       chart.draw(data, options);
 }
