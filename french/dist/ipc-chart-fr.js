@@ -905,14 +905,9 @@ function financialchart() {
         title: '22 632 300 $',
         pieHole: 0.4,
         colors: ['#242D38', '#337975', '#00A19C', '#C3E86C', '#727372'],
-          // pieSliceText: 'value',
-          pieSliceTextStyle: {
-          color: 'white', 
-          },
-          tooltip: {trigger: 'none'}
       };
 
-            var chart = new google.visualization.PieChart(document.getElementById('financial-2022-chart'));
+      var chart = new google.visualization.PieChart(document.getElementById('financial-2022-chart'));
 
       chart.draw(data, options);
 }
